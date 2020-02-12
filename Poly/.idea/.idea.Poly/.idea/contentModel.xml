@@ -9,13 +9,15 @@
         <e p="Ile" t="Include">
           <e p="Rotation.cs" t="Include" />
         </e>
-        <e p="moves.cs" t="Include" />
-        <e p="moves_p2.cs" t="Include" />
         <e p="PolygonCity" t="Include">
           <e p="Change_Log.txt" t="Include" />
         </e>
         <e p="Scripts" t="Include">
-          <e p="camscript.cs" t="Include" />
+          <e p="moves.cs" t="Include" />
+          <e p="moves_p2.cs" t="Include" />
+          <e p="Premiere_salle" t="Include">
+            <e p="camscript.cs" t="Include" />
+          </e>
           <e p="Start_Menu" t="Include">
             <e p="Blackscreen.cs" t="Include" />
             <e p="Cross_Menu.cs" t="Include" />
