@@ -9,10 +9,7 @@ using UnityEngine.SceneManagement;
 
 public class Cross_Menu : MonoBehaviour
 {
-    public void PlayGame()
-    {
-        SceneManager.LoadScene(1);
-    }
+   
 
     public void OptionMenu()
     {
@@ -25,6 +22,13 @@ public class Cross_Menu : MonoBehaviour
         SceneManager.UnloadSceneAsync("Options");
         SceneManager.LoadScene("MENUOK", LoadSceneMode.Additive);
     }
+
+    public void PlayButt()
+    {
+        SceneManager.UnloadSceneAsync("MENUOK");
+        SceneManager.LoadScene("lobby", LoadSceneMode.Additive); 
+    }
+
 
     public void ExitGame()
     {
