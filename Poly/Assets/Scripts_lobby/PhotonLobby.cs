@@ -49,7 +49,7 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
 
     public void OnPlayClick()
     {
-        SceneManager.UnloadSceneAsync("Polynon Scene");
+        SceneManager.UnloadSceneAsync("lobby");
         SceneManager.LoadScene("Nouvelle_salle");
     }
     
