@@ -1,25 +1,9 @@
 sceneSetups:
-- path: Assets/Scenes/Polynon Scene.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/Blackscreen.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/MENUOK.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/Options.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
 - path: Assets/Scenes/lobby.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
 - path: Assets/Scenes/Nouvelle_salle.unity
-  isLoaded: 0
+  isLoaded: 1
   isActive: 0
   isSubScene: 0
