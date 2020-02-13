@@ -7,6 +7,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 using Random = System.Random;
+using UnityEngine.SceneManagement; 
 
 /*
 Script final du lobby, le reste est du trash file
@@ -17,11 +18,11 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
     
     public static PhotonLobby lobby;
 
-
-
     public Button CreateOrjoinButton;
 
     public Button Cancel;
+
+    public Button Play;
     
     public InputField nom;
 
@@ -43,8 +44,14 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
         InfoOnConnection.text = "Starting...";
         CreateOrjoinButton.interactable = false;
         Cancel.interactable = false;
+        Play.interactable = false;
     }
-    
+
+    public void OnPlayClick()
+    {
+        SceneManager.UnloadSceneAsync("Polynon Scene");
+        SceneManager.LoadScene("Nouvelle_salle");
+    }
     
 
     public void OnJoinOrCreateButton()
@@ -99,9 +106,12 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
 
             if (PhotonNetwork.CurrentRoom.PlayerCount == 1)
                 InfoOnConnection.text = "waiting for a player";
-            
+
             if (PhotonNetwork.CurrentRoom.PlayerCount == 2)
+            {
+                Play.interactable = true;
                 InfoOnConnection.text = "You have been rejoined";
+            }
 
         }
     }
