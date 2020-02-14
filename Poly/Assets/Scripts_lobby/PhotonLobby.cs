@@ -89,6 +89,11 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
 
     }
 
+    public void BackToMenu()
+    {
+        SceneManager.UnloadSceneAsync("lobby");
+        SceneManager.LoadScene("MENUOK", LoadSceneMode.Additive);
+    }
 
 
     public override void OnJoinedRoom()
