@@ -20,7 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/lobby.unity
     guid: 8dcc1c28e3c214bfaa4b1b34b332c027
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/Nouvelle_salle.unity
-    guid: bb487a856326da94cac8384134e16fe9
+    path: Assets/Scenes/premiere_salle.unity
+    guid: efb492ba44058b44887f3ad80decda00
   m_configObjects: {}

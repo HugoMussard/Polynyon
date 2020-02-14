@@ -205,6 +205,7 @@
           <e p="CreateUserName.cs" t="Include" />
           <e p="PhotonLobby.cs" t="Include" />
         </e>
+        <e p="Spawn_script.cs" t="Include" />
         <e p="SpeedTutor_Full_Menu_System" t="Include">
           <e p="GUI Elements" t="Include">
             <e p="UI_BrightnessShader" t="Include">

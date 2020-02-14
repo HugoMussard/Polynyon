@@ -78,6 +78,7 @@
      <Compile Include="Assets\Scripts\moves_p2.cs" />
      <Compile Include="Assets\Scripts_lobby\CreateUserName.cs" />
      <Compile Include="Assets\Scripts_lobby\PhotonLobby.cs" />
+     <Compile Include="Assets\Spawn_script.cs" />
      <Compile Include="Assets\SpeedTutor_Full_Menu_System\GUI Elements\UI_BrightnessShader\Brightness.cs" />
      <Compile Include="Assets\SpeedTutor_Full_Menu_System\MenuScripts\Init_LoadPreferences.cs" />
      <Compile Include="Assets\SpeedTutor_Full_Menu_System\MenuScripts\MenuController.cs" />
