@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Photon.Pun;
 using Photon.Realtime;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -24,7 +25,7 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
 
     public Button Play;
     
-    public InputField nom;
+    public TMP_InputField nom;
 
     public Text InfoOnConnection;
     
@@ -110,12 +111,12 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
             Debug.Log(Convert.ToString(PhotonNetwork.CurrentRoom.Players.Count));
 
             if (PhotonNetwork.CurrentRoom.PlayerCount == 1)
-                InfoOnConnection.text = "waiting for a player";
+                InfoOnConnection.text = "Waiting for a player";
 
             if (PhotonNetwork.CurrentRoom.PlayerCount == 2)
             {
                 Play.interactable = true;
-                InfoOnConnection.text = "You have been rejoined";
+                InfoOnConnection.text = "Another player have joined your session";
             }
 
         }
@@ -125,7 +126,7 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
     {
 
         CreateOrjoinButton.interactable = true;
-        InfoOnConnection.text = "Connected to the servers";
+        InfoOnConnection.text = "Connected to the server";
         
     }
 
