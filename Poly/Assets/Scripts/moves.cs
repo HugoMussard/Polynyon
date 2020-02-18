@@ -50,7 +50,7 @@ public class moves : MonoBehaviourPunCallbacks
         xrotation = Mathf.Clamp(xrotation, -90f, 90f);
         
         yrotation += mousex;
-        yrotation = Mathf.Clamp(yrotation, -180f, 180f);
+        //yrotation = Mathf.Clamp(yrotation, -180f, 180f);
 
         camera.transform.localRotation = Quaternion.Euler(xrotation, yrotation, 0f);
         player.Rotate(Vector3.up * mousex);

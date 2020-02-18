@@ -57,7 +57,6 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
 
     public void OnJoinOrCreateButton()
     {
-
         JoinOrCreateRoom();
     }
 
