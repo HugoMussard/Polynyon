@@ -16,47 +16,13 @@ public class moves : MonoBehaviourPunCallbacks
     public bool isgrounded;
     public Vector3 velocity;
     public float jumphigh = 3f;
-    // Start is called before the first frame update
-    public float sensi = 100f;
-    public GameObject Cameraparent; 
-    public Camera camera; 
-    public Transform player;
-
-    private float xrotation = 0f;
-    
-    private float yrotation = 0f;
-   
     
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        Cameraparent.SetActive(photonView.IsMine);
-        Cursor.lockState = CursorLockMode.Locked;
-    }
-
-    
-    // Update is called once per frame
     void Update()
     {
         
-        if (!photonView.IsMine) return; 
-        
-        //MouvCam
-        float mousex = Input.GetAxis("Mouse X") * sensi * Time.deltaTime;
-        float mousey = Input.GetAxis("Mouse Y") * sensi * Time.deltaTime;
+        if (!photonView.IsMine) return;
 
-        xrotation -= mousey;
-        xrotation = Mathf.Clamp(xrotation, -90f, 90f);
-        
-        yrotation += mousex;
-        //yrotation = Mathf.Clamp(yrotation, -180f, 180f);
-
-        camera.transform.localRotation = Quaternion.Euler(xrotation, yrotation, 0f);
-        player.Rotate(Vector3.up * mousex);
-        
-        
-        
         //Deplacement 
         isgrounded = Physics.CheckSphere(groundCheck.position, groundis, groundmask);
             if (isgrounded && velocity.y < 0)

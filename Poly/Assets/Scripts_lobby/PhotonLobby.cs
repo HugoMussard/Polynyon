@@ -45,7 +45,8 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
         InfoOnConnection.text = "Starting...";
         CreateOrjoinButton.interactable = false;
         Cancel.interactable = false;
-        Play.interactable = false;
+        //Play.interactable = false;
+        
     }
 
     public void OnPlayClick()
@@ -114,7 +115,7 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
 
             if (PhotonNetwork.CurrentRoom.PlayerCount == 2)
             {
-                Play.interactable = true;
+                //Play.interactable = true;
                 InfoOnConnection.text = "Another player have joined your session";
             }
 
