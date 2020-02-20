@@ -27,6 +27,7 @@ public class Spawn_script : MonoBehaviour
 
    public void Spawn()
    {
+      
       if (PhotonNetwork.IsMasterClient)
       {
          PhotonNetwork.Instantiate(player_prefab, spawn_point.position, spawn_point.rotation);

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun; 
@@ -16,8 +17,13 @@ public class moves : MonoBehaviourPunCallbacks
     public bool isgrounded;
     public Vector3 velocity;
     public float jumphigh = 3f;
-    
-    
+    public GameObject parent; 
+
+    private void Start()
+    {
+        parent.SetActive(photonView.IsMine); 
+    }
+
     void Update()
     {
         

@@ -82,10 +82,8 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
         CreateOrjoinButton.interactable = false;
         Cancel.interactable = true;
         string nomchambre = nom.text;
-        RoomOptions RoomOps = new RoomOptions(){IsVisible = true, IsOpen = true, MaxPlayers = 2};
+        RoomOptions RoomOps = new RoomOptions {IsVisible = true, IsOpen = true, MaxPlayers = 2};
         Debug.Log("On cree une chambre ID : " +nomchambre);
-        
-        
         PhotonNetwork.JoinOrCreateRoom(nomchambre, RoomOps, TypedLobby.Default);
 
     }
@@ -115,7 +113,7 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
 
             if (PhotonNetwork.CurrentRoom.PlayerCount == 2)
             {
-                //Play.interactable = true;
+                Play.interactable = true;
                 InfoOnConnection.text = "Another player have joined your session";
             }
 

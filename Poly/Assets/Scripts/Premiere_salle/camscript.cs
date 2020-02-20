@@ -8,7 +8,7 @@ public class camscript : MonoBehaviourPunCallbacks
     public float sensi = 100f;
     public Transform player;
     private float xrotation = 0f;
-    private float yrotation = 0f; 
+
     
     void Start()
     {
@@ -25,9 +25,6 @@ public class camscript : MonoBehaviourPunCallbacks
         xrotation -= mousey;
         xrotation = Mathf.Clamp(xrotation, -90f, 90f);
         
-        yrotation += mousex;
-        
-
         transform.localRotation = Quaternion.Euler(xrotation, 0f, 0f);
         player.Rotate(Vector3.up * mousex); 
     }
