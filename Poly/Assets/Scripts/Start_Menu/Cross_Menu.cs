@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
@@ -22,6 +23,14 @@ public class Cross_Menu : MonoBehaviour
         SceneManager.UnloadSceneAsync("Options");
         SceneManager.LoadScene("MENUOK", LoadSceneMode.Additive);
     }
+    
+    public void BackFromGame()
+    {
+        PhotonNetwork.Disconnect();
+        SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
+        SceneManager.LoadScene("Polynon Scene"); 
+    }
+
 
     public void PlayButt()
     {

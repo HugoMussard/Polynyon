@@ -90,6 +90,7 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
 
     public void BackToMenu()
     {
+        PhotonNetwork.Disconnect();
         SceneManager.UnloadSceneAsync("lobby");
         SceneManager.LoadScene("MENUOK", LoadSceneMode.Additive);
     }

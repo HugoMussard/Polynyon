@@ -12,6 +12,7 @@ public class camscript : MonoBehaviourPunCallbacks
     
     void Start()
     {
+        Cursor.visible = false; 
         Cursor.lockState = CursorLockMode.Locked;
     }
 

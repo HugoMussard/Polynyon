@@ -50,13 +50,14 @@ public class Spawn_script : MonoBehaviour
       {
          if (!SceneManager.GetSceneByName("BackFromGame").isLoaded)
          {
-           
-
-            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = true; 
+            Cursor.lockState = CursorLockMode.None;
             SceneManager.LoadScene("BackFromGame", LoadSceneMode.Additive);
          }
          else
          {
+            Cursor.visible = false; 
+            Cursor.lockState = CursorLockMode.Locked;
             SceneManager.UnloadSceneAsync("BackFromGame");
          }
       }

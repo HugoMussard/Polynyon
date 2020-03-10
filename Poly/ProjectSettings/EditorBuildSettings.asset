@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/premiere_salle.unity
     guid: efb492ba44058b44887f3ad80decda00
+  - enabled: 1
+    path: Assets/Scenes/BackFromGame.unity
+    guid: 6aa4e87683dea8940b76bae00834d94d
   m_configObjects: {}
