@@ -15,14 +15,19 @@ using UnityEngine;
 public class Spawn_script : MonoBehaviour
 {
    public string player_prefab;
+   public string player_prefab2;
    public Transform spawn_point;
    public Transform spawn_point2;
-  
-
+   public TextMeshProUGUI txt;
+   public GameObject ping;
+   private GameObject clone1;
+   private GameObject clone2;
+ 
 
    private void Start()
    {
-      Spawn(); 
+     
+      Spawn();
    }
 
    public void Spawn()
@@ -30,11 +35,40 @@ public class Spawn_script : MonoBehaviour
       
       if (PhotonNetwork.IsMasterClient)
       {
-         PhotonNetwork.Instantiate(player_prefab, spawn_point.position, spawn_point.rotation);
+         clone1 = PhotonNetwork.Instantiate(player_prefab, spawn_point.position, spawn_point.rotation);
       }
       else
       {
-         PhotonNetwork.Instantiate(player_prefab, spawn_point2.position, spawn_point.rotation);
+         clone2 = PhotonNetwork.Instantiate(player_prefab2, spawn_point2.position, spawn_point.rotation);
       }
    }
+
+   void Update()
+   {
+   
+      if (Input.GetKeyDown(KeyCode.Escape))
+      {
+         if (!SceneManager.GetSceneByName("BackFromGame").isLoaded)
+         {
+           
+
+            Cursor.lockState = CursorLockMode.Confined;
+            SceneManager.LoadScene("BackFromGame", LoadSceneMode.Additive);
+         }
+         else
+         {
+            SceneManager.UnloadSceneAsync("BackFromGame");
+         }
+      }
+      
+      
+      if (Input.GetKeyDown(KeyCode.P))
+      {
+         ping.SetActive(!ping.activeSelf);
+      }
+      txt.text = $"{PhotonNetwork.GetPing()} ms";
+      
+   }
 }
+
+
