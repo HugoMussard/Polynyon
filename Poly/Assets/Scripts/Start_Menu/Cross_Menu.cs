@@ -10,8 +10,6 @@ using UnityEngine.SceneManagement;
 
 public class Cross_Menu : MonoBehaviour
 {
-   
-
     public void OptionMenu()
     {
         SceneManager.UnloadSceneAsync("MENUOK");
@@ -26,9 +24,23 @@ public class Cross_Menu : MonoBehaviour
     
     public void BackFromGame()
     {
-        PhotonNetwork.Disconnect();
-        SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
-        SceneManager.LoadScene("Polynon Scene"); 
+        if (PhotonNetwork.IsMasterClient)
+        {
+            if (PhotonNetwork.CurrentRoom.Players.Count <= 1)
+            {
+                PhotonNetwork.Disconnect();
+                SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
+                SceneManager.LoadScene("Polynon Scene");
+            }
+            else Debug.Log("All players must be disconnected first");
+        }
+        else
+        {
+            PhotonNetwork.Disconnect();
+            SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
+            SceneManager.LoadScene("Polynon Scene");
+        }
+        
     }
 
 

@@ -22,40 +22,52 @@ public class Spawn_script : MonoBehaviour
    public GameObject ping;
    private GameObject clone1;
    private GameObject clone2;
- 
+   private camscript script1; 
+   private camscript script2; 
+   
 
    private void Start()
    {
-     
+      script1 = null;
+      script2 = null;
       Spawn();
+     
    }
 
    public void Spawn()
    {
-      
+
       if (PhotonNetwork.IsMasterClient)
       {
          clone1 = PhotonNetwork.Instantiate(player_prefab, spawn_point.position, spawn_point.rotation);
+         script1 = clone1.transform.Find("GameObject").transform.Find("player_cam").GetComponent<camscript>();
       }
       else
       {
          clone2 = PhotonNetwork.Instantiate(player_prefab2, spawn_point2.position, spawn_point.rotation);
+         script2 = clone2.transform.Find("GameObject").transform.Find("player_cam").GetComponent<camscript>(); 
       }
    }
 
    void Update()
    {
-   
+
       if (Input.GetKeyDown(KeyCode.Escape))
       {
          if (!SceneManager.GetSceneByName("BackFromGame").isLoaded)
          {
+            if (PhotonNetwork.IsMasterClient)
+               script1.enabled = false;
+            else script2.enabled = false;
             Cursor.visible = true; 
             Cursor.lockState = CursorLockMode.None;
             SceneManager.LoadScene("BackFromGame", LoadSceneMode.Additive);
          }
          else
          {
+            if (PhotonNetwork.IsMasterClient)
+               script1.enabled = true;
+            else script2.enabled = true;
             Cursor.visible = false; 
             Cursor.lockState = CursorLockMode.Locked;
             SceneManager.UnloadSceneAsync("BackFromGame");
