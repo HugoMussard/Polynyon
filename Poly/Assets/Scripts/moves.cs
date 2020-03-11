@@ -17,17 +17,20 @@ public class moves : MonoBehaviourPunCallbacks
     public bool isgrounded;
     public Vector3 velocity;
     public float jumphigh = 3f;
-    public GameObject parent; 
+    public GameObject parent;
+    public Animator Anim;
 
     private void Start()
     {
-        parent.SetActive(photonView.IsMine); 
+        parent.SetActive(photonView.IsMine);
     }
 
     void Update()
     {
         
+        
         if (!photonView.IsMine) return;
+        Anim.SetFloat("vertical", Input.GetAxis("Vertical"));
 
         //Deplacement 
         isgrounded = Physics.CheckSphere(groundCheck.position, groundis, groundmask);
@@ -45,7 +48,28 @@ public class moves : MonoBehaviourPunCallbacks
 
         control.Move(velocity * Time.deltaTime);
 
+        if (Input.GetKeyDown(KeyCode.T) && !(Anim.GetBool("isTackling")))
+        {
+            Anim.SetBool("isTackling", true);
+        }
+        else
+        {
+            Anim.SetBool("isTackling", false);
+        }
+
         if (Input.GetButtonDown("Jump") && isgrounded)
+        {
             velocity.y = Mathf.Sqrt(jumphigh * (-2f) * gravity);
+            Anim.SetBool("isJumping", true);
+        }
+        else
+        {
+            Anim.SetBool("isJumping", false);
+        }
+
+
+
+
+
     }
 }
