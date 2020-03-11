@@ -13,7 +13,7 @@ public class moves : MonoBehaviourPunCallbacks
     public float gravity = -9.81f;
     public Transform groundCheck;
     public float groundis = 1.5f;
-    public LayerMask groundmask;
+    public LayerMask groundmask; 
     public bool isgrounded;
     public Vector3 velocity;
     public float jumphigh = 3f;
