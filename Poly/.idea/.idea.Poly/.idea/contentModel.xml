@@ -187,6 +187,9 @@
           <e p="Change_Log.txt" t="Include" />
         </e>
         <e p="Scripts" t="Include">
+          <e p="Doors.cs" t="Include" />
+          <e p="Interactable.cs" t="Include" />
+          <e p="Interaction.cs" t="Include" />
           <e p="moves.cs" t="Include" />
           <e p="moves_p2.cs" t="Include" />
           <e p="Premiere_salle" t="Include">

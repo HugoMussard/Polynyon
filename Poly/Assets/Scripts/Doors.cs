@@ -6,21 +6,31 @@ public class Doors : MonoBehaviour
     public Transform door;
     public Interactable opener;
     float speed = - 0.2f;
-    Collider collider;
-    // Start is called before the first frame update
-    void Start()
-    {
-        collider = GetComponent<Collider>();
-    }
+    float t;
+    Vector3 startPosition;
+    Vector3 target;
+    float timeToReachTarget;
+    //Collider collider;
+    
+  
 
-    // Update is called once per frame
-    void Update()
+    public void Glissement()
     {
         if (opener.state)
         {
-            collider.enabled = false;
-            Vector3 move = new Vector3(0, speed,0);
-            door.up = (door.up - move ) * Time.deltaTime;
+            //collider.enabled = false;
+            transform.Translate(Vector3.down * (Time.deltaTime * 5.0f));
+            
+        }
+    }
+    
+    void Update()
+    {
+        if (opener.state && transform.position.y > -3.5f)
+        {
+            //collider.enabled = false;
+            transform.Translate(Vector3.down * (Time.deltaTime * 1.0f));
+            
         }
     }
 }
