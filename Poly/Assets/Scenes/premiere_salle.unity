@@ -183,6 +183,7 @@ GameObject:
   - component: {fileID: 55602801}
   - component: {fileID: 55602800}
   - component: {fileID: 55602799}
+  - component: {fileID: 55602803}
   m_Layer: 0
   m_Name: Blue Door
   m_TagString: Untagged
@@ -264,6 +265,20 @@ Transform:
   m_Father: {fileID: 1355189178}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &55602803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55602798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f157138ef53e7ef48bfe5f63045e82a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 55602802}
+  opener: {fileID: 8296172669068347349}
 --- !u!1 &167322660
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,6 +446,7 @@ GameObject:
   - component: {fileID: 220491077}
   - component: {fileID: 220491076}
   - component: {fileID: 220491075}
+  - component: {fileID: 220491078}
   m_Layer: 0
   m_Name: SM_Prop_Crate_02
   m_TagString: Untagged
@@ -513,6 +529,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 220491073}
   m_Mesh: {fileID: -5566364194259015079, guid: 1ca295e6a6f72b149b80f35bb68acd56, type: 3}
+--- !u!114 &220491078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220491073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59273d1e62f549c48b217bfcea3f5f23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  state: 0
 --- !u!1 &323073360
 GameObject:
   m_ObjectHideFlags: 0
@@ -1524,6 +1554,7 @@ GameObject:
   - component: {fileID: 956011940}
   - component: {fileID: 956011939}
   - component: {fileID: 956011938}
+  - component: {fileID: 956011942}
   m_Layer: 0
   m_Name: Red Door
   m_TagString: Untagged
@@ -1605,6 +1636,20 @@ Transform:
   m_Father: {fileID: 1355189178}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &956011942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956011937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f157138ef53e7ef48bfe5f63045e82a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 956011941}
+  opener: {fileID: 220491078}
 --- !u!1 &1002861914
 GameObject:
   m_ObjectHideFlags: 0
@@ -1787,7 +1832,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1351858036}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10, y: 0.2, z: -40}
+  m_LocalPosition: {x: 10, y: 3, z: -40}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1968,7 +2013,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1604899865}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10, y: 0.2, z: -40}
+  m_LocalPosition: {x: -10, y: 3, z: -40}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3111,6 +3156,7 @@ GameObject:
   - component: {fileID: 4044710141411872758}
   - component: {fileID: 7718390322770588431}
   - component: {fileID: 8296172669068347348}
+  - component: {fileID: 8296172669068347349}
   m_Layer: 0
   m_Name: SM_Prop_Crate_02
   m_TagString: Untagged
@@ -3132,6 +3178,20 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5566364194259015079, guid: 1ca295e6a6f72b149b80f35bb68acd56, type: 3}
+--- !u!114 &8296172669068347349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8296172669068347347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59273d1e62f549c48b217bfcea3f5f23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  state: 0
 --- !u!1 &8296172669291904387
 GameObject:
   m_ObjectHideFlags: 0
