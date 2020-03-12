@@ -12,6 +12,7 @@ public class SoundScript : MonoBehaviour
     private void Start()
     {
         slider.value = PlayerPrefs.GetFloat("volume"); 
+        
     }
 
     public void AdjustMusicVolume(float volume)

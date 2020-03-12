@@ -1487,4 +1487,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/lobby.unity
   - Assets/Scenes/premiere_salle.unity
   - Assets/Scenes/BackFromGame.unity
-  playerPath: C:/Users/tidje/OneDrive/Bureau/build/Polypoly.exe
+  playerPath: D:/Utilisateur/Bureau/Verylastbuild/Polypoly.exe

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -9,14 +10,20 @@ public class Intro : MonoBehaviour
 {
 
     public AudioMixer audioMixer;
-    
+
+
+    private void Awake()
+    {
+        //audioMixer.SetFloat("volume", PlayerPrefs.GetFloat("volume"));
+
+    }
 
     void Start()
     {
         SceneManager.LoadScene("Blackscreen", LoadSceneMode.Additive); 
         SceneManager.LoadScene("MENUOK", LoadSceneMode.Additive);
-        float music = PlayerPrefs.GetFloat("volume", 10f); 
-
+        //float music = PlayerPrefs.GetFloat("volume", 10f); 
+        
     }
 
   
