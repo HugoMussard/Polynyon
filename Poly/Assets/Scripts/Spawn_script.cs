@@ -40,12 +40,12 @@ public class Spawn_script : MonoBehaviour
       if (PhotonNetwork.IsMasterClient)
       {
          clone1 = PhotonNetwork.Instantiate(player_prefab, spawn_point.position, spawn_point.rotation);
-         script1 = clone1.transform.Find("GameObject").transform.Find("player_cam").GetComponent<camscript>();
+         script1 = clone1.transform.Find("Character").transform.Find("GameObject").transform.Find("player_cam").GetComponent<camscript>(); 
       }
       else
       {
          clone2 = PhotonNetwork.Instantiate(player_prefab2, spawn_point2.position, spawn_point.rotation);
-         script2 = clone2.transform.Find("GameObject").transform.Find("player_cam2").GetComponent<camscript>(); 
+         script2 = clone2.transform.Find("Character").transform.Find("GameObject").transform.Find("player_cam2").GetComponent<camscript>(); 
       }
    }
 

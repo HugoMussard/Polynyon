@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_prefab: Player_1
-  player_prefab2: Copie
+  player_prefab2: Player_2
   spawn_point: {fileID: 1351858037}
   spawn_point2: {fileID: 1604899866}
   txt: {fileID: 2102785575}
@@ -186,6 +186,7 @@ GameObject:
   - component: {fileID: 55602803}
   - component: {fileID: 55602805}
   - component: {fileID: 55602804}
+  - component: {fileID: 55602806}
   m_Layer: 0
   m_Name: Blue Door
   m_TagString: Untagged
@@ -315,9 +316,23 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 55602804}
+  - {fileID: 55602806}
   viewIdField: 1
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &55602806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55602798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35144820bcc25444bb8f0fd767d9423e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SmoothingDelay: 5
 --- !u!1 &167322660
 GameObject:
   m_ObjectHideFlags: 0
@@ -1935,6 +1950,7 @@ GameObject:
   - component: {fileID: 1461531144}
   - component: {fileID: 1461531143}
   - component: {fileID: 1461531142}
+  - component: {fileID: 1461531148}
   m_Layer: 0
   m_Name: Reeeeed Doooor
   m_TagString: Untagged
@@ -1990,6 +2006,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 1461531142}
+  - {fileID: 1461531148}
   viewIdField: 2
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -2067,6 +2084,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1461531140}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1461531148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461531140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35144820bcc25444bb8f0fd767d9423e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SmoothingDelay: 5
 --- !u!1 &1604899865
 GameObject:
   m_ObjectHideFlags: 0

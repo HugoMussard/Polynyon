@@ -152,12 +152,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7362143612910217909}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 0.8333333, y: 1, z: 0.8333333}
   m_Children:
   - {fileID: 8263823285861699726}
-  m_Father: {fileID: 8263823287175323130}
-  m_RootOrder: 1
+  m_Father: {fileID: 6402062560905648241}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8263823285861699721
 GameObject:
@@ -351,7 +351,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1.5, z: 1}
   m_Children:
   - {fileID: 6402062560905648241}
-  - {fileID: 4549022579970771621}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -395,7 +394,7 @@ MonoBehaviour:
     m_Bits: 544
   isgrounded: 0
   velocity: {x: 0, y: 0, z: 0}
-  jumphigh: 10
+  jumphigh: 12
   parent: {fileID: 7362143612910217909}
   Anim: {fileID: 6450837323883361911}
 --- !u!114 &8263823287175323135
@@ -457,7 +456,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1109705922278564, guid: 7851e97aa32f5474f92b61e3e4988c1a, type: 3}
       propertyPath: m_Name
-      value: Character_BusinessMan_Shirt
+      value: Character
       objectReference: {fileID: 0}
     - target: {fileID: 4077195986647316, guid: 7851e97aa32f5474f92b61e3e4988c1a, type: 3}
       propertyPath: m_LocalPosition.x

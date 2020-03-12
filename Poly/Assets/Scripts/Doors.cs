@@ -12,12 +12,10 @@ public class Doors : MonoBehaviourPunCallbacks
     public Transform door;
     public Interactable opener;
     float speed = - 0.2f;
-    float t;
-    Vector3 startPosition;
-    Vector3 target;
-    float timeToReachTarget;
-    //Collider collider;
-
+    private void Start()
+    {
+        if (!photonView.IsMine) return;
+    }
 
     void Update()
     {
@@ -27,12 +25,13 @@ public class Doors : MonoBehaviourPunCallbacks
     [PunRPC]
     void Descente()
     {
-        if (!photonView.IsMine) return;
-        if (opener.state && transform.position.y > -3.5f)
+        //if (!photonView.IsMine) return;
+        if (opener.state && transform.position.y < -3.5f)
         {
             //collider.enabled = false;
-            transform.Translate(Vector3.down * (Time.deltaTime * 1.0f));
+            transform.Translate(Vector3.up * (Time.deltaTime * 1.0f));
             
         }
-    }
+    } 
+   
 }
