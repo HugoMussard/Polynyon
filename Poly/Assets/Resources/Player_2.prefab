@@ -346,7 +346,7 @@ MonoBehaviour:
     m_Bits: 544
   isgrounded: 0
   velocity: {x: 0, y: 0, z: 0}
-  jumphigh: 3
+  jumphigh: 10
   parent: {fileID: 7362143612910217909}
   Anim: {fileID: 8795732428264628786}
 --- !u!114 &8263823287175323135
@@ -455,9 +455,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8263823287175323130}
     m_Modifications:
+    - target: {fileID: 1683284082092430, guid: 5082799ad37f92b4bb2aaba2bdb7a5d4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1804036296530324, guid: 5082799ad37f92b4bb2aaba2bdb7a5d4, type: 3}
       propertyPath: m_Name
       value: Character_Female_Jacket
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898961140295678, guid: 5082799ad37f92b4bb2aaba2bdb7a5d4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4219285788569418, guid: 5082799ad37f92b4bb2aaba2bdb7a5d4, type: 3}
       propertyPath: m_LocalRotation.x

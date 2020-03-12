@@ -1,7 +1,13 @@
 ﻿
 using UnityEngine;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Photon.Pun; 
 
-public class Doors : MonoBehaviour
+
+public class Doors : MonoBehaviourPunCallbacks
 {
     public Transform door;
     public Interactable opener;
@@ -11,21 +17,17 @@ public class Doors : MonoBehaviour
     Vector3 target;
     float timeToReachTarget;
     //Collider collider;
-    
-  
 
-    public void Glissement()
-    {
-        if (opener.state)
-        {
-            //collider.enabled = false;
-            transform.Translate(Vector3.down * (Time.deltaTime * 5.0f));
-            
-        }
-    }
-    
+
     void Update()
     {
+        photonView.RPC("Descente", RpcTarget.All);
+    }
+    
+    [PunRPC]
+    void Descente()
+    {
+        if (!photonView.IsMine) return;
         if (opener.state && transform.position.y > -3.5f)
         {
             //collider.enabled = false;

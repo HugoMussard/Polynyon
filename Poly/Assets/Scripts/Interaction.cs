@@ -1,7 +1,11 @@
-﻿
+﻿using UnityEngine;
+using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun; 
 
-public class Interaction : MonoBehaviour
+public class Interaction : MonoBehaviourPunCallbacks
 {
     public Camera cam;
     
@@ -15,7 +19,7 @@ public class Interaction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (!photonView.IsMine) return;
         if (Input.GetMouseButtonDown(0))
         {
 

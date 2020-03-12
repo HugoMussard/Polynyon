@@ -187,7 +187,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8263823285861699721}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0.664, z: 0.242}
+  m_LocalPosition: {x: 0, y: 0.664, z: 0.17}
   m_LocalScale: {x: 0.7692308, y: 0.71542335, z: 1}
   m_Children:
   - {fileID: 3468551027604656918}
@@ -219,7 +219,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 50
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -395,7 +395,7 @@ MonoBehaviour:
     m_Bits: 544
   isgrounded: 0
   velocity: {x: 0, y: 0, z: 0}
-  jumphigh: 3
+  jumphigh: 10
   parent: {fileID: 7362143612910217909}
   Anim: {fileID: 6450837323883361911}
 --- !u!114 &8263823287175323135
