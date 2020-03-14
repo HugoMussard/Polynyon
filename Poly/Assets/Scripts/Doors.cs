@@ -11,23 +11,32 @@ public class Doors : MonoBehaviourPunCallbacks
 {
     public Transform door;
     public Interactable opener;
-    float speed = - 0.2f;
+    float speed = -0.2f;
  
 
-    void FixedUpdate()
+    /*void Update()
     {
         photonView.RPC("Descente", RpcTarget.All);
     }
+
+    */
     
-    [PunRPC]
-    void Descente()
+    
+
+    private void Update()
     {
-        if (!photonView.IsSceneView) return;
+        //if (!photonView.IsMine) return; 
+        //if (this == null) return; 
         if (opener.state && transform.position.y > -3.5f)
         {
-            //collider.enabled = false;
-            transform.Translate(Vector3.down * (Time.deltaTime * 1.0f));
-            
+            if (photonView.Owner == PhotonNetwork.LocalPlayer)
+                transform.Translate(Vector3.down * (Time.deltaTime * 1.0f));
+            else
+            {
+                photonView.TransferOwnership(PhotonNetwork.LocalPlayer);
+                transform.Translate(Vector3.down * (Time.deltaTime * 1.0f));
+            }
+
         }
     } 
    

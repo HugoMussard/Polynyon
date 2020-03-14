@@ -11,23 +11,17 @@ public class Interaction : MonoBehaviourPunCallbacks
     
 
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   
 
     // Update is called once per frame
     void Update()
     {
-        if (!photonView.IsMine) return;
+        //if (!photonView.IsSceneView) return;
         if (Input.GetMouseButtonDown(0))
         {
-
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             Vector3 position = transform.position;
-
-            
             if (Physics.Raycast(ray, out hit, 100))
             {
                 Interactable interactable = hit.collider.GetComponent<Interactable>();
