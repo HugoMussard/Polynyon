@@ -46,13 +46,14 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
         CreateOrjoinButton.interactable = false;
         Cancel.interactable = false;
         //Play.interactable = false;
-        
+            
     }
 
     public void OnPlayClick()
     {
         SceneManager.UnloadSceneAsync("lobby");
         SceneManager.LoadScene("premiere_salle");
+        SceneManager.LoadScene("Blackscreen", LoadSceneMode.Additive);
     }
     
 

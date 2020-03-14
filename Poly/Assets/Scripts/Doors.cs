@@ -14,7 +14,7 @@ public class Doors : MonoBehaviourPunCallbacks
     float speed = - 0.2f;
  
 
-    void Update()
+    void FixedUpdate()
     {
         photonView.RPC("Descente", RpcTarget.All);
     }
@@ -22,7 +22,7 @@ public class Doors : MonoBehaviourPunCallbacks
     [PunRPC]
     void Descente()
     {
-        //if (!photonView.IsMine) return;
+        if (!photonView.IsSceneView) return;
         if (opener.state && transform.position.y > -3.5f)
         {
             //collider.enabled = false;
