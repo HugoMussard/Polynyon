@@ -53,6 +53,7 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
     {
         SceneManager.UnloadSceneAsync("lobby");
         SceneManager.LoadScene("premiere_salle");
+        SceneManager.LoadScene("HUD", LoadSceneMode.Additive);
         SceneManager.LoadScene("Blackscreen", LoadSceneMode.Additive);
     }
     

@@ -10,24 +10,21 @@ public class Intro : MonoBehaviour
 {
 
     public AudioMixer audioMixer;
-
-
+    public AudioSource hg; 
+  
     private void Awake()
     {
-        //audioMixer.SetFloat("volume", PlayerPrefs.GetFloat("volume"));
-
+        hg.volume = PlayerPrefs.GetFloat("volume");
     }
 
     void Start()
     {
         SceneManager.LoadScene("Blackscreen", LoadSceneMode.Additive); 
         SceneManager.LoadScene("MENUOK", LoadSceneMode.Additive);
-        //float music = PlayerPrefs.GetFloat("volume", 10f); 
-        
     }
 
-  
-
-
-
+    private void Update()
+    {
+        hg.volume = PlayerPrefs.GetFloat("volume");
+    }
 }

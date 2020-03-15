@@ -18,8 +18,7 @@ public class Spawn_script : MonoBehaviour
    public string player_prefab2;
    public Transform spawn_point;
    public Transform spawn_point2;
-   public TextMeshProUGUI txt;
-   public GameObject ping;
+
    private GameObject clone1;
    private GameObject clone2;
    private camscript script1; 
@@ -60,6 +59,7 @@ public class Spawn_script : MonoBehaviour
             else script2.enabled = false;
             Cursor.visible = true; 
             Cursor.lockState = CursorLockMode.None;
+            SceneManager.UnloadSceneAsync("HUD");
             SceneManager.LoadScene("BackFromGame", LoadSceneMode.Additive);
          }
          else
@@ -70,15 +70,10 @@ public class Spawn_script : MonoBehaviour
             Cursor.visible = false; 
             Cursor.lockState = CursorLockMode.Locked;
             SceneManager.UnloadSceneAsync("BackFromGame");
+            SceneManager.LoadScene("HUD", LoadSceneMode.Additive);
          }
       }
       
-      
-      if (Input.GetKeyDown(KeyCode.P))
-      {
-         ping.SetActive(!ping.activeSelf);
-      }
-      txt.text = $"{PhotonNetwork.GetPing()} ms";
       
    }
 }

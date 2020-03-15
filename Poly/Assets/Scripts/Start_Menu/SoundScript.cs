@@ -11,17 +11,12 @@ public class SoundScript : MonoBehaviour
    
     private void Start()
     {
-        slider.value = PlayerPrefs.GetFloat("volume"); 
-        
+        slider.value = PlayerPrefs.GetFloat("volume");
     }
 
     public void AdjustMusicVolume(float volume)
     {
-        //Update AudioMixer
-        audioMixer.SetFloat("volume", Mathf.Log10(volume) * 20);
-        //Update PlayerPrefs "Music"
         PlayerPrefs.SetFloat("volume", volume);
-        //Save changes
         PlayerPrefs.Save();
     }
 

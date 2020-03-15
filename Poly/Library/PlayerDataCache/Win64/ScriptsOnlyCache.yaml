@@ -5,6 +5,7 @@ ScriptsOnlyBuild:
     - CreateUserName
     - Cross_Menu
     - Doors
+    - HUD
     - Interactable
     - Interaction
     - Intro
@@ -124,6 +125,47 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
+    Assets/Scenes/HUD.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11186}
+    - Class: 114
+      Script: {instanceID: 11418}
+    - Class: 114
+      Script: {instanceID: 12544}
+    - Class: 114
+      Script: {instanceID: 12782}
+    - Class: 114
+      Script: {instanceID: 12850}
+    - Class: 114
+      Script: {instanceID: 13282}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/MENUOK.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -219,7 +261,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13266}
     - Class: 114
-      Script: {instanceID: 13298}
+      Script: {instanceID: 13300}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -428,8 +470,6 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11186}
-    - Class: 114
       Script: {instanceID: 11194}
     - Class: 114
       Script: {instanceID: 11860}
@@ -437,12 +477,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 12184}
     - Class: 114
       Script: {instanceID: 12226}
-    - Class: 114
-      Script: {instanceID: 12544}
-    - Class: 114
-      Script: {instanceID: 12782}
-    - Class: 114
-      Script: {instanceID: 12850}
     - Class: 114
       Script: {instanceID: 13102}
     - Class: 114
@@ -453,17 +487,9 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13266}
     - Class: 115
       Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
       Script: {instanceID: 0}
     - Class: 258
       Script: {instanceID: 0}
@@ -962,7 +988,7 @@ ScriptsOnlyBuild:
     className: OnClickDestroy
   - hash:
       serializedVersion: 2
-      Hash: ad814c3c3f4a45c98d32a3295f3eaa42
+      Hash: ec46b32a33a9e778fbc626b2c5d124f7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Spawn_script
@@ -1118,7 +1144,7 @@ ScriptsOnlyBuild:
     className: FriendItem
   - hash:
       serializedVersion: 2
-      Hash: d835e37be8caf473a0d64dc941f2a2a8
+      Hash: 0a1092f0f70cbf4c3191c6781be6279d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Intro
@@ -1454,6 +1480,12 @@ ScriptsOnlyBuild:
     className: Toggle
   - hash:
       serializedVersion: 2
+      Hash: a374e872b08f5ab7d82aba96e955e7e8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HUD
+  - hash:
+      serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -1491,4 +1523,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/lobby.unity
   - Assets/Scenes/premiere_salle.unity
   - Assets/Scenes/BackFromGame.unity
+  - Assets/Scenes/HUD.unity
   playerPath: C:/Users/Hugo/Desktop/Lastlastbuild/Polypoly.exe

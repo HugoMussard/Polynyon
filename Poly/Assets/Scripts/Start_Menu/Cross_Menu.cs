@@ -22,6 +22,7 @@ public class Cross_Menu : MonoBehaviour
         SceneManager.LoadScene("MENUOK", LoadSceneMode.Additive);
     }
     
+    
     public void BackFromGame()
     {
         if (PhotonNetwork.IsMasterClient)
@@ -30,6 +31,7 @@ public class Cross_Menu : MonoBehaviour
             {
                 PhotonNetwork.Disconnect();
                 SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
+                //SceneManager.UnloadSceneAsync("HUD");
                 SceneManager.LoadScene("Polynon Scene");
             }
             else Debug.Log("All players must be disconnected first");
