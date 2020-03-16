@@ -30,8 +30,7 @@ MonoBehaviour:
   StartInOfflineMode: 0
   RpcList:
   - ClickRpc
-  - Descente
   - DestroyRpc
-  - Update
+  - Load
   DisableAutoOpenWizard: 1
   ShowSettings: 0

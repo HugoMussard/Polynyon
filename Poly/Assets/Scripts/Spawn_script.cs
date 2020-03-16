@@ -30,7 +30,8 @@ public class Spawn_script : MonoBehaviour
       script1 = null;
       script2 = null;
       Spawn();
-     
+      SceneManager.LoadSceneAsync("HUD", LoadSceneMode.Additive);
+      SceneManager.LoadSceneAsync("Blackscreen", LoadSceneMode.Additive); 
    }
 
    public void Spawn()
@@ -48,6 +49,18 @@ public class Spawn_script : MonoBehaviour
       }
    }
 
+   public void Resume()
+   {
+      if (PhotonNetwork.IsMasterClient)
+         script1.enabled = true;
+      else script2.enabled = true;
+      Cursor.visible = false; 
+      Cursor.lockState = CursorLockMode.Locked;
+      SceneManager.UnloadSceneAsync("BackFromGame");
+      SceneManager.UnloadSceneAsync("TranspaESC"); 
+      SceneManager.LoadScene("HUD", LoadSceneMode.Additive);
+   }
+
    void Update()
    {
       if (Input.GetKeyDown(KeyCode.Escape))
@@ -60,20 +73,11 @@ public class Spawn_script : MonoBehaviour
             Cursor.visible = true; 
             Cursor.lockState = CursorLockMode.None;
             SceneManager.UnloadSceneAsync("HUD");
+            SceneManager.LoadScene("TranspaESC", LoadSceneMode.Additive);
             SceneManager.LoadScene("BackFromGame", LoadSceneMode.Additive);
          }
-         else
-         {
-            if (PhotonNetwork.IsMasterClient)
-               script1.enabled = true;
-            else script2.enabled = true;
-            Cursor.visible = false; 
-            Cursor.lockState = CursorLockMode.Locked;
-            SceneManager.UnloadSceneAsync("BackFromGame");
-            SceneManager.LoadScene("HUD", LoadSceneMode.Additive);
-         }
+         else Resume();
       }
-      
       
    }
 }

@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HUD.unity
     guid: c54b7e495e6d85440aabf94b09a38112
+  - enabled: 1
+    path: Assets/Scenes/TranspaESC.unity
+    guid: 9b386980f0d59624ca265c18c124fbd0
   m_configObjects: {}

@@ -34,7 +34,6 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
     {
         lobby = this;
         PhotonNetwork.AutomaticallySyncScene = true;
-        
     }
 
 
@@ -46,16 +45,13 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
         CreateOrjoinButton.interactable = false;
         Cancel.interactable = false;
         //Play.interactable = false;
-            
     }
 
     public void OnPlayClick()
     {
-        SceneManager.UnloadSceneAsync("lobby");
-        SceneManager.LoadScene("premiere_salle");
-        SceneManager.LoadScene("HUD", LoadSceneMode.Additive);
-        SceneManager.LoadScene("Blackscreen", LoadSceneMode.Additive);
+        PhotonNetwork.LoadLevel("premiere_salle");
     }
+    
     
 
     public void OnJoinOrCreateButton()

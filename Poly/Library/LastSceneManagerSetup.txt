@@ -8,7 +8,7 @@ sceneSetups:
   isActive: 0
   isSubScene: 0
 - path: Assets/Scenes/lobby.unity
-  isLoaded: 1
+  isLoaded: 0
   isActive: 0
   isSubScene: 0
 - path: Assets/Scenes/MENUOK.unity
@@ -28,6 +28,10 @@ sceneSetups:
   isActive: 0
   isSubScene: 0
 - path: Assets/Scenes/HUD.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/TrasnpaESC.unity
   isLoaded: 0
   isActive: 0
   isSubScene: 0

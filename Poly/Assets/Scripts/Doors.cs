@@ -11,22 +11,10 @@ public class Doors : MonoBehaviourPunCallbacks
 {
     public Transform door;
     public Interactable opener;
-    float speed = -0.2f;
- 
 
-    /*void Update()
-    {
-        photonView.RPC("Descente", RpcTarget.All);
-    }
-
-    */
-    
-    
 
     private void Update()
     {
-        //if (!photonView.IsMine) return; 
-        //if (this == null) return; 
         if (opener.state && transform.position.y > -3.5f)
         {
             if (photonView.Owner == PhotonNetwork.LocalPlayer)

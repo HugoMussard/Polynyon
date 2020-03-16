@@ -10,19 +10,31 @@ using UnityEngine.SceneManagement;
 
 public class Cross_Menu : MonoBehaviour
 {
+
+    
     public void OptionMenu()
     {
-        SceneManager.UnloadSceneAsync("MENUOK");
+        if (SceneManager.GetSceneByName("Polynon Scene").isLoaded) SceneManager.UnloadSceneAsync("MENUOK");
+        else SceneManager.UnloadSceneAsync("BackFromGame");
         SceneManager.LoadScene("Options", LoadSceneMode.Additive);
     }
 
     public void BackToMenu()
     {
-        SceneManager.UnloadSceneAsync("Options");
-        SceneManager.LoadScene("MENUOK", LoadSceneMode.Additive);
+        if (SceneManager.GetSceneByName("Polynon Scene").isLoaded)
+        {
+            SceneManager.UnloadSceneAsync("Options");
+            SceneManager.LoadScene("MENUOK", LoadSceneMode.Additive);
+        }
+        else
+        {
+            SceneManager.UnloadSceneAsync("Options");
+            SceneManager.LoadScene("BackFromGame", LoadSceneMode.Additive);
+        }
+        
     }
-    
-    
+
+
     public void BackFromGame()
     {
         if (PhotonNetwork.IsMasterClient)
@@ -31,7 +43,6 @@ public class Cross_Menu : MonoBehaviour
             {
                 PhotonNetwork.Disconnect();
                 SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
-                //SceneManager.UnloadSceneAsync("HUD");
                 SceneManager.LoadScene("Polynon Scene");
             }
             else Debug.Log("All players must be disconnected first");
@@ -42,8 +53,8 @@ public class Cross_Menu : MonoBehaviour
             SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
             SceneManager.LoadScene("Polynon Scene");
         }
-        
     }
+    
 
 
     public void PlayButt()
