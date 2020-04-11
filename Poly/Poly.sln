@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotonUnityNetworking.Utilities", "PhotonUnityNetworking.Utilities.csproj", "{C6438736-86E3-E1CB-D4B0-53D3D7E0A8EB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotonChat", "PhotonChat.csproj", "{DE5219DC-6292-0325-C0E3-EF075F036CAC}"
@@ -18,6 +18,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotonUnityNetworking.Utilities.PhotonPlayer.Editor", "PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj", "{17E4489C-8BBB-7114-34E2-2C073C61121F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotonUnityNetworking.Utilities.Culling.Editor", "PhotonUnityNetworking.Utilities.Culling.Editor.csproj", "{FC8A5356-7461-8816-1548-743E87857A19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{95A944F4-CEBB-4813-8F5C-B608D412E371}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +63,10 @@ Global
 		{FC8A5356-7461-8816-1548-743E87857A19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC8A5356-7461-8816-1548-743E87857A19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC8A5356-7461-8816-1548-743E87857A19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95A944F4-CEBB-4813-8F5C-B608D412E371}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95A944F4-CEBB-4813-8F5C-B608D412E371}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95A944F4-CEBB-4813-8F5C-B608D412E371}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95A944F4-CEBB-4813-8F5C-B608D412E371}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
