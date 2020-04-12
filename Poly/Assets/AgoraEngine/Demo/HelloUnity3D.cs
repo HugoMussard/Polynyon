@@ -49,6 +49,7 @@ public class HelloUnity3D : MonoBehaviour
         mRtcEngine = IRtcEngine.GetEngine(appId);
         versionText.GetComponent<Text>().text = "Version : " + getSdkVersion();
         PlayerPrefs.SetString("roomname", "");
+        PlayerPrefs.SetInt("keydown", 0);
 
         /*mRtcEngine.OnJoinChannelSuccess += (string channelName, uint uid, int elapsed) =>
         {
@@ -165,21 +166,22 @@ public class HelloUnity3D : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (mRtcEngine.GetConnectionState() == CONNECTION_STATE_TYPE.CONNECTION_STATE_DISCONNECTED)
+        if (PlayerPrefs.GetInt("keydown") == 0 && Input.GetKeyDown(KeyCode.P))
             JoinChannel();
+        else if (Input.GetKeyDown(KeyCode.P))
+            LeaveChannel();
+            
     }
 
     
     public void JoinChannel()
     {
         //string channelName = mChannelNameInputField.text.Trim();
+        PlayerPrefs.SetInt("keydown", 1);
         string hg = PlayerPrefs.GetString("roomname");
-        if (hg != "")
-        {
-            Debug.Log(string.Format("tap joinChannel with channel name {0}", hg));
-            mRtcEngine.JoinChannel(hg, "extra", 0);
-        }
-       
+        Debug.Log(string.Format("tap joinChannel with channel name {0}", hg));
+        mRtcEngine.JoinChannel(hg, "extra", 0);
+        
     }
 
     public void LeaveChannel()
@@ -189,7 +191,7 @@ public class HelloUnity3D : MonoBehaviour
 
         // IAudioEffectManager effect = mRtcEngine.GetAudioEffectManager();
         // effect.StopAllEffects ();
-
+        PlayerPrefs.SetInt("keydown", 0);
         mRtcEngine.LeaveChannel();
         string channelName = mChannelNameInputField.text.Trim();
         Debug.Log(string.Format("left channel name {0}", channelName));

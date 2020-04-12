@@ -18,6 +18,8 @@ ScriptsOnlyBuild:
     - Spawn_script
     - camscript
     - moves
+    PhotonUnityNetworking.Editor.dll:
+    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.Utilities.dll:
     - Photon.Pun.UtilityScripts.SmoothSyncMovement
     PhotonUnityNetworking.dll:
@@ -38,10 +40,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -1643,4 +1643,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/HUD.unity
   - Assets/Scenes/TranspaESC.unity
   - Assets/AgoraEngine/Demo/HelloUnity3D.unity
-  playerPath: D:/Utilisateur/Bureau/Polygame/Polypoly.exe
+  playerPath: D:/Utilisateur/Bureau/PolyPlay/Polypoly.exe
