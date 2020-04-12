@@ -80,6 +80,8 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
         CreateOrjoinButton.interactable = false;
         Cancel.interactable = true;
         string nomchambre = nom.text;
+        PlayerPrefs.SetString("roomname", nomchambre);
+        PlayerPrefs.Save();
         RoomOptions RoomOps = new RoomOptions {IsVisible = true, IsOpen = true, MaxPlayers = 2};
         Debug.Log("On cree une chambre ID : " +nomchambre);
         PhotonNetwork.JoinOrCreateRoom(nomchambre, RoomOps, TypedLobby.Default);

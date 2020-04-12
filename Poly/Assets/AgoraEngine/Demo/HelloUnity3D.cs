@@ -42,14 +42,15 @@ public class HelloUnity3D : MonoBehaviour
 				Permission.RequestUserPermission(Permission.Microphone);
 			}
 #endif
-        joinChannel.onClick.AddListener(JoinChannel);
-        leaveChannel.onClick.AddListener(LeaveChannel);
-        muteButton.onClick.AddListener(MuteButtonTapped);
+        //joinChannel.onClick.AddListener(JoinChannel);
+        //leaveChannel.onClick.AddListener(LeaveChannel);
+        //muteButton.onClick.AddListener(MuteButtonTapped);
 
         mRtcEngine = IRtcEngine.GetEngine(appId);
         versionText.GetComponent<Text>().text = "Version : " + getSdkVersion();
+        PlayerPrefs.SetString("roomname", "");
 
-        mRtcEngine.OnJoinChannelSuccess += (string channelName, uint uid, int elapsed) =>
+        /*mRtcEngine.OnJoinChannelSuccess += (string channelName, uint uid, int elapsed) =>
         {
             string joinSuccessMessage = string.Format("joinChannel callback uid: {0}, channel: {1}, version: {2}", uid, channelName, getSdkVersion());
             Debug.Log(joinSuccessMessage);
@@ -158,27 +159,27 @@ public class HelloUnity3D : MonoBehaviour
         mRtcEngine.SetChannelProfile(CHANNEL_PROFILE.CHANNEL_PROFILE_COMMUNICATION);
 
         // mRtcEngine.SetChannelProfile (CHANNEL_PROFILE.CHANNEL_PROFILE_LIVE_BROADCASTING);
-        // mRtcEngine.SetClientRole (CLIENT_ROLE.BROADCASTER);
+        // mRtcEngine.SetClientRole (CLIENT_ROLE.BROADCASTER);*/
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (mRtcEngine.GetConnectionState() == CONNECTION_STATE_TYPE.CONNECTION_STATE_DISCONNECTED)
+            JoinChannel();
     }
 
+    
     public void JoinChannel()
     {
-        string channelName = mChannelNameInputField.text.Trim();
-
-        Debug.Log(string.Format("tap joinChannel with channel name {0}", channelName));
-
-        if (string.IsNullOrEmpty(channelName))
+        //string channelName = mChannelNameInputField.text.Trim();
+        string hg = PlayerPrefs.GetString("roomname");
+        if (hg != "")
         {
-            return;
+            Debug.Log(string.Format("tap joinChannel with channel name {0}", hg));
+            mRtcEngine.JoinChannel(hg, "extra", 0);
         }
-
-        mRtcEngine.JoinChannel(channelName, "extra", 0);
+       
     }
 
     public void LeaveChannel()

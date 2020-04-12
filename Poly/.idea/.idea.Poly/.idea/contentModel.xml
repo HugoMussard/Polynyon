@@ -4,8 +4,46 @@
     <e p="C:\Users\hugom\.Rider2019.3\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\hugom\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Poly.-1596253593.00" t="ExcludeRecursive" />
     <e p="C:\Users\hugom\polynyon\Poly" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="AgoraEngine" t="Include">
+          <e p="Demo" t="Include">
+            <e p="HelloUnity3D.cs" t="Include" />
+            <e p="LoggerBridge.cs" t="Include" />
+          </e>
+          <e p="Editor" t="Include">
+            <e p="BL_BuildPostProcess.cs" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="AgoraGamingSDK" t="Include">
+              <e p="AgoraCallback.cs" t="Include" />
+              <e p="AgoraEnums.cs" t="Include" />
+              <e p="AgoraGamingRtcEngine.cs" t="Include" />
+              <e p="AudioEffectManager.cs" t="Include" />
+              <e p="deviceManager" t="Include">
+                <e p="AudioPlaybackDeviceManager.cs" t="Include" />
+                <e p="AudioRecordingDeviceManager.cs" t="Include" />
+                <e p="VideoDeviceManager.cs" t="Include" />
+              </e>
+              <e p="native" t="Include">
+                <e p="IAgoraGamingRtcEngineNative.cs" t="Include" />
+              </e>
+              <e p="observer" t="Include">
+                <e p="MetaDataObserver.cs" t="Include" />
+                <e p="PacketObserver.cs" t="Include" />
+              </e>
+              <e p="rawData" t="Include">
+                <e p="AudioRawDataManager.cs" t="Include" />
+                <e p="VideoRawDataManager.cs" t="Include" />
+              </e>
+              <e p="videoRender" t="Include">
+                <e p="VideoRender.cs" t="Include" />
+                <e p="VideoSurface.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="Ile" t="Include">
           <e p="Rotation.cs" t="Include" />
         </e>
