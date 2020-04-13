@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections;
 using System.Collections.Generic;
 using Photon.Pun;
+using Photon.Realtime;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
@@ -10,8 +11,13 @@ using UnityEngine.SceneManagement;
 
 public class Cross_Menu : MonoBehaviour
 {
+    private string Scenesave;
 
-    
+    public void SaveClick()
+    {
+        PlayerPrefs.SetString("save", SceneManager.GetActiveScene().name);
+    }
+
     public void OptionMenu()
     {
         if (SceneManager.GetSceneByName("Polynon Scene").isLoaded) SceneManager.UnloadSceneAsync("MENUOK");
