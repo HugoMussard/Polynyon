@@ -48,7 +48,6 @@ public class HelloUnity3D : MonoBehaviour
 
         mRtcEngine = IRtcEngine.GetEngine(appId);
         versionText.GetComponent<Text>().text = "Version : " + getSdkVersion();
-        PlayerPrefs.SetString("roomname", "");
         PlayerPrefs.SetInt("keydown", 0);
 
         /*mRtcEngine.OnJoinChannelSuccess += (string channelName, uint uid, int elapsed) =>
