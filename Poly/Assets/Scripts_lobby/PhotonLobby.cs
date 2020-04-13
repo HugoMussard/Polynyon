@@ -23,8 +23,6 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
 
     public Button Cancel;
 
-    public Button Play;
-    
     public TMP_InputField nom;
 
     public Text InfoOnConnection;
@@ -44,17 +42,9 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
         InfoOnConnection.text = "Starting...";
         CreateOrjoinButton.interactable = false;
         Cancel.interactable = false;
-        //Play.interactable = false;
-    }
-
-    public void OnPlayClick()
-    {
-        //PhotonNetwork.LoadLevel("premiere_salle");
-        PhotonNetwork.LoadLevel("premiere_salle");
     }
     
     
-
     public void OnJoinOrCreateButton()
     {
         JoinOrCreateRoom();
@@ -115,8 +105,13 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
 
             if (PhotonNetwork.CurrentRoom.PlayerCount == 2)
             {
-                Play.interactable = true;
-                InfoOnConnection.text = "Another player have joined your session";
+                if (PhotonNetwork.IsMasterClient)
+                {
+                    SceneManager.UnloadSceneAsync("lobby");
+                    SceneManager.LoadSceneAsync("Load_NewGame", LoadSceneMode.Additive); 
+                }    
+                else
+                    InfoOnConnection.text = "Waiting for Player1"; 
             }
 
         }
@@ -124,7 +119,6 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
 
     public override void OnConnectedToMaster()
     {
-
         CreateOrjoinButton.interactable = true;
         InfoOnConnection.text = "Connected to the server";
         
