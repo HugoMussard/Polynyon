@@ -31,7 +31,8 @@ public class Spawn_script : MonoBehaviour
       script2 = null;
       Spawn();
       SceneManager.LoadSceneAsync("HUD", LoadSceneMode.Additive);
-      SceneManager.LoadSceneAsync("Blackscreen", LoadSceneMode.Additive); 
+      SceneManager.LoadSceneAsync("Blackscreen", LoadSceneMode.Additive);
+      SceneManager.LoadSceneAsync("HelloUnity3D", LoadSceneMode.Additive); 
    }
 
    public void Spawn()

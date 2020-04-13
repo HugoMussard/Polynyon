@@ -166,9 +166,9 @@ public class HelloUnity3D : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PlayerPrefs.GetInt("keydown") == 0 && Input.GetKeyDown(KeyCode.P))
+        if (PlayerPrefs.GetInt("keydown") == 0 && Input.GetKeyDown(KeyCode.V))
             JoinChannel();
-        else if (Input.GetKeyDown(KeyCode.P))
+        else if (Input.GetKeyDown(KeyCode.V))
             LeaveChannel();
             
     }

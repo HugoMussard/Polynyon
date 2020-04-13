@@ -49,6 +49,7 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
 
     public void OnPlayClick()
     {
+        //PhotonNetwork.LoadLevel("premiere_salle");
         PhotonNetwork.LoadLevel("premiere_salle");
     }
     
@@ -107,7 +108,7 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
     {
         if (PhotonNetwork.InRoom)
         {
-            Debug.Log(Convert.ToString(PhotonNetwork.CurrentRoom.Players.Count));
+            //Debug.Log(Convert.ToString(PhotonNetwork.CurrentRoom.Players.Count));
 
             if (PhotonNetwork.CurrentRoom.PlayerCount == 1)
                 InfoOnConnection.text = "Waiting for a player";
