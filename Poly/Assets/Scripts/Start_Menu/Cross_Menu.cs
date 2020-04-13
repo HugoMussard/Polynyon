@@ -12,10 +12,17 @@ using UnityEngine.SceneManagement;
 public class Cross_Menu : MonoBehaviour
 {
     private string Scenesave;
-
+    
     public void SaveClick()
     {
-        PlayerPrefs.SetString("save", SceneManager.GetActiveScene().name);
+        if (PhotonNetwork.IsMasterClient) 
+            PlayerPrefs.SetString("save", SceneManager.GetActiveScene().name);
+        else
+        {
+            PlayerPrefs.SetString("popupwarn", "Only MasterClient can save the game !");
+            SceneManager.LoadSceneAsync("Pop Up", LoadSceneMode.Additive);
+        }
+        
     }
 
     public void OptionMenu()

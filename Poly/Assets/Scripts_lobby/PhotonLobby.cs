@@ -33,8 +33,7 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
         lobby = this;
         PhotonNetwork.AutomaticallySyncScene = true;
     }
-
-
+    
     private void Start()
     {
 

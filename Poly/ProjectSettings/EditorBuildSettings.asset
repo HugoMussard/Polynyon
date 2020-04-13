@@ -38,6 +38,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Load_NewGame.unity
     guid: ec11af5ca598e7d43a5249635a676c71
+  - enabled: 1
+    path: Assets/Scenes/Pop Up.unity
+    guid: 5af1f4b61daae7549a5225a642e02817
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
