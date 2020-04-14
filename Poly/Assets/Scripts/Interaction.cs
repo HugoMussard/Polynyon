@@ -46,7 +46,7 @@ public class Interaction : MonoBehaviourPunCallbacks
                 
                     float rad = interactable.radius;
                     if (diff.x<rad && diff.y<rad && diff.z <rad)
-                        interactable.state = true;
+                        interactable.state = !interactable.state;
                 }
             }
         }

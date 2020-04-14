@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-
+//on essaye de voir ce que ca donne
 public class Interactable : MonoBehaviour
 {
     public float radius = 3f;
