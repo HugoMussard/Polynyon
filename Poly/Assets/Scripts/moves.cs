@@ -27,8 +27,7 @@ public class moves : MonoBehaviourPunCallbacks
 
     void Update()
     {
-        
-        
+
         if (!photonView.IsMine) return;
         Anim.SetFloat("vertical", Input.GetAxis("Vertical"));
 

@@ -25,6 +25,12 @@ public class Cross_Menu : MonoBehaviour
         
     }
 
+    public void KeyBind()
+    {
+        SceneManager.UnloadSceneAsync("Options");
+        SceneManager.LoadSceneAsync("KeyBind", LoadSceneMode.Additive);
+    }
+
     public void OptionMenu()
     {
         if (SceneManager.GetSceneByName("Polynon Scene").isLoaded) SceneManager.UnloadSceneAsync("MENUOK");
