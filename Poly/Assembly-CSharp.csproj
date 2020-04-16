@@ -100,6 +100,7 @@
     <Compile Include="Assets\Scripts\Premiere_salle\camscript.cs" />
     <Compile Include="Assets\Scripts\Premiere_salle\enigma1.cs" />
     <Compile Include="Assets\Scripts\Premiere_salle\glypheenigma.cs" />
+    <Compile Include="Assets\Scripts\Premiere_salle\indice.cs" />
     <Compile Include="Assets\Scripts\Spawn_script.cs" />
     <Compile Include="Assets\Scripts\Start_Menu\Blackscreen.cs" />
     <Compile Include="Assets\Scripts\Start_Menu\Cross_Menu.cs" />

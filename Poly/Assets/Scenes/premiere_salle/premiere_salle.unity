@@ -1244,6 +1244,7 @@ GameObject:
   - component: {fileID: 424921326}
   - component: {fileID: 424921325}
   - component: {fileID: 424921324}
+  - component: {fileID: 424921328}
   m_Layer: 0
   m_Name: IndicePlayer1
   m_TagString: Untagged
@@ -1325,6 +1326,23 @@ Transform:
   m_Father: {fileID: 553887512}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &424921328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424921323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 410cd138e905aa046905dccf5d3de90a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enigma: {fileID: 991365955}
+  mat0: {fileID: 2100000, guid: 3cae61d99ca2b6d4a85b145f3e9a51af, type: 2}
+  mat1: {fileID: 2100000, guid: 5b07868f692fdec45892c40f833f2b9f, type: 2}
+  mat2: {fileID: 2100000, guid: 3cae61d99ca2b6d4a85b145f3e9a51af, type: 2}
+  rend: {fileID: 0}
 --- !u!1 &471160267
 GameObject:
   m_ObjectHideFlags: 0
@@ -2564,6 +2582,7 @@ MonoBehaviour:
   glyphe5: {fileID: 967987093}
   glyphe6: {fileID: 281418271}
   opener: {fileID: 779584201}
+  enigm: 0
 --- !u!4 &991365956
 Transform:
   m_ObjectHideFlags: 0
@@ -4407,6 +4426,7 @@ GameObject:
   - component: {fileID: 1696386788}
   - component: {fileID: 1696386787}
   - component: {fileID: 1696386786}
+  - component: {fileID: 1696386790}
   m_Layer: 0
   m_Name: IndicePlayer1
   m_TagString: Untagged
@@ -4488,6 +4508,23 @@ Transform:
   m_Father: {fileID: 553887512}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1696386790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696386785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 410cd138e905aa046905dccf5d3de90a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enigma: {fileID: 991365955}
+  mat0: {fileID: 2100000, guid: bfbbe81e362ba724d988ec31229f710a, type: 2}
+  mat1: {fileID: 2100000, guid: 546ac8519d104aa438b1dd49a5ae7657, type: 2}
+  mat2: {fileID: 2100000, guid: 5b07868f692fdec45892c40f833f2b9f, type: 2}
+  rend: {fileID: 0}
 --- !u!1 &1699170904
 GameObject:
   m_ObjectHideFlags: 0
