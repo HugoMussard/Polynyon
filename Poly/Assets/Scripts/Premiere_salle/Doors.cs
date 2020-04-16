@@ -15,7 +15,7 @@ public class Doors : MonoBehaviourPunCallbacks
 
     private void Update()
     {
-        if (opener.state && transform.position.y > -3.5f)
+        if (opener.state && transform.position.y > -3.3f)
         {
             if (photonView.Owner == PhotonNetwork.LocalPlayer)
                 transform.Translate(Vector3.down * (Time.deltaTime * 1.0f));
