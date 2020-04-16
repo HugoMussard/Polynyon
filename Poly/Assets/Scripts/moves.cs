@@ -23,8 +23,8 @@ public class moves : MonoBehaviourPunCallbacks
     private double x = 0; 
     private double z = 0;
     
-    
-    
+
+
     private void Start()
     {
         parent.SetActive(photonView.IsMine);
@@ -37,7 +37,12 @@ public class moves : MonoBehaviourPunCallbacks
         string down = PlayerPrefs.GetString("down");
         string left = PlayerPrefs.GetString("left");
         string right = PlayerPrefs.GetString("right"); 
-
+        
+        KeyCode upCode = (KeyCode) Enum.Parse(typeof(KeyCode), up);
+        KeyCode downCode = (KeyCode) Enum.Parse(typeof(KeyCode), down);
+        KeyCode leftCode = (KeyCode) Enum.Parse(typeof(KeyCode), left);
+        KeyCode rightCode = (KeyCode) Enum.Parse(typeof(KeyCode), right);
+        
         if (!photonView.IsMine) return;
         Anim.SetFloat("vertical", Input.GetAxis("Vertical"));
 
@@ -45,18 +50,16 @@ public class moves : MonoBehaviourPunCallbacks
         isgrounded = Physics.CheckSphere(groundCheck.position, groundis, groundmask);
         if (isgrounded && velocity.y < 0)
             velocity.y = -2f;
-       
 
-        if (Input.GetKey(right) && x < 1) x += 0.1f; 
-        else if (Input.GetKey(left) && x > -1) x -= 0.1f;
+        if (Input.GetKey(rightCode) && x < 1) x += 0.1f; 
+        else if (Input.GetKey(leftCode) && x > -1) x -= 0.1f;
         else if (x >= -0.1 && x <= 0.1) x = 0; 
         else if (x > 0) x -= 0.1f; 
         else if (x < 0) x += 0.1f; 
         
         
-        
-        if (Input.GetKey(up) && z < 1) z += 0.1f; 
-        else if (Input.GetKey(down) && z > -1) z -= 0.1f;
+        if (Input.GetKey(upCode) && z < 1) z += 0.1f; 
+        else if (Input.GetKey(downCode) && z > -1) z -= 0.1f;
         else if (z >= -0.1 && z <= 0.1) z = 0; 
         else if (z > 0) z -= 0.1f; 
         else if (z < 0) z += 0.1f; 

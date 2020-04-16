@@ -100,7 +100,14 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
             //Debug.Log(Convert.ToString(PhotonNetwork.CurrentRoom.Players.Count));
 
             if (PhotonNetwork.CurrentRoom.PlayerCount == 1)
+            {
                 InfoOnConnection.text = "Waiting for a player";
+                if (PhotonNetwork.IsMasterClient)
+                {
+                    SceneManager.UnloadSceneAsync("lobby");
+                    SceneManager.LoadSceneAsync("Load_NewGame", LoadSceneMode.Additive); 
+                }  
+            }
 
             if (PhotonNetwork.CurrentRoom.PlayerCount == 2)
             {
