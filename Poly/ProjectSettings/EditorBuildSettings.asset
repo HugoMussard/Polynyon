@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Autres/HUD.unity
     guid: c54b7e495e6d85440aabf94b09a38112
   - enabled: 1
-    path: Assets/Scenes/Autres/TranspaESC.unity
+    path: Assets/Scenes/TranspaESC.unity
     guid: 9b386980f0d59624ca265c18c124fbd0
   - enabled: 1
     path: Assets/AgoraEngine/Demo/HelloUnity3D.unity
@@ -44,6 +44,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Options/KeyBind.unity
     guid: dd6d119ea72940844b0e31832e9acde1
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000

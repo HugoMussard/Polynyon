@@ -2,7 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Photon.Pun; 
+using Photon.Pun;
+using UnityEngine.UI;
 
 public class moves : MonoBehaviourPunCallbacks
 {
@@ -19,34 +20,55 @@ public class moves : MonoBehaviourPunCallbacks
     public float jumphigh = 3f;
     public GameObject parent;
     public Animator Anim;
-
+    private double x = 0; 
+    private double z = 0;
+    
+    
+    
     private void Start()
     {
         parent.SetActive(photonView.IsMine);
     }
+    
 
     void Update()
     {
+        string up = PlayerPrefs.GetString("up");
+        string down = PlayerPrefs.GetString("down");
+        string left = PlayerPrefs.GetString("left");
+        string right = PlayerPrefs.GetString("right"); 
 
         if (!photonView.IsMine) return;
         Anim.SetFloat("vertical", Input.GetAxis("Vertical"));
 
-        //Deplacement 
+        
         isgrounded = Physics.CheckSphere(groundCheck.position, groundis, groundmask);
-            if (isgrounded && velocity.y < 0)
-                velocity.y = -2f;
+        if (isgrounded && velocity.y < 0)
+            velocity.y = -2f;
+       
 
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
+        if (Input.GetKey(right) && x < 1) x += 0.1f; 
+        else if (Input.GetKey(left) && x > -1) x -= 0.1f;
+        else if (x >= -0.1 && x <= 0.1) x = 0; 
+        else if (x > 0) x -= 0.1f; 
+        else if (x < 0) x += 0.1f; 
         
-        Vector3 move = transform.right * x + transform.forward * z;
         
-        control.Move(move * speed * Time.deltaTime);
-
+        
+        if (Input.GetKey(up) && z < 1) z += 0.1f; 
+        else if (Input.GetKey(down) && z > -1) z -= 0.1f;
+        else if (z >= -0.1 && z <= 0.1) z = 0; 
+        else if (z > 0) z -= 0.1f; 
+        else if (z < 0) z += 0.1f; 
+            
+        Vector3 move = transform.right * (float) x + transform.forward * (float) z;
+        control.Move(move * (speed * Time.deltaTime));
+        
         velocity.y += gravity * Time.deltaTime;
-
         control.Move(velocity * Time.deltaTime);
-
+     
+        
+        
         if (Input.GetKeyDown(KeyCode.T) && !(Anim.GetBool("isTackling")))
         {
             Anim.SetBool("isTackling", true);
@@ -65,8 +87,6 @@ public class moves : MonoBehaviourPunCallbacks
         {
             Anim.SetBool("isJumping", false);
         }
-
-
 
 
 

@@ -25,13 +25,12 @@ public class KeyBind : MonoBehaviour
     public TextMeshProUGUI Vocal;
     public TMP_InputField VocalInput;
 
-
+    
     private void Awake()
     {
-        string hg = Directory.GetCurrentDirectory(); 
-        if (!File.Exists($"{hg}/FirstRun"))
+        if (!File.Exists($"{Application.dataPath}/firstrun"))
         {
-            File.Create($"{hg}/FirstRun");
+            File.Create($"{Application.dataPath}/firstrun");
             PlayerPrefs.SetString("up", "Z");
             PlayerPrefs.SetString("down", "S");
             PlayerPrefs.SetString("left", "Q");
@@ -39,6 +38,7 @@ public class KeyBind : MonoBehaviour
             PlayerPrefs.SetString("vocal", "V");
             PlayerPrefs.Save();
         }
+        
     }
 
     void Start()

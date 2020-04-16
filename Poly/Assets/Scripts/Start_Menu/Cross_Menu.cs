@@ -85,6 +85,6 @@ public class Cross_Menu : MonoBehaviour
 
     public void ExitGame()
     {
-        Application.Quit(); 
+        if (!Application.isEditor) System.Diagnostics.Process.GetCurrentProcess().Kill();
     }
 }
