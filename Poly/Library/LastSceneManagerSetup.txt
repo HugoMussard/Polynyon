@@ -1,49 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Polynon Scene.unity
+- path: Assets/Scenes/Premiere ile/Premiere ile.unity
   isLoaded: 1
   isActive: 1
-  isSubScene: 0
-- path: Assets/Scenes/Blackscreen.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/lobby.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/MENUOK.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/Options.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/premiere_salle.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/BackFromGame.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/HUD.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/TrasnpaESC.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/AgoraEngine/Demo/HelloUnity3D.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/Load_NewGame.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/Pop Up.unity
-  isLoaded: 0
-  isActive: 0
   isSubScene: 0
