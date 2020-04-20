@@ -20,8 +20,11 @@ public class gohub : MonoBehaviour
     {
         if (Physics.CheckSphere(Hubcheck.position, groundis, hub))
         {
-            SceneManager.LoadSceneAsync(13);
-            SceneManager.UnloadSceneAsync(12);
+            SceneManager.UnloadSceneAsync("HUD");
+            SceneManager.UnloadSceneAsync("Blackscreen");
+            SceneManager.UnloadSceneAsync("HelloUnity3D");
+            SceneManager.LoadSceneAsync("HUB");
+            
         }
     }
 }
