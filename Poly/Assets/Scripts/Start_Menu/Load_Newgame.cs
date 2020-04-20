@@ -20,6 +20,7 @@ public class Load_Newgame : MonoBehaviourPunCallbacks
     void Start()
     {
         save = PlayerPrefs.GetString("save");
+        
     }
 
     public void LoadSave()

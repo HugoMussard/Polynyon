@@ -44,10 +44,17 @@
             </e>
           </e>
         </e>
+        <e p="Asset_ile2" t="Include">
+          <e p="Ramp" t="Include">
+            <e p="Shaders" t="Include">
+              <e p="Prototype_Global.shader" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="EnigmeFils.cs" t="Include" />
         <e p="Ile" t="Include">
           <e p="Rotation.cs" t="Include" />
         </e>
-        <e p="KeyBind.cs" t="Include" />
         <e p="Photon" t="Include">
           <e p="Photon" t="Include">
             <e p="PhotonChat" t="Include">
@@ -225,16 +232,12 @@
         <e p="PolygonCity" t="Include">
           <e p="Change_Log.txt" t="Include" />
         </e>
-        <e p="PolygonPrototype" t="Include">
-          <e p="Shaders" t="Include">
-            <e p="Prototype_Global.shader" t="Include" />
-          </e>
-        </e>
         <e p="Scripts" t="Include">
           <e p="HUD.cs" t="Include" />
           <e p="Interactable.cs" t="Include" />
           <e p="Interaction.cs" t="Include" />
           <e p="interactonoff.cs" t="Include" />
+          <e p="KeyBind.cs" t="Include" />
           <e p="moves.cs" t="Include" />
           <e p="PopUp.cs" t="Include" />
           <e p="Premiere_salle" t="Include">

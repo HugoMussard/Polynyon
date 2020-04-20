@@ -15,6 +15,7 @@ public class Intro : MonoBehaviour
     private void Awake()
     {
         hg.volume = PlayerPrefs.GetFloat("volume");
+        QualitySettings.vSyncCount = 1; 
     }
 
     void Start()

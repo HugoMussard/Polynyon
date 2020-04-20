@@ -44,6 +44,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Options/KeyBind.unity
     guid: dd6d119ea72940844b0e31832e9acde1
+  - enabled: 1
+    path: Assets/Scenes/IleBombe.unity
+    guid: 2d37c02265a0714419ede70b0cb56b5a
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
