@@ -331,11 +331,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 930996b28afc47a499c5baba92417798, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hub:
-    serializedVersion: 2
-    m_Bits: 1024
-  groundis: 0.5
-  Hubcheck: {fileID: 8263823285886614641}
+  trigger1: {fileID: 0}
+  trigger2: {fileID: 0}
+  player1: {fileID: 0}
+  player2: {fileID: 0}
 --- !u!114 &1545296970830300568
 MonoBehaviour:
   m_ObjectHideFlags: 0

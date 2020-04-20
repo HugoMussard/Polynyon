@@ -784,6 +784,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11204}
     - Class: 114
+      Script: {instanceID: 11552}
+    - Class: 114
       Script: {instanceID: 11894}
     - Class: 114
       Script: {instanceID: 12222}
@@ -1014,7 +1016,7 @@ ScriptsOnlyBuild:
     className: SignalAsset
   - hash:
       serializedVersion: 2
-      Hash: 7469cba0ce670b950162f5ae58a6b65a
+      Hash: a9ed0ab7f01bed890cb3cb6c8f9be8db
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: gohub
@@ -1916,4 +1918,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Options/KeyBind.unity
   - Assets/Scenes/premiere_salle/premiere_salle.unity
   - Assets/Scenes/premiere_ile/HUB.unity
-  playerPath: C:/Users/tidje/OneDrive/Bureau/build/Polypoly.exe
+  playerPath: D:/Utilisateur/Bureau/Polyplay/Polypoly.exe

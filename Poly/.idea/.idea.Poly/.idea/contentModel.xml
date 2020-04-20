@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\polynyon\Poly" t="IncludeRecursive">
+    <e p="C:\Users\hugom\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\hugom\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Poly.-1596253593.00" t="ExcludeRecursive" />
+    <e p="C:\Users\hugom\polynyon\Poly" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -224,19 +226,23 @@
           <e p="Change_Log.txt" t="Include" />
         </e>
         <e p="Scripts" t="Include">
-          <e p="HUD.cs" t="Include" />
-          <e p="Interactable.cs" t="Include" />
-          <e p="Interaction.cs" t="Include" />
-          <e p="interactonoff.cs" t="Include" />
-          <e p="moves.cs" t="Include" />
-          <e p="PopUp.cs" t="Include" />
+          <e p="all the game" t="Include">
+            <e p="gohub.cs" t="Include" />
+            <e p="HUD.cs" t="Include" />
+            <e p="Interactable.cs" t="Include" />
+            <e p="Interaction.cs" t="Include" />
+            <e p="interactonoff.cs" t="Include" />
+            <e p="moves.cs" t="Include" />
+            <e p="PopUp.cs" t="Include" />
+            <e p="Spawn_script.cs" t="Include" />
+          </e>
           <e p="Premiere_salle" t="Include">
             <e p="camscript.cs" t="Include" />
             <e p="Doors.cs" t="Include" />
             <e p="enigma1.cs" t="Include" />
             <e p="glypheenigma.cs" t="Include" />
+            <e p="indice.cs" t="Include" />
           </e>
-          <e p="Spawn_script.cs" t="Include" />
           <e p="Start_Menu" t="Include">
             <e p="Blackscreen.cs" t="Include" />
             <e p="Cross_Menu.cs" t="Include" />
@@ -347,7 +353,5 @@
       <e p="Poly.sln" t="IncludeFlat" />
       <e p="Temp\bin" t="ExcludeRecursive" />
     </e>
-    <e p="C:\Users\tidje\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\tidje\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Poly.-799452145.00" t="ExcludeRecursive" />
   </component>
 </project>
