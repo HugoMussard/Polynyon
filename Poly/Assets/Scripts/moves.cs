@@ -22,8 +22,10 @@ public class moves : MonoBehaviourPunCallbacks
     public Animator Anim;
     private double x = 0; 
     private double z = 0;
-    
-
+    public static bool Istrapped;
+    public LayerMask trapmask;
+    public LayerMask interactmask;
+    public static bool OnInteract;
 
     private void Start()
     {
@@ -70,28 +72,7 @@ public class moves : MonoBehaviourPunCallbacks
         velocity.y += gravity * Time.deltaTime;
         control.Move(velocity * Time.deltaTime);
      
+        Istrapped = Physics.CheckSphere(groundCheck.position, groundis, trapmask);
         
-        
-        if (Input.GetKeyDown(KeyCode.T) && !(Anim.GetBool("isTackling")))
-        {
-            Anim.SetBool("isTackling", true);
-        }
-        else
-        {
-            Anim.SetBool("isTackling", false);
-        }
-
-        if (Input.GetButtonDown("Jump") && isgrounded)
-        {
-            velocity.y = Mathf.Sqrt(jumphigh * (-2f) * gravity);
-            Anim.SetBool("isJumping", true);
-        }
-        else
-        {
-            Anim.SetBool("isJumping", false);
-        }
-
-
-
     }
 }

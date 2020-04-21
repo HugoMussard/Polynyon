@@ -44,22 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Options/KeyBind.unity
     guid: dd6d119ea72940844b0e31832e9acde1
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Enigmes/Enigme_plaques.unity
+    guid: 99048458569701b41962f2808da6441f
   m_configObjects: {}

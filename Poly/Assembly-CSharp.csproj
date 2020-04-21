@@ -85,6 +85,7 @@
      <Compile Include="Assets\Photon\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
      <Compile Include="Assets\Photon\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
      <Compile Include="Assets\Scripts\Enigme_Chemin_pic\ButtonPush.cs" />
+     <Compile Include="Assets\Scripts\Enigme_Chemin_pic\Plateforme.cs" />
      <Compile Include="Assets\Scripts\Enigme_Chemin_pic\Spikes.cs" />
      <Compile Include="Assets\Scripts\HUD.cs" />
      <Compile Include="Assets\Scripts\Interactable.cs" />

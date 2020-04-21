@@ -270,7 +270,10 @@ MonoBehaviour:
   Anim: {fileID: 8795732428264628786}
   trapmask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 0
+  interactmask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &8263823287175323135
 MonoBehaviour:
   m_ObjectHideFlags: 0
