@@ -163,11 +163,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8590658}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 5.608185, y: 0, z: -41.518475}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 553887512}
-  m_RootOrder: 10
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &55180481
 GameObject:
@@ -371,7 +371,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f157138ef53e7ef48bfe5f63045e82a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 55602802}
   opener: {fileID: 8296172669068347349}
 --- !u!114 &55602804
 MonoBehaviour:
@@ -1844,7 +1843,6 @@ Transform:
   - {fileID: 424921327}
   - {fileID: 144320722}
   - {fileID: 991365956}
-  - {fileID: 8590660}
   - {fileID: 779584202}
   m_Father: {fileID: 1355189178}
   m_RootOrder: 1
@@ -2357,7 +2355,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 553887512}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &838235604
 MeshCollider:
@@ -2943,7 +2941,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1171379118
 GameObject:
@@ -3480,7 +3478,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f157138ef53e7ef48bfe5f63045e82a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 1261891177}
   opener: {fileID: 779584201}
 --- !u!65 &1261891182
 BoxCollider:
@@ -3695,7 +3692,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1355189177
 GameObject:
@@ -3730,7 +3727,7 @@ Transform:
   - {fileID: 5006512736863527388}
   - {fileID: 416933527}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1379225343
 GameObject:
@@ -3991,7 +3988,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f157138ef53e7ef48bfe5f63045e82a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 1404231243}
   opener: {fileID: 779584201}
 --- !u!65 &1404231248
 BoxCollider:
@@ -4233,7 +4229,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f157138ef53e7ef48bfe5f63045e82a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 1461531141}
   opener: {fileID: 220491078}
 --- !u!65 &1461531145
 BoxCollider:
@@ -4508,7 +4503,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1622609534
 GameObject:

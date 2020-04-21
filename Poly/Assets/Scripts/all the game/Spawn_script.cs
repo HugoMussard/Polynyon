@@ -24,7 +24,7 @@ public class Spawn_script : MonoBehaviour
    private camscript script1; 
    private camscript script2; 
    
-
+   
    private void Start()
    {
       script1 = null;
@@ -33,7 +33,6 @@ public class Spawn_script : MonoBehaviour
       SceneManager.LoadSceneAsync("HUD", LoadSceneMode.Additive);
       SceneManager.LoadSceneAsync("Blackscreen", LoadSceneMode.Additive);
       SceneManager.LoadSceneAsync("HelloUnity3D", LoadSceneMode.Additive);
-      
    }
 
    public void Spawn()

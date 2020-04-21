@@ -9,7 +9,6 @@ using Photon.Pun;
 
 public class Doors : MonoBehaviourPunCallbacks
 {
-    public Transform door;
     public Interactable opener;
 
 
