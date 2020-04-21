@@ -1,30 +1,28 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class gohub : MonoBehaviour
+public class gohub : MonoBehaviourPunCallbacks
 {
-    public LayerMask hub;
-    public float groundis = 0.5f;
-    public Transform Hubcheck;
+    //public LayerMask hub;
+    //public float groundis = 0.5f;
+    //public Transform Hubcheck;
+    
+    public PhotonView player1;
+    public PhotonView player2; 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+  
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider collider)
     {
-        if (Physics.CheckSphere(Hubcheck.position, groundis, hub))
-        {
-            SceneManager.UnloadSceneAsync("HUD");
-            SceneManager.UnloadSceneAsync("Blackscreen");
-            SceneManager.UnloadSceneAsync("HelloUnity3D");
-            SceneManager.LoadSceneAsync("HUB");
-            
-        }
+        SceneManager.UnloadSceneAsync("HUD");
+        SceneManager.UnloadSceneAsync("Blackscreen");
+        SceneManager.UnloadSceneAsync("HelloUnity3D");
+        SceneManager.LoadSceneAsync("HUB");
+        //PhotonNetwork.LoadLevel("HUB");
     }
+    
 }

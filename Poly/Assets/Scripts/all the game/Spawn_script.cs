@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using Photon.Pun;
 using Photon.Realtime;
 using TMPro;
@@ -12,7 +13,7 @@ using Random = System.Random;
 using UnityEngine.SceneManagement; 
 using UnityEngine;
 
-public class Spawn_script : MonoBehaviour
+public class Spawn_script : MonoBehaviourPunCallbacks
 {
    public string player_prefab;
    public string player_prefab2;
@@ -37,17 +38,19 @@ public class Spawn_script : MonoBehaviour
 
    public void Spawn()
    {
-
       if (PhotonNetwork.IsMasterClient)
       {
-         clone1 = PhotonNetwork.Instantiate(player_prefab, spawn_point.position, spawn_point.rotation);
-         script1 = clone1.transform.Find("Character").transform.Find("GameObject").transform.Find("player_cam").GetComponent<camscript>(); 
+            clone1 = PhotonNetwork.Instantiate(player_prefab, spawn_point.position, spawn_point.rotation);
+            script1 = clone1.transform.Find("Character").transform.Find("GameObject").transform.Find("player_cam")
+               .GetComponent<camscript>();
       }
       else
       {
-         clone2 = PhotonNetwork.Instantiate(player_prefab2, spawn_point2.position, spawn_point.rotation);
-         script2 = clone2.transform.Find("Character").transform.Find("GameObject").transform.Find("player_cam2").GetComponent<camscript>(); 
+            clone2 = PhotonNetwork.Instantiate(player_prefab2, spawn_point2.position, spawn_point.rotation);
+            script2 = clone2.transform.Find("Character").transform.Find("GameObject").transform.Find("player_cam2")
+               .GetComponent<camscript>();
       }
+
    }
 
    public void Resume()
@@ -61,6 +64,8 @@ public class Spawn_script : MonoBehaviour
       SceneManager.UnloadSceneAsync("TranspaESC"); 
       SceneManager.LoadScene("HUD", LoadSceneMode.Additive);
    }
+   
+   
 
    void Update()
    {
