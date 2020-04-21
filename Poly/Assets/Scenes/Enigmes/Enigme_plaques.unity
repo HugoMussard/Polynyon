@@ -4335,6 +4335,7 @@ GameObject:
   - component: {fileID: 1250795598}
   - component: {fileID: 1250795597}
   - component: {fileID: 1250795596}
+  - component: {fileID: 1250795600}
   m_Layer: 9
   m_Name: Rosedesvents
   m_TagString: Untagged
@@ -4409,13 +4410,32 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1250795595}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.75, y: -5.5, z: 21.15}
+  m_LocalRotation: {x: 0.4530506, y: -0, z: -0, w: 0.8914848}
+  m_LocalPosition: {x: 5.75, y: -2.44, z: 16.38}
   m_LocalScale: {x: -8, y: 8, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 53.879, y: 0, z: 0}
+--- !u!95 &1250795600
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250795595}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aca86e2965c5a464f8b94ee7d9bf7bfb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1251869491
 GameObject:
   m_ObjectHideFlags: 0
@@ -6956,13 +6976,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1928678696}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.74, y: 4.19, z: 15.86}
+  m_LocalRotation: {x: 0.18209507, y: -0, z: -0, w: 0.98328096}
+  m_LocalPosition: {x: 5.74, y: 7.22, z: 14.4}
   m_LocalScale: {x: 62.125, y: 61.25, z: 50}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 20.984001, y: 0, z: 0}
 --- !u!1 &1960926014
 GameObject:
   m_ObjectHideFlags: 0
@@ -7748,6 +7768,7 @@ GameObject:
   - component: {fileID: 2040662672}
   - component: {fileID: 2040662671}
   - component: {fileID: 2040662670}
+  - component: {fileID: 2040662675}
   - component: {fileID: 2040662676}
   m_Layer: 0
   m_Name: Bouton qui marche
@@ -7845,6 +7866,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!95 &2040662675
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040662669}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c1600a14914d6464da1d22fd2ecfd29a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &2040662676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7859,7 +7899,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 2040662674}
   opener: {fileID: 2040662670}
-  Rosedesvents: {fileID: 1250795599}
+  Rosedesventsobj: {fileID: 1250795595}
 --- !u!1 &2044111042
 GameObject:
   m_ObjectHideFlags: 0

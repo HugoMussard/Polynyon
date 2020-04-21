@@ -7,13 +7,14 @@ public class ButtonPush : MonoBehaviour
 {
     public Transform button;
     public Interactable opener;
-    public Transform Rosedesvents;
+    public GameObject Rosedesventsobj;
+    Animator anim;
+    Animator animrdv;
 
     void Start()
     {
-        GameObject lightGameObject = new GameObject("The Light");
-        
-        Light lightComp = lightGameObject.AddComponent<Light>();
+        anim = GetComponent<Animator>();
+        animrdv = Rosedesventsobj.GetComponent<Animator>();
     }
 
     
@@ -22,15 +23,15 @@ public class ButtonPush : MonoBehaviour
     {
         if (opener.state)
         {
-            if (button.position.z >= -21.353f)
-            {
-                button.transform.Translate(Vector3.up * (Time.deltaTime * 3.0f));
-            }
+            
+            anim.SetBool("Button_state", true);
+            animrdv.SetBool("Sort", true);
+            
 
-            if (Rosedesvents.position.y <= 4)
-            {
-                Rosedesvents.Translate(Vector3.up * (Time.deltaTime * 1.5f));
-            }
+        }
+        else
+        {
+            anim.SetBool("Button_state", false);
         }
     }
 }
