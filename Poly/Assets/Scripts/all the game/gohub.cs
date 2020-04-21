@@ -7,19 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class gohub : MonoBehaviourPunCallbacks
 {
-    //public LayerMask hub;
-    //public float groundis = 0.5f;
-    //public Transform Hubcheck;
-
-
-  
-
     private void OnTriggerEnter(Collider collider)
     {
-        SceneManager.UnloadSceneAsync("HUD");
-        SceneManager.UnloadSceneAsync("Blackscreen");
-        SceneManager.UnloadSceneAsync("HelloUnity3D");
-        //SceneManager.LoadSceneAsync("HUB");
         PhotonNetwork.LoadLevel("HUB");
     }
     

@@ -31,9 +31,12 @@ public class Spawn_script : MonoBehaviourPunCallbacks
       script1 = null;
       script2 = null;
       Spawn();
-      SceneManager.LoadSceneAsync("HUD", LoadSceneMode.Additive);
-      SceneManager.LoadSceneAsync("Blackscreen", LoadSceneMode.Additive);
-      SceneManager.LoadSceneAsync("HelloUnity3D", LoadSceneMode.Additive);
+      if(!SceneManager.GetSceneByName("HUD").isLoaded)
+        SceneManager.LoadSceneAsync("HUD", LoadSceneMode.Additive);
+      if (!SceneManager.GetSceneByName("Blackscreen").isLoaded)
+            SceneManager.LoadSceneAsync("Blackscreen", LoadSceneMode.Additive);
+      if (!SceneManager.GetSceneByName("HelloUnity3D").isLoaded)
+            SceneManager.LoadSceneAsync("HelloUnity3D", LoadSceneMode.Additive);
    }
 
    public void Spawn()

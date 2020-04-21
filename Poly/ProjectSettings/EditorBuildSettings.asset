@@ -41,4 +41,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/IleBombe.unity
     guid: 2d37c02265a0714419ede70b0cb56b5a
+  - enabled: 1
+    path: Assets/Scenes/Options/Options.unity
+    guid: 00b200523b0f5e84dbd16496dcd540bb
+  - enabled: 1
+    path: Assets/AgoraEngine/Demo/HelloUnity3D.unity
+    guid: cf0f0349488134449a67eea42ac82665
+  - enabled: 1
+    path: Assets/Scenes/TranspaESC.unity
+    guid: 9b386980f0d59624ca265c18c124fbd0
   m_configObjects: {}
