@@ -155,8 +155,6 @@ MonoBehaviour:
   player_prefab2: Player_2
   spawn_point: {fileID: 1351858037}
   spawn_point2: {fileID: 1604899866}
-  trigger1: {fileID: 0}
-  trigger2: {fileID: 0}
 --- !u!4 &8590660
 Transform:
   m_ObjectHideFlags: 0
@@ -983,7 +981,7 @@ Transform:
   m_LocalScale: {x: 7.5, y: 1, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &281418270
 GameObject:
@@ -1543,7 +1541,6 @@ GameObject:
   - component: {fileID: 431430742}
   - component: {fileID: 431430740}
   - component: {fileID: 431430741}
-  - component: {fileID: 431430745}
   m_Layer: 0
   m_Name: Trigger1
   m_TagString: Untagged
@@ -1571,7 +1568,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 431430739}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 930996b28afc47a499c5baba92417798, type: 3}
   m_Name: 
@@ -1639,24 +1636,6 @@ Transform:
   m_Father: {fileID: 881680632}
   m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &431430745
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 431430739}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecab18288126c4044bb98536f11262e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player_prefab: 
-  player_prefab2: 
-  spawn_point: {fileID: 0}
-  spawn_point2: {fileID: 0}
-  trigger1: {fileID: 431430740}
-  trigger2: {fileID: 1891884015}
 --- !u!1 &471160267
 GameObject:
   m_ObjectHideFlags: 0
@@ -5305,7 +5284,7 @@ Transform:
   m_LocalScale: {x: 7.5, y: 1, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1891653676
 GameObject:
