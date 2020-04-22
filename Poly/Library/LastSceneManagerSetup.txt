@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/3eme enigme/Scene princ.unity
+- path: Assets/Scenes/premiere_salle/premiere_salle.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

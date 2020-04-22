@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+//using Random = UnityEngine.Random;
 
 public class Simonsays : MonoBehaviour
 {
@@ -19,40 +21,58 @@ public class Simonsays : MonoBehaviour
 
     private int Time = 30; //temps en seconde a laquelle se fait chaque enigmes
 
-    public Text disp;
+    //public Text disp;
+
+    public Interactable levierRouge;
+    public Interactable levierVert;
+    public Interactable levierBleu;
+    public Interactable levierJaune;
+
+    public GameObject Light;
+
+
+
+    public Material couleurGrise;
+
+    public Material couleurRouge;
+    public Material couleurVerte;
+    public Material couleurBleue;
+    public Material couleurJaune;
+    
     // Start is called before the first frame update
 
     void lighton(int light)
     {
         switch (light)
         {
-            case 1:
-                //allumer lumiere rouge, etc...
+            case 0 :
+                Light.GetComponent<MeshRenderer>().material = couleurRouge;
                 break;
-            
+            case 1 :
+                Light.GetComponent<MeshRenderer>().material = couleurBleue;
+                break;
+            case 2:
+                Light.GetComponent<MeshRenderer>().material = couleurVerte;
+                break;
+            case 3:
+                Light.GetComponent<MeshRenderer>().material = couleurJaune;
+                break;
+            default:
+                Light.GetComponent<MeshRenderer>().material = couleurGrise;
+                break;
         }
         
         
     }
     
-    void lightoff(int light)
-    {
-        switch (light)
-        {
-            case 1:
-            //eteindre lumiere rouge, etc...
-            break;
-            
-        }
-        
-        
-    }
+    
 
     void waitFor(int seconds)
     {
-        timer = 0;
+        int timer = 0;
+        
         while (timer < seconds)
-            timer += Time.deltaTime;
+            timer += 1;
 
         return;
     }
@@ -63,13 +83,14 @@ public class Simonsays : MonoBehaviour
         {
             lighton(light);
             waitFor(timePause);
-            lightoff(light);
+            lighton(4);
             waitFor(timePause);
 
         }
         
         
     }
+    
 
     int adatp(int light, int modifier)
     {
@@ -77,13 +98,35 @@ public class Simonsays : MonoBehaviour
 
     }
 
+
+    int action()
+    {
+        (levierRouge.state, levierVert.state, levierBleu.state, levierJaune.state) = (false, false, false, false);
+
+        while (!(levierRouge.state || levierVert.state || levierBleu.state || levierJaune.state))
+            continue;
+
+        if (levierRouge.state)
+            return 0;
+        if (levierVert.state)
+            return 1;
+        if (levierBleu.state)
+            return 2;
+        if (levierJaune.state)
+            return 3;
+        
+        throw new Exception("La ia un soucis");
+
+    }
+
     int[] getactions(int length)
     {
         int[] actions = new int[length];
-        
-        for(int i=0; i< length; i++)
-        //retournes la touche pressee
-        
+
+        for (int i = 0; i < length; i++)
+            actions[i] = action();
+
+        return actions;
     }
     
     bool ClickLevel(int[] lights, int modifier)
@@ -133,8 +176,7 @@ public class Simonsays : MonoBehaviour
     {
         int[] lights = new int[length];
 
-        var rand = new Random();
-
+        System.Random rand = new System.Random();
         for (int i = 0; i < length; i++)
         {
             lights[i] = rand.Next(4);
