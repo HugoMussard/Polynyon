@@ -17,7 +17,7 @@ public class Spikes : MonoBehaviourPunCallbacks
 
     private void Update()
     {
-        if (moves.Istrapped && transform.position.y < 0.44)
+        if (moves.Istrapped && transform.position.y < -0.44)
         {
             transform.Translate(Vector3.up * (Time.deltaTime * 15f));
             Invoke("Die", 1);
