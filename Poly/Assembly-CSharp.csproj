@@ -113,6 +113,7 @@
     <Compile Include="Assets\Scripts\all the game\gohub.cs" />
     <Compile Include="Assets\Scripts\all the game\interactonoff.cs" />
     <Compile Include="Assets\Scripts\all the game\moves.cs" />
+    <Compile Include="Assets\Scripts\all the game\pression_plate_hub.cs" />
     <Compile Include="Assets\Scripts_lobby\CreateUserName.cs" />
     <Compile Include="Assets\Scripts_lobby\PhotonLobby.cs" />
     <Compile Include="Assets\SpeedTutor_Full_Menu_System\GUI Elements\UI_BrightnessShader\Brightness.cs" />
