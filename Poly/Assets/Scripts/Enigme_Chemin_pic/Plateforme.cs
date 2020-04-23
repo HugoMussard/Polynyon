@@ -7,31 +7,35 @@ using Photon.Pun;
 public class Plateforme : MonoBehaviour
 {
     public Transform instructions;
+    public Transform plaquedroite;
+    Animator anim;
+    public static bool plateformetrigger;
 
-    public Transform murquibouge;
+    //public Transform murquibouge;
     // Start is called before the first frame update
     void Start()
     {
-        
+        anim = instructions.GetComponent<Animator>();
+        plateformetrigger = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (murquibouge.position.x > 30f)
-        {
-            Die();
-        }
-    }
-    private void OnTriggerStay(Collider other)
-    {
-        murquibouge.Translate(Vector3.right * (Time.deltaTime * 0.5f));
-        instructions.transform.position = new Vector3(32,2,0);
+        
     }
 
-    private void OnTriggerExit(Collider other)
+    void OnTriggerStay(Collider other)
     {
-        instructions.transform.position = new Vector3(33,2,0);
+        anim.SetBool("Trigger", true);
+        plateformetrigger = true;
+
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        anim.SetBool("Trigger", false);
+        plateformetrigger = false;
     }
 
     private void Die()

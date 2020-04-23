@@ -5,15 +5,15 @@ using UnityEngine;
 
 public class ButtonPush : MonoBehaviour
 {
-    public Transform button;
     public Interactable opener;
     public GameObject Rosedesventsobj;
+    public GameObject Boutonrouge;
     Animator anim;
     Animator animrdv;
 
     void Start()
     {
-        anim = GetComponent<Animator>();
+        anim = Boutonrouge.GetComponent<Animator>();
         animrdv = Rosedesventsobj.GetComponent<Animator>();
     }
 

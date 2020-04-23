@@ -9,17 +9,18 @@ using UnityEngine.SceneManagement;
 
 public class Spikes : MonoBehaviourPunCallbacks
 {
-    public Transform spike;
+    Animator anim;
 
     private void Start()
     {
+        anim = GetComponent<Animator>();
     }
 
     private void Update()
     {
-        if (moves.Istrapped && transform.position.y < -0.44)
+        if (moves.Istrapped)
         {
-            transform.Translate(Vector3.up * (Time.deltaTime * 15f));
+            anim.SetBool("Spike", true);
             Invoke("Die", 1);
         }
     }
