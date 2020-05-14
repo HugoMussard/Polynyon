@@ -30,7 +30,11 @@ public class Load_Newgame : MonoBehaviourPunCallbacks
     public void NewGame()
     {
         if (save != "") Debug.Log("Etes vous sur de vouloir écraser votre sauvegarde ?");
+<<<<<<< HEAD
         SceneManager.LoadScene("premiere_salle");
+=======
+        PhotonNetwork.LoadLevel("Enigme_plaques");
+>>>>>>> EnigmePlaqueSimon
     }
     
 }

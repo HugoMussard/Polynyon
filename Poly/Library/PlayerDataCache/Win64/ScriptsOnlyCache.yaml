@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Blackscreen
+    - ButtonPush
     - CreateUserName
     - Cross_Menu
     - Doors
@@ -20,11 +21,16 @@ ScriptsOnlyBuild:
     - MainCable
     - Overlay
     - PhotonLobby
+    - Plateforme
     - PopUp
     - Rotation
     - SoundScript
     - Spawn_script
+<<<<<<< HEAD
     - TW_AK_Ile2
+=======
+    - Spikes
+>>>>>>> EnigmePlaqueSimon
     - camscript
     - glypheenigma
     - goenigm
@@ -93,6 +99,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 14812}
     - Class: 114
       Script: {instanceID: 15000}
@@ -112,6 +119,27 @@ ScriptsOnlyBuild:
       Script: {instanceID: 16496}
     - Class: 114
       Script: {instanceID: 16920}
+=======
+      Script: {instanceID: 11196}
+    - Class: 114
+      Script: {instanceID: 11390}
+    - Class: 114
+      Script: {instanceID: 11436}
+    - Class: 114
+      Script: {instanceID: 11894}
+    - Class: 114
+      Script: {instanceID: 12138}
+    - Class: 114
+      Script: {instanceID: 12346}
+    - Class: 114
+      Script: {instanceID: 12362}
+    - Class: 114
+      Script: {instanceID: 12560}
+    - Class: 114
+      Script: {instanceID: 12912}
+    - Class: 114
+      Script: {instanceID: 13338}
+>>>>>>> EnigmePlaqueSimon
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -146,6 +174,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 14812}
     - Class: 114
       Script: {instanceID: 15000}
@@ -157,6 +186,19 @@ ScriptsOnlyBuild:
       Script: {instanceID: 16496}
     - Class: 114
       Script: {instanceID: 16876}
+=======
+      Script: {instanceID: 11196}
+    - Class: 114
+      Script: {instanceID: 11390}
+    - Class: 114
+      Script: {instanceID: 12346}
+    - Class: 114
+      Script: {instanceID: 12616}
+    - Class: 114
+      Script: {instanceID: 12912}
+    - Class: 114
+      Script: {instanceID: 13292}
+>>>>>>> EnigmePlaqueSimon
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -185,6 +227,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 14812}
     - Class: 114
       Script: {instanceID: 15046}
@@ -196,6 +239,19 @@ ScriptsOnlyBuild:
       Script: {instanceID: 16496}
     - Class: 114
       Script: {instanceID: 16936}
+=======
+      Script: {instanceID: 11196}
+    - Class: 114
+      Script: {instanceID: 11436}
+    - Class: 114
+      Script: {instanceID: 12596}
+    - Class: 114
+      Script: {instanceID: 12844}
+    - Class: 114
+      Script: {instanceID: 12912}
+    - Class: 114
+      Script: {instanceID: 13354}
+>>>>>>> EnigmePlaqueSimon
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -226,6 +282,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 14812}
     - Class: 114
       Script: {instanceID: 15046}
@@ -241,6 +298,23 @@ ScriptsOnlyBuild:
       Script: {instanceID: 16496}
     - Class: 114
       Script: {instanceID: 16920}
+=======
+      Script: {instanceID: 11196}
+    - Class: 114
+      Script: {instanceID: 11436}
+    - Class: 114
+      Script: {instanceID: 11716}
+    - Class: 114
+      Script: {instanceID: 11894}
+    - Class: 114
+      Script: {instanceID: 12596}
+    - Class: 114
+      Script: {instanceID: 12844}
+    - Class: 114
+      Script: {instanceID: 12912}
+    - Class: 114
+      Script: {instanceID: 13338}
+>>>>>>> EnigmePlaqueSimon
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -254,6 +328,47 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Enigmes/Enigme_plaques.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11268}
+    - Class: 114
+      Script: {instanceID: 11972}
+    - Class: 114
+      Script: {instanceID: 12266}
+    - Class: 114
+      Script: {instanceID: 12738}
+    - Class: 114
+      Script: {instanceID: 13172}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
       Script: {instanceID: 0}
     Assets/Scenes/Intro/Load_NewGame.unity:
     - Class: 1
@@ -277,6 +392,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 14812}
     - Class: 114
       Script: {instanceID: 15046}
@@ -296,6 +412,27 @@ ScriptsOnlyBuild:
       Script: {instanceID: 16876}
     - Class: 114
       Script: {instanceID: 16920}
+=======
+      Script: {instanceID: 11196}
+    - Class: 114
+      Script: {instanceID: 11436}
+    - Class: 114
+      Script: {instanceID: 11736}
+    - Class: 114
+      Script: {instanceID: 11894}
+    - Class: 114
+      Script: {instanceID: 12346}
+    - Class: 114
+      Script: {instanceID: 12596}
+    - Class: 114
+      Script: {instanceID: 12844}
+    - Class: 114
+      Script: {instanceID: 12912}
+    - Class: 114
+      Script: {instanceID: 13292}
+    - Class: 114
+      Script: {instanceID: 13338}
+>>>>>>> EnigmePlaqueSimon
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -338,6 +475,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 14812}
     - Class: 114
       Script: {instanceID: 15046}
@@ -357,6 +495,27 @@ ScriptsOnlyBuild:
       Script: {instanceID: 16876}
     - Class: 114
       Script: {instanceID: 16920}
+=======
+      Script: {instanceID: 11196}
+    - Class: 114
+      Script: {instanceID: 11436}
+    - Class: 114
+      Script: {instanceID: 11894}
+    - Class: 114
+      Script: {instanceID: 12346}
+    - Class: 114
+      Script: {instanceID: 12596}
+    - Class: 114
+      Script: {instanceID: 12616}
+    - Class: 114
+      Script: {instanceID: 12844}
+    - Class: 114
+      Script: {instanceID: 12912}
+    - Class: 114
+      Script: {instanceID: 13292}
+    - Class: 114
+      Script: {instanceID: 13338}
+>>>>>>> EnigmePlaqueSimon
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -419,6 +578,7 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 14958}
     - Class: 114
       Script: {instanceID: 15334}
@@ -446,6 +606,35 @@ ScriptsOnlyBuild:
       Script: {instanceID: 16806}
     - Class: 114
       Script: {instanceID: 16848}
+=======
+      Script: {instanceID: 11350}
+    - Class: 114
+      Script: {instanceID: 11728}
+    - Class: 114
+      Script: {instanceID: 11786}
+    - Class: 114
+      Script: {instanceID: 11926}
+    - Class: 114
+      Script: {instanceID: 12110}
+    - Class: 114
+      Script: {instanceID: 12212}
+    - Class: 114
+      Script: {instanceID: 12224}
+    - Class: 114
+      Script: {instanceID: 12400}
+    - Class: 114
+      Script: {instanceID: 12596}
+    - Class: 114
+      Script: {instanceID: 12610}
+    - Class: 114
+      Script: {instanceID: 12690}
+    - Class: 114
+      Script: {instanceID: 13098}
+    - Class: 114
+      Script: {instanceID: 13222}
+    - Class: 114
+      Script: {instanceID: 13264}
+>>>>>>> EnigmePlaqueSimon
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -494,6 +683,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 14812}
     - Class: 114
       Script: {instanceID: 15000}
@@ -521,6 +711,35 @@ ScriptsOnlyBuild:
       Script: {instanceID: 16876}
     - Class: 114
       Script: {instanceID: 16920}
+=======
+      Script: {instanceID: 11196}
+    - Class: 114
+      Script: {instanceID: 11390}
+    - Class: 114
+      Script: {instanceID: 11400}
+    - Class: 114
+      Script: {instanceID: 11436}
+    - Class: 114
+      Script: {instanceID: 11458}
+    - Class: 114
+      Script: {instanceID: 11658}
+    - Class: 114
+      Script: {instanceID: 11754}
+    - Class: 114
+      Script: {instanceID: 11894}
+    - Class: 114
+      Script: {instanceID: 12346}
+    - Class: 114
+      Script: {instanceID: 12596}
+    - Class: 114
+      Script: {instanceID: 12844}
+    - Class: 114
+      Script: {instanceID: 12912}
+    - Class: 114
+      Script: {instanceID: 13292}
+    - Class: 114
+      Script: {instanceID: 13338}
+>>>>>>> EnigmePlaqueSimon
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -549,6 +768,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 14812}
     - Class: 114
       Script: {instanceID: 15046}
@@ -556,6 +776,15 @@ ScriptsOnlyBuild:
       Script: {instanceID: 16496}
     - Class: 114
       Script: {instanceID: 16536}
+=======
+      Script: {instanceID: 11196}
+    - Class: 114
+      Script: {instanceID: 11436}
+    - Class: 114
+      Script: {instanceID: 12912}
+    - Class: 114
+      Script: {instanceID: 12950}
+>>>>>>> EnigmePlaqueSimon
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -582,6 +811,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 14812}
     - Class: 114
       Script: {instanceID: 14962}
@@ -607,6 +837,33 @@ ScriptsOnlyBuild:
       Script: {instanceID: 16876}
     - Class: 114
       Script: {instanceID: 16920}
+=======
+      Script: {instanceID: 11196}
+    - Class: 114
+      Script: {instanceID: 11354}
+    - Class: 114
+      Script: {instanceID: 11390}
+    - Class: 114
+      Script: {instanceID: 11436}
+    - Class: 114
+      Script: {instanceID: 11458}
+    - Class: 114
+      Script: {instanceID: 11658}
+    - Class: 114
+      Script: {instanceID: 11894}
+    - Class: 114
+      Script: {instanceID: 12346}
+    - Class: 114
+      Script: {instanceID: 12596}
+    - Class: 114
+      Script: {instanceID: 12844}
+    - Class: 114
+      Script: {instanceID: 12912}
+    - Class: 114
+      Script: {instanceID: 13292}
+    - Class: 114
+      Script: {instanceID: 13338}
+>>>>>>> EnigmePlaqueSimon
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -643,6 +900,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 14812}
     - Class: 114
       Script: {instanceID: 14920}
@@ -666,6 +924,31 @@ ScriptsOnlyBuild:
       Script: {instanceID: 16920}
     - Class: 114
       Script: {instanceID: 16954}
+=======
+      Script: {instanceID: 11196}
+    - Class: 114
+      Script: {instanceID: 11312}
+    - Class: 114
+      Script: {instanceID: 11390}
+    - Class: 114
+      Script: {instanceID: 11436}
+    - Class: 114
+      Script: {instanceID: 11894}
+    - Class: 114
+      Script: {instanceID: 12286}
+    - Class: 114
+      Script: {instanceID: 12346}
+    - Class: 114
+      Script: {instanceID: 12616}
+    - Class: 114
+      Script: {instanceID: 12912}
+    - Class: 114
+      Script: {instanceID: 13292}
+    - Class: 114
+      Script: {instanceID: 13338}
+    - Class: 114
+      Script: {instanceID: 13372}
+>>>>>>> EnigmePlaqueSimon
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -704,6 +987,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 14812}
     - Class: 114
       Script: {instanceID: 15046}
@@ -713,6 +997,17 @@ ScriptsOnlyBuild:
       Script: {instanceID: 16496}
     - Class: 114
       Script: {instanceID: 16920}
+=======
+      Script: {instanceID: 11196}
+    - Class: 114
+      Script: {instanceID: 11436}
+    - Class: 114
+      Script: {instanceID: 11894}
+    - Class: 114
+      Script: {instanceID: 12912}
+    - Class: 114
+      Script: {instanceID: 13338}
+>>>>>>> EnigmePlaqueSimon
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -910,6 +1205,7 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 14820}
     - Class: 114
       Script: {instanceID: 15158}
@@ -933,6 +1229,29 @@ ScriptsOnlyBuild:
       Script: {instanceID: 16848}
     - Class: 114
       Script: {instanceID: 16920}
+=======
+      Script: {instanceID: 11204}
+    - Class: 114
+      Script: {instanceID: 11894}
+    - Class: 114
+      Script: {instanceID: 12224}
+    - Class: 114
+      Script: {instanceID: 12266}
+    - Class: 114
+      Script: {instanceID: 12276}
+    - Class: 114
+      Script: {instanceID: 12712}
+    - Class: 114
+      Script: {instanceID: 12970}
+    - Class: 114
+      Script: {instanceID: 13172}
+    - Class: 114
+      Script: {instanceID: 13232}
+    - Class: 114
+      Script: {instanceID: 13264}
+    - Class: 114
+      Script: {instanceID: 13338}
+>>>>>>> EnigmePlaqueSimon
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -982,6 +1301,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: 35ee725e49f23f97206d9751cae6bd90
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ButtonPush
   - hash:
       serializedVersion: 2
       Hash: ee1dba1a186ac062d564e9eb73a1c56f
@@ -1368,6 +1693,7 @@ ScriptsOnlyBuild:
     className: Benchmark01
   - hash:
       serializedVersion: 2
+<<<<<<< HEAD
       Hash: c801b54d17fdf740199f57453254b7c1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1378,6 +1704,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TW_AK_Ile2
+=======
+      Hash: 1872b3f912bf0f842ca1c538167002b3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Plateforme
+>>>>>>> EnigmePlaqueSimon
   - hash:
       serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
@@ -1404,7 +1736,7 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: d4037f3e68383fde6fc56002515971da
+      Hash: 253e7ee9be8be7ac95e3231867dc6344
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: moves
@@ -1726,6 +2058,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: SimpleScript
+  - hash:
+      serializedVersion: 2
+      Hash: a99e34f1eafff03d89e02811ca74eaf6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Spikes
   - hash:
       serializedVersion: 2
       Hash: 274152c972478468d8321a977bbca8e3
@@ -2094,6 +2432,7 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Autres/Pop Up.unity
   - Assets/Scenes/Options/Blackscreen.unity
   - Assets/Scenes/Options/KeyBind.unity
+<<<<<<< HEAD
   - Assets/Scenes/Intro/Load_NewGame.unity
   - Assets/Scenes/Intro/lobby.unity
   - Assets/Scenes/Intro/MENUOK.unity
@@ -2105,3 +2444,7 @@ ScriptsOnlyBuild:
   - Assets/Scenes/premiere_ile/IleBombe.unity
   - Assets/Scenes/enigma1-1.unity
   playerPath: D:/Utilisateur/Bureau/JeuPoly/Polypoly.exe
+=======
+  - Assets/Scenes/Enigmes/Enigme_plaques.unity
+  playerPath: C:/Users/sdefo/Bureau/PolyGame/Polypoly.exe
+>>>>>>> EnigmePlaqueSimon
