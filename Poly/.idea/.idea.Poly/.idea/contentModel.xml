@@ -3,7 +3,7 @@
   <component name="ContentModelStore">
     <e p="C:\Users\hugom\.Rider2019.3\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\hugom\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Poly.-1596253593.00" t="ExcludeRecursive" />
-    <e p="C:\Users\hugom\polynyon\Poly" t="IncludeRecursive">
+    <e p="C:\Users\hugom\Polynyon\Poly" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -48,6 +48,11 @@
           <e p="Ramp" t="Include">
             <e p="Shaders" t="Include">
               <e p="Prototype_Global.shader" t="Include" />
+            </e>
+          </e>
+          <e p="SimpleApocalypseInteriors" t="Include">
+            <e p="_Materials" t="Include">
+              <e p="UnlitVertexColour_Alpha.shader" t="Include" />
             </e>
           </e>
         </e>
@@ -233,15 +238,6 @@
           <e p="Change_Log.txt" t="Include" />
         </e>
         <e p="Scripts" t="Include">
-<<<<<<< HEAD
-          <e p="HUD.cs" t="Include" />
-          <e p="Interactable.cs" t="Include" />
-          <e p="Interaction.cs" t="Include" />
-          <e p="interactonoff.cs" t="Include" />
-          <e p="KeyBind.cs" t="Include" />
-          <e p="moves.cs" t="Include" />
-          <e p="PopUp.cs" t="Include" />
-=======
           <e p="all the game" t="Include">
             <e p="gohub.cs" t="Include" />
             <e p="HUD.cs" t="Include" />
@@ -250,9 +246,17 @@
             <e p="interactonoff.cs" t="Include" />
             <e p="moves.cs" t="Include" />
             <e p="PopUp.cs" t="Include" />
+            <e p="pression_plate_hub.cs" t="Include" />
             <e p="Spawn_script.cs" t="Include" />
           </e>
->>>>>>> b2388787831334faf010dd4ede6e4cc2341056ef
+          <e p="enigme_1-1" t="Include">
+            <e p="grilles.cs" t="Include" />
+          </e>
+          <e p="HUB" t="Include">
+            <e p="goenigm.cs" t="Include" />
+            <e p="GoGo.cs" t="Include" />
+          </e>
+          <e p="KeyBind.cs" t="Include" />
           <e p="Premiere_salle" t="Include">
             <e p="camscript.cs" t="Include" />
             <e p="Doors.cs" t="Include" />
@@ -354,6 +358,18 @@
           </e>
           <e p="Sprites" t="Include">
             <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+        <e p="UnityGrassGeometryShader-master" t="Include">
+          <e p="Assets" t="Include">
+            <e p="Grass.shader" t="Include" />
+            <e p="Shaders" t="Include">
+              <e p="CustomTessellation.cginc" t="Include" />
+              <e p="TessellationExample.shader" t="Include" />
+            </e>
+          </e>
+          <e p="ProjectSettings" t="Include">
+            <e p="ProjectVersion.txt" t="Include" />
           </e>
         </e>
       </e>

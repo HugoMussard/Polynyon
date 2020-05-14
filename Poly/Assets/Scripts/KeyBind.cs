@@ -36,6 +36,7 @@ public class KeyBind : MonoBehaviour
             PlayerPrefs.SetString("left", "Q");
             PlayerPrefs.SetString("right", "D");
             PlayerPrefs.SetString("vocal", "V");
+            PlayerPrefs.SetString("run", "W");
             PlayerPrefs.Save();
         }
         
