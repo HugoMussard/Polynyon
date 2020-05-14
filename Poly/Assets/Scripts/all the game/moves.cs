@@ -22,6 +22,9 @@ public class moves : MonoBehaviourPunCallbacks
     public Animator Anim;
     private double x = 0; 
     private double z = 0;
+    public static bool Istrapped;
+    public LayerMask trapmask;
+  
     
     private float sp = 0.1f; 
     
@@ -99,8 +102,9 @@ public class moves : MonoBehaviourPunCallbacks
         {
             Anim.SetBool("isJumping", false);
         }
-
-
+        
+        
+        Istrapped = Physics.CheckSphere(groundCheck.position, groundis, trapmask);
 
     }
 }

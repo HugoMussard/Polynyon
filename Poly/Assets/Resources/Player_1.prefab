@@ -320,9 +320,6 @@ MonoBehaviour:
   trapmask:
     serializedVersion: 2
     m_Bits: 256
-  interactmask:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!114 &8263823287175323135
 MonoBehaviour:
   m_ObjectHideFlags: 0
