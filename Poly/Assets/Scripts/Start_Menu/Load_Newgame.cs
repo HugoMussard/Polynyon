@@ -14,9 +14,7 @@ public class Load_Newgame : MonoBehaviourPunCallbacks
 {
 
     private string save;
-    
-    
-    
+
     void Start()
     {
         save = PlayerPrefs.GetString("save");
@@ -32,7 +30,7 @@ public class Load_Newgame : MonoBehaviourPunCallbacks
     public void NewGame()
     {
         if (save != "") Debug.Log("Etes vous sur de vouloir écraser votre sauvegarde ?");
-        PhotonNetwork.LoadLevel("IleBombe");
+        SceneManager.LoadScene("premiere_salle");
     }
     
 }

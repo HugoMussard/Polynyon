@@ -28,18 +28,7 @@ public class KeyBind : MonoBehaviour
     
     private void Awake()
     {
-        if (!File.Exists($"{Application.dataPath}/firstrun"))
-        {
-            File.Create($"{Application.dataPath}/firstrun");
-            PlayerPrefs.SetString("up", "Z");
-            PlayerPrefs.SetString("down", "S");
-            PlayerPrefs.SetString("left", "Q");
-            PlayerPrefs.SetString("right", "D");
-            PlayerPrefs.SetString("vocal", "V");
-            PlayerPrefs.SetString("run", "W");
-            PlayerPrefs.Save();
-        }
-        
+
     }
 
     void Start()

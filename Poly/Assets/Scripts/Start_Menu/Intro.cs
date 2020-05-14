@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
+using System.IO;
+
 
 public class Intro : MonoBehaviour
 {
@@ -16,6 +17,18 @@ public class Intro : MonoBehaviour
     {
         hg.volume = PlayerPrefs.GetFloat("volume");
         QualitySettings.vSyncCount = 1; 
+        
+        if (!File.Exists($"{Application.dataPath}/firstrun"))
+        {
+            File.Create($"{Application.dataPath}/firstrun");
+            PlayerPrefs.SetString("up", "Z");
+            PlayerPrefs.SetString("down", "S");
+            PlayerPrefs.SetString("left", "Q");
+            PlayerPrefs.SetString("right", "D");
+            PlayerPrefs.SetString("vocal", "V");
+            PlayerPrefs.SetString("run", "W");
+            PlayerPrefs.Save();
+        }
     }
 
     void Start()
