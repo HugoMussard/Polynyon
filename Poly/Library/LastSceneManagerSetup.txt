@@ -56,7 +56,7 @@ sceneSetups:
   isActive: 0
   isSubScene: 0
 - path: Assets/Scenes/premiere_ile/IleBombe.unity
-  isLoaded: 0
+  isLoaded: 1
   isActive: 0
   isSubScene: 0
 - path: Assets/Scenes/enigma1-1.unity

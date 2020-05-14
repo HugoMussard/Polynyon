@@ -26,7 +26,7 @@ public class Intro : MonoBehaviour
             PlayerPrefs.SetString("left", "Q");
             PlayerPrefs.SetString("right", "D");
             PlayerPrefs.SetString("vocal", "V");
-            PlayerPrefs.SetString("run", "W");
+            PlayerPrefs.SetString("run", "LeftShift");
             PlayerPrefs.Save();
         }
     }
