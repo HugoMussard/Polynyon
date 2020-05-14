@@ -36,13 +36,13 @@ public class moves : MonoBehaviourPunCallbacks
         string up = PlayerPrefs.GetString("up");
         string down = PlayerPrefs.GetString("down");
         string left = PlayerPrefs.GetString("left");
-        string right = PlayerPrefs.GetString("right"); 
-        
+        string right = PlayerPrefs.GetString("right");
+
         KeyCode upCode = (KeyCode) Enum.Parse(typeof(KeyCode), up);
         KeyCode downCode = (KeyCode) Enum.Parse(typeof(KeyCode), down);
         KeyCode leftCode = (KeyCode) Enum.Parse(typeof(KeyCode), left);
         KeyCode rightCode = (KeyCode) Enum.Parse(typeof(KeyCode), right);
-        
+
         if (!photonView.IsMine) return;
         Anim.SetFloat("vertical", Input.GetAxis("Vertical"));
 
@@ -55,15 +55,18 @@ public class moves : MonoBehaviourPunCallbacks
         else if (Input.GetKey(leftCode) && x > -1) x -= 0.1f;
         else if (x >= -0.1 && x <= 0.1) x = 0; 
         else if (x > 0) x -= 0.1f; 
-        else if (x < 0) x += 0.1f; 
+        else if (x < 0) x += 0.1f;
+
         
-        
+
         if (Input.GetKey(upCode) && z < 1) z += 0.1f; 
         else if (Input.GetKey(downCode) && z > -1) z -= 0.1f;
         else if (z >= -0.1 && z <= 0.1) z = 0; 
         else if (z > 0) z -= 0.1f; 
-        else if (z < 0) z += 0.1f; 
-            
+        else if (z < 0) z += 0.1f;
+        
+        
+
         Vector3 move = transform.right * (float) x + transform.forward * (float) z;
         control.Move(move * (speed * Time.deltaTime));
         

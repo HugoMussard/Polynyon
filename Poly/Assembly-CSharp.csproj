@@ -92,6 +92,8 @@
     <Compile Include="Assets\Photon\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
     <Compile Include="Assets\Photon\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
     <Compile Include="Assets\Photon\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
+    <Compile Include="Assets\Scripts\HUB\GoGo.cs" />
+    <Compile Include="Assets\Scripts\HUB\goenigm.cs" />
     <Compile Include="Assets\Scripts\KeyBind.cs" />
     <Compile Include="Assets\Scripts\Premiere_salle\Doors.cs" />
     <Compile Include="Assets\Scripts\Premiere_salle\camscript.cs" />
@@ -114,6 +116,7 @@
     <Compile Include="Assets\Scripts\all the game\interactonoff.cs" />
     <Compile Include="Assets\Scripts\all the game\moves.cs" />
     <Compile Include="Assets\Scripts\all the game\pression_plate_hub.cs" />
+    <Compile Include="Assets\Scripts\enigme_1-1\grilles.cs" />
     <Compile Include="Assets\Scripts_lobby\CreateUserName.cs" />
     <Compile Include="Assets\Scripts_lobby\PhotonLobby.cs" />
     <Compile Include="Assets\SpeedTutor_Full_Menu_System\GUI Elements\UI_BrightnessShader\Brightness.cs" />
