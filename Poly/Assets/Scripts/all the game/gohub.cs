@@ -7,9 +7,10 @@ using UnityEngine.SceneManagement;
 
 public class gohub : MonoBehaviourPunCallbacks
 {
+    public Scene load;
     private void OnTriggerEnter(Collider collider)
     {
-        PhotonNetwork.LoadLevel("HUB");
+        SceneManager.LoadScene(load.handle);
     }
     
 }
