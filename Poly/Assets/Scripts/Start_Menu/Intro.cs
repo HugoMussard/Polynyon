@@ -16,8 +16,7 @@ public class Intro : MonoBehaviour
     private void Awake()
     {
         hg.volume = PlayerPrefs.GetFloat("volume");
-        QualitySettings.vSyncCount = 1; 
-        
+
         if (!File.Exists($"{Application.dataPath}/firstrun"))
         {
             File.Create($"{Application.dataPath}/firstrun");

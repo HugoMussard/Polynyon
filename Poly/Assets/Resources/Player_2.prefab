@@ -262,16 +262,13 @@ MonoBehaviour:
   groundis: 0.5
   groundmask:
     serializedVersion: 2
-    m_Bits: 544
+    m_Bits: 288
   isgrounded: 0
   velocity: {x: 0, y: 0, z: 0}
   jumphigh: 3
   parent: {fileID: 7362143612910217909}
   Anim: {fileID: 8795732428264628786}
   trapmask:
-    serializedVersion: 2
-    m_Bits: 0
-  interactmask:
     serializedVersion: 2
     m_Bits: 0
 --- !u!114 &8263823287175323135
