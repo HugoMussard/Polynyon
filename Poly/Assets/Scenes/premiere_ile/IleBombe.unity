@@ -1425,7 +1425,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &175073682
 MonoBehaviour:
@@ -10614,7 +10614,7 @@ GameObject:
   - component: {fileID: 1269399676}
   - component: {fileID: 1269399675}
   - component: {fileID: 1269399674}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}

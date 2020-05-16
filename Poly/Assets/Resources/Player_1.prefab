@@ -311,7 +311,7 @@ MonoBehaviour:
   groundis: 0.5
   groundmask:
     serializedVersion: 2
-    m_Bits: 544
+    m_Bits: 256
   isgrounded: 0
   velocity: {x: 0, y: 0, z: 0}
   jumphigh: 3

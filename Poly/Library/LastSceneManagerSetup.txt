@@ -47,19 +47,19 @@ sceneSetups:
   isLoaded: 0
   isActive: 0
   isSubScene: 0
-- path: Assets/Scenes/premiere_ile/HUB.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
 - path: Assets/Scenes/premiere_salle/premiere_salle.unity
   isLoaded: 0
   isActive: 0
   isSubScene: 0
-- path: Assets/Scenes/premiere_ile/IleBombe.unity
+- path: Assets/Scenes/premiere_ile/HUB.unity
   isLoaded: 0
   isActive: 0
   isSubScene: 0
 - path: Assets/Scenes/enigma1-1.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/premiere_ile/IleBombe.unity
   isLoaded: 0
   isActive: 0
   isSubScene: 0

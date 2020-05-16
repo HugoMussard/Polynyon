@@ -27,10 +27,11 @@ public class Load_Newgame : MonoBehaviourPunCallbacks
         else PhotonNetwork.LoadLevel($"{save}");
     }
 
+
     public void NewGame()
     {
         if (save != "") Debug.Log("Etes vous sur de vouloir écraser votre sauvegarde ?"); 
-        SceneManager.LoadScene("Enigme_plaques");
+        SceneManager.LoadScene("premiere_salle");
 
     }
     

@@ -11,7 +11,7 @@ public class goenigm : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rend = GetComponent<Renderer>();
+        
     }
 
     // Update is called once per frame
