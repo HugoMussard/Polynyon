@@ -39,7 +39,7 @@ public class TW_AK_Ile2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     { 
-        while (total < 4) Init();
+        while (total < 5) Init();
         
         if (tw1 == 1) TW1.SetActive(true);
         if (tw2 == 1) TW2.SetActive(true);

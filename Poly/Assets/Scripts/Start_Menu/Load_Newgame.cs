@@ -34,5 +34,11 @@ public class Load_Newgame : MonoBehaviourPunCallbacks
         SceneManager.LoadScene("premiere_salle");
 
     }
+
+    public void Biomes()
+    {
+        SceneManager.UnloadSceneAsync("Load_NewGame"); 
+        SceneManager.LoadScene("BIOMES SOLVED", LoadSceneMode.Additive); 
+    }
     
 }

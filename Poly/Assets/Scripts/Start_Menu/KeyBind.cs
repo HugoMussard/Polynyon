@@ -24,12 +24,11 @@ public class KeyBind : MonoBehaviour
     
     public TextMeshProUGUI Vocal;
     public TMP_InputField VocalInput;
+    
+    public TextMeshProUGUI Run;
+    public TMP_InputField RunInput;
 
     
-    private void Awake()
-    {
-
-    }
 
     void Start()
     {
@@ -37,7 +36,8 @@ public class KeyBind : MonoBehaviour
         Down.text = PlayerPrefs.GetString("down");
         Left.text = PlayerPrefs.GetString("left");
         Right.text = PlayerPrefs.GetString("right");
-        Vocal.text = PlayerPrefs.GetString("vocal"); 
+        Vocal.text = PlayerPrefs.GetString("vocal");
+        Run.text = PlayerPrefs.GetString("run"); 
     }
 
     public void Apply()
@@ -47,6 +47,7 @@ public class KeyBind : MonoBehaviour
         if (!String.IsNullOrEmpty(LeftInput.text)) PlayerPrefs.SetString("left", LeftInput.text);
         if (!String.IsNullOrEmpty(RightInput.text)) PlayerPrefs.SetString("right", RightInput.text);
         if (!String.IsNullOrEmpty(VocalInput.text)) PlayerPrefs.SetString("vocal", VocalInput.text);
+        if (!String.IsNullOrEmpty(RunInput.text)) PlayerPrefs.SetString("run", Run.text);
         PlayerPrefs.Save();
     }
 

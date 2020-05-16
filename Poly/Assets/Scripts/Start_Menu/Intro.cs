@@ -16,8 +16,7 @@ public class Intro : MonoBehaviour
     private void Awake()
     {
         hg.volume = PlayerPrefs.GetFloat("volume");
-        QualitySettings.vSyncCount = 1; 
-        
+
         if (!File.Exists($"{Application.dataPath}/firstrun"))
         {
             File.Create($"{Application.dataPath}/firstrun");
@@ -26,7 +25,7 @@ public class Intro : MonoBehaviour
             PlayerPrefs.SetString("left", "Q");
             PlayerPrefs.SetString("right", "D");
             PlayerPrefs.SetString("vocal", "V");
-            PlayerPrefs.SetString("run", "W");
+            PlayerPrefs.SetString("run", "LeftShift");
             PlayerPrefs.Save();
         }
     }

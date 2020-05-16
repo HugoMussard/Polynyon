@@ -37,30 +37,32 @@ public class HUD : MonoBehaviour
             ping.SetActive(!ping.activeSelf);
         }
         txt.text = $"{PhotonNetwork.GetPing()} ms";
-        
 
-        if (timer >= 0.0f && canCount)
+
+        if (SceneManager.GetSceneByName("IleBombe").isLoaded)
         {
-            timer -= Time.deltaTime;
-            if (timer >= 0.0f) txt2.text = $"{minutes}:{timer:F}"; 
-        }
-        
-        else if (timer <= 0.0f && !doOnce)
-        {
-            if (minutes > 0)
+            if (timer >= 0.0f && canCount)
             {
-                minutes--;
-                timer = 60.0f; 
+                timer -= Time.deltaTime;
+                if (timer >= 0.0f) txt2.text = $"{minutes}:{timer:F}";
             }
-            else
+
+            else if (timer <= 0.0f && !doOnce)
             {
-                canCount = false;
-                doOnce = true; 
-                txt2.text = "0.00";
-                timer = 0.0f; 
+                if (minutes > 0)
+                {
+                    minutes--;
+                    timer = 60.0f;
+                }
+                else
+                {
+                    canCount = false;
+                    doOnce = true;
+                    txt2.text = "0.00";
+                    timer = 0.0f;
+                }
+
             }
-            
         }
-        
     }
 }

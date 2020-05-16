@@ -36,6 +36,12 @@ public class moves : MonoBehaviourPunCallbacks
     }
     
 
+    private void OnTriggerEnter(Collision other)
+    {
+        Debug.Log("sa mere a la pomme OMG");
+        transform.position = new Vector3(12, -19, 2);
+    }
+    
     void Update()
     {
         string up = PlayerPrefs.GetString("up");
@@ -65,7 +71,7 @@ public class moves : MonoBehaviourPunCallbacks
         else if (x > 0) x -= 0.1f; 
         else if (x < 0) x += 0.1f;
 
-        if (Input.GetKey(runCode)) speed = 12f;
+        if (Input.GetKey(runCode) && isgrounded) speed = 12f;
         else speed = 8f; 
 
         if (Input.GetKey(upCode) && z < 1) z += sp; 
