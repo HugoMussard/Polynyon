@@ -1,18 +1,17 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
 using UnityEngine;
 
-public class TP_Ile2 : MonoBehaviour
+public class TP_Ile2 : MonoBehaviourPunCallbacks
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    private void OnTriggerEnter(Collider other)
+    public GameObject tp1; 
+    
+  
+    private void OnTriggerStay(Collider other1)
     {
-        throw new NotImplementedException();
+        other1.gameObject.transform.position = tp1.gameObject.transform.position;
     }
 }

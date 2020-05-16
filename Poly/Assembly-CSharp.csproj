@@ -96,7 +96,6 @@
      <Compile Include="Assets\Scripts\Ile2\LetterUPDOWN.cs" />
      <Compile Include="Assets\Scripts\Ile2\Levier.cs" />
      <Compile Include="Assets\Scripts\Ile2\MainCable.cs" />
-     <Compile Include="Assets\Scripts\Ile2\TW_AK_Ile2.cs" />
      <Compile Include="Assets\Scripts\Scripts_lobby\CreateUserName.cs" />
      <Compile Include="Assets\Scripts\Scripts_lobby\PhotonLobby.cs" />
      <Compile Include="Assets\Scripts\Start_Menu\Blackscreen.cs" />

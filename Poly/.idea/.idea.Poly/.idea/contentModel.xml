@@ -271,7 +271,6 @@
             <e p="LetterUPDOWN.cs" t="Include" />
             <e p="Levier.cs" t="Include" />
             <e p="MainCable.cs" t="Include" />
-            <e p="TW_AK_Ile2.cs" t="Include" />
           </e>
           <e p="Scripts_lobby" t="Include">
             <e p="CreateUserName.cs" t="Include" />

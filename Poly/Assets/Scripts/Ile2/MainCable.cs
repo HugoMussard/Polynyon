@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = System.Random;
 
 public class MainCable : MonoBehaviour
 {
@@ -42,6 +43,19 @@ public class MainCable : MonoBehaviour
     public GameObject ak4; 
     public GameObject ak5; 
     public GameObject ak6;
+    
+    private int _tw1;
+    private int _tw2;
+    private int _tw3;
+    private int _tw4;
+    private int _tw5;
+    private int _tw6;
+    private int _ak1;
+    private int _ak2;
+    private int _ak3;
+    private int _ak4;
+    private int _ak5;
+    private int _ak6;
 
     private List<GameObject> _cables;
     private List<GameObject> _tws;
@@ -49,19 +63,95 @@ public class MainCable : MonoBehaviour
 
     private bool check = false;
 
-    private bool mybool1 = false; 
-    private bool mybool2 = false; 
-    private bool mybool3 = false; 
-    private bool mybool4 = false; 
-    private bool mybool5 = false; 
-    private bool mybool6 = false;
+    private bool mybool1; 
+    private bool mybool2; 
+    private bool mybool3; 
+    private bool mybool4; 
+    private bool mybool5; 
+    private bool mybool6;
 
-    private int validCables = 0;
+    Random rnd = new Random();
+    
     private int i = 0;
+
+    private int validCables = 0; 
+    
+    
+    private void Init()
+    {
+        tw1.SetActive(false);
+        tw2.SetActive(false);
+        tw3.SetActive(false);
+        tw4.SetActive(false);
+        tw5.SetActive(false);
+        tw6.SetActive(false);
+        
+        ak1.SetActive(false);
+        ak2.SetActive(false);
+        ak3.SetActive(false);
+        ak4.SetActive(false);
+        ak5.SetActive(false);
+        ak6.SetActive(false);
+
+        _tw1 = rnd.Next(2);
+        _tw2 = rnd.Next(2);
+        _tw3 = rnd.Next(2);
+        _tw4 = rnd.Next(2);
+        _tw5 = rnd.Next(2);
+        _tw6 = rnd.Next(2);
+        
+
+        _ak1 = rnd.Next(2); 
+        _ak2 = rnd.Next(2);
+        _ak3 = rnd.Next(2);
+        _ak4 = rnd.Next(2);
+        _ak5 = rnd.Next(2);
+        _ak6 = rnd.Next(2);
+
+        if (_tw1 == 1) tw1.SetActive(true);
+        if (_tw2 == 1) tw2.SetActive(true);
+        if (_tw3 == 1) tw3.SetActive(true);
+        if (_tw4 == 1) tw4.SetActive(true);
+        if (_tw5 == 1) tw5.SetActive(true);
+        if (_tw6 == 1) tw6.SetActive(true);
+        
+        if (_ak1 == 1) ak1.SetActive(true);
+        if (_ak2 == 1) ak2.SetActive(true);
+        if (_ak3 == 1) ak3.SetActive(true);
+        if (_ak4 == 1) ak4.SetActive(true);
+        if (_ak5 == 1) ak5.SetActive(true);
+        if (_ak6 == 1) ak6.SetActive(true);
+    }
+
+    private int _annexeStart()
+    {
+        int var = 0;
+        for(int j = 0; j < _cables.Count; j++)
+            if (ToCut(_tws[j], _aks[j], _cables[j]))
+            {
+                var++;
+            }
+        
+        return var;
+    }
     
     
     void Start()
     {
+        
+        _cables = new List<GameObject>() {cable1, cable2, cable3, cable4, cable5, cable6};
+        _tws = new List<GameObject>() {tw1, tw2, tw3, tw4, tw5, tw6};
+        _aks = new List<GameObject>() {ak1, ak2, ak3, ak4, ak5, ak6};
+        
+        do
+        {
+            Init();
+        } while (_annexeStart() != 3);
+
+        validCables = _annexeStart();
+
+        material_principal.color = new Color(255, 255, 255, 0);
+        
         coul1.color = new Color(coul1.color.r, coul1.color.g, coul1.color.b, 1);
         coul2.color = new Color(coul2.color.r, coul2.color.g, coul2.color.b, 1);
         coul3.color = new Color(coul3.color.r, coul3.color.g, coul3.color.b, 1);
@@ -69,21 +159,10 @@ public class MainCable : MonoBehaviour
         coul5.color = new Color(coul5.color.r, coul5.color.g, coul5.color.b, 1);
         coul6.color = new Color(coul6.color.r, coul6.color.g, coul6.color.b, 1);
         
-        _cables = new List<GameObject>() {cable1, cable2, cable3, cable4, cable5, cable6};
-        _tws = new List<GameObject>() {tw1, tw2, tw3, tw4, tw5, tw6};
-        _aks = new List<GameObject>() {ak1, ak2, ak3, ak4, ak5, ak6};
-
-        for(int j = 0; j < _cables.Count; j++)
-            if (ToCut(_tws[j], _aks[j], _cables[j]))
-            {
-                Debug.Log(j);
-                validCables++;
-            }
-        Debug.Log(validCables);
         
         PlayerPrefs.SetInt("LTcables", 0);
         PlayerPrefs.Save();
-
+    
     }
 
 
@@ -168,8 +247,12 @@ public class MainCable : MonoBehaviour
             } 
             mybool6 = lever6.state; 
         }
-
-        if (i == validCables) 
+        
+        Debug.Log(i);
+        if (i == validCables)
+        {
             material_principal.color = new Color(0, 1, 0);
+        }
+           
     }
 }

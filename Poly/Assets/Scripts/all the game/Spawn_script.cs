@@ -12,6 +12,7 @@ using UnityEngine.UI;
 using Random = System.Random;
 using UnityEngine.SceneManagement; 
 using UnityEngine;
+using Object = System.Object;
 
 public class Spawn_script : MonoBehaviourPunCallbacks
 {
@@ -55,6 +56,8 @@ public class Spawn_script : MonoBehaviourPunCallbacks
       }
 
    }
+   
+ 
 
    public void Resume()
    {
