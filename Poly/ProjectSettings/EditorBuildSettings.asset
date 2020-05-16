@@ -56,4 +56,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Enigmes/Enigme_plaques.unity
     guid: 99048458569701b41962f2808da6441f
+  - enabled: 1
+    path: Assets/Scenes/Intro/Starting_Scenes.unity
+    guid: 0dd9c6309bf9b4e4ea28c9f846525fd9
+  - enabled: 1
+    path: Assets/Scenes/Intro/BIOMES SOLVED.unity
+    guid: 915a8a0abf88dfe409389144b13a7724
   m_configObjects: {}

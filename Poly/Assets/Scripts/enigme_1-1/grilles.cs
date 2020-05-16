@@ -18,7 +18,9 @@ public class grilles : MonoBehaviour
     void Update()
     {
         if (button.state && button2.state)
+        {
             transf.position = new Vector3(transf.position.x, 8f, transf.position.z);
+        }
 
     }
 }

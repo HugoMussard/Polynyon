@@ -250,7 +250,9 @@
             <e p="Spawn_script.cs" t="Include" />
           </e>
           <e p="enigme_1-1" t="Include">
+            <e p="antigrille.cs" t="Include" />
             <e p="grilles.cs" t="Include" />
+            <e p="Jewel.cs" t="Include" />
           </e>
           <e p="Enigme_Chemin_pic" t="Include">
             <e p="ButtonPush.cs" t="Include" />
