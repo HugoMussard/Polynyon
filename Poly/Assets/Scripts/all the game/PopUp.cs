@@ -24,6 +24,7 @@ public class PopUp : MonoBehaviour
         PopUpTxt.text = PopUpWarning;
         Invoke("Disappear", 3);
     }
+    
     private void Disappear()
     {
         SceneManager.UnloadSceneAsync("Pop Up"); 

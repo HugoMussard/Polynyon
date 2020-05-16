@@ -36,6 +36,12 @@ public class moves : MonoBehaviourPunCallbacks
     }
     
 
+    private void OnTriggerEnter(Collision other)
+    {
+        Debug.Log("sa mere a la pomme OMG");
+        transform.position = new Vector3(12, -19, 2);
+    }
+    
     void Update()
     {
         string up = PlayerPrefs.GetString("up");
