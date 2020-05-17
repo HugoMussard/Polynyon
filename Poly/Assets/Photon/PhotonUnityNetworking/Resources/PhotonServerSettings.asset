@@ -31,5 +31,8 @@ MonoBehaviour:
   RpcList:
   - ClickRpc
   - DestroyRpc
+  - Setbool1
+  - SetBool
+  - UnsetBool
   DisableAutoOpenWizard: 1
   ShowSettings: 0

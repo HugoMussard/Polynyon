@@ -10,9 +10,6 @@ public class Interaction : MonoBehaviourPunCallbacks
     public Camera cam;
     
 
-    // Start is called before the first frame update
-   
-
     // Update is called once per frame
     void Update()
     {
@@ -45,8 +42,11 @@ public class Interaction : MonoBehaviourPunCallbacks
                     #endregion
                 
                     float rad = interactable.radius;
-                    if (diff.x<rad && diff.y<rad && diff.z <rad)
+                    if (diff.x < rad && diff.y < rad && diff.z < rad)
+                    {
                         interactable.state = !interactable.state;
+                        
+                    }
                 }
             }
         }
