@@ -61,6 +61,9 @@ public class MainCable : MonoBehaviour
     private List<GameObject> _tws;
     private List<GameObject> _aks;
 
+    public UnlockIndices_Ile2 script_unlock;
+    
+
     private bool check = false;
 
     private bool mybool1; 
@@ -73,9 +76,17 @@ public class MainCable : MonoBehaviour
     Random rnd = new Random();
     
     private int i = 0;
-
-    private int validCables = 0; 
+    private int indice = 1; 
     
+
+    private int validCables = 0;
+
+
+    private void Unlock()
+    {
+        script_unlock.nb += indice;
+        indice += 1; 
+    }
     
     private void Init()
     {
@@ -193,6 +204,7 @@ public class MainCable : MonoBehaviour
             if (ToCut(_tws[0], _aks[0], _cables[0]))
             {
                 coul1.color = new Color(coul1.color.r, coul1.color.g, coul1.color.b, 0);
+                Unlock();
                 i++;
             }
             else PlayerPrefs.SetInt("LTcables", PlayerPrefs.GetInt("LTcables") + 1);
@@ -204,6 +216,7 @@ public class MainCable : MonoBehaviour
             if (ToCut(_tws[1], _aks[1], _cables[1]))
             {
                 coul2.color = new Color(coul2.color.r, coul2.color.g, coul2.color.b, 0);
+                Unlock();
                 i++;
             }
             mybool2 = lever2.state; 
@@ -214,6 +227,7 @@ public class MainCable : MonoBehaviour
             if (ToCut(_tws[2], _aks[2], _cables[2]))
             {
                 coul3.color = new Color(coul3.color.r, coul3.color.g, coul3.color.b, 0);
+                Unlock();
                 i++;
             }
             mybool3 = lever3.state; 
@@ -224,6 +238,7 @@ public class MainCable : MonoBehaviour
             if (ToCut(_tws[3], _aks[3], _cables[3]))
             {
                 coul4.color = new Color(coul4.color.r, coul4.color.g, coul4.color.b, 0);
+                Unlock();
                 i++;
             }
             mybool4 = lever4.state; 
@@ -234,6 +249,7 @@ public class MainCable : MonoBehaviour
             if (ToCut(_tws[4], _aks[4], _cables[4]))
             {
                 coul5.color = new Color(coul5.color.r, coul5.color.g, coul5.color.b, 0);
+                Unlock();
                 i++;
             }
             mybool5 = lever5.state; 
@@ -243,12 +259,12 @@ public class MainCable : MonoBehaviour
             if (ToCut(_tws[5], _aks[5], _cables[5]))
             {
                 coul6.color = new Color(coul6.color.r, coul6.color.g, coul6.color.b, 0);
+                Unlock();
                 i++;
             } 
             mybool6 = lever6.state; 
         }
-        
-        Debug.Log(i);
+    
         if (i == validCables)
         {
             material_principal.color = new Color(0, 1, 0);
