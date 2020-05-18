@@ -12,6 +12,7 @@ public class TP_Ile2 : MonoBehaviourPunCallbacks
   
     private void OnTriggerStay(Collider other1)
     {
+        Debug.Log("zbi");
         other1.gameObject.transform.position = tp1.gameObject.transform.position;
     }
 }

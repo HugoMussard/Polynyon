@@ -34,5 +34,7 @@ MonoBehaviour:
   - Setbool1
   - SetBool
   - UnsetBool
+  - Set_act_coll
+  - Set_act_coll2
   DisableAutoOpenWizard: 1
   ShowSettings: 0

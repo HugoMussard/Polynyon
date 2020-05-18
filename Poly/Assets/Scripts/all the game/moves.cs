@@ -50,8 +50,8 @@ public class moves : MonoBehaviourPunCallbacks
         KeyCode leftCode = (KeyCode) Enum.Parse(typeof(KeyCode), left);
         KeyCode rightCode = (KeyCode) Enum.Parse(typeof(KeyCode), right);
         KeyCode runCode = (KeyCode) Enum.Parse(typeof(KeyCode), run);
-            
-            
+
+
         if (!photonView.IsMine) return;
         Anim.SetFloat("vertical", Input.GetAxis("Vertical"));
 
