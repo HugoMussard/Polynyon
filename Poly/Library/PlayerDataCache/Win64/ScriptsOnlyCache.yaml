@@ -44,6 +44,8 @@ ScriptsOnlyBuild:
     - indice
     - interactonoff
     - moves
+    PhotonUnityNetworking.Editor.dll:
+    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.Utilities.dll:
     - Photon.Pun.UtilityScripts.SmoothSyncMovement
     PhotonUnityNetworking.dll:
@@ -61,6 +63,14 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -352,6 +362,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13406}
     - Class: 114
       Script: {instanceID: 13492}
+    - Class: 114
+      Script: {instanceID: 13962}
     - Class: 114
       Script: {instanceID: 14058}
     - Class: 115
@@ -976,6 +988,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 4
       Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
     - Class: 23
@@ -994,6 +1008,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 90
@@ -1006,8 +1022,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 11474}
     - Class: 114
       Script: {instanceID: 12272}
     - Class: 114
@@ -1724,7 +1738,7 @@ ScriptsOnlyBuild:
     className: OnClickDestroy
   - hash:
       serializedVersion: 2
-      Hash: ec46b32a33a9e778fbc626b2c5d124f7
+      Hash: c4dddabcbcb9f0fdcf13d3c52f4544bd
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Spawn_script
@@ -1742,7 +1756,7 @@ ScriptsOnlyBuild:
     className: SoundScript
   - hash:
       serializedVersion: 2
-      Hash: 29b514d86a2db78713a91d98bf074301
+      Hash: 03b76382d0201621de1e1fc7bfd01efb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MainCable
@@ -1850,7 +1864,7 @@ ScriptsOnlyBuild:
     className: SignalReceiver
   - hash:
       serializedVersion: 2
-      Hash: dbc1d6560711161def658f8b2478aee1
+      Hash: 97068396c3ce0d3fd7bf884cfcde4829
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UnlockIndices_Ile2
@@ -2379,4 +2393,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Enigmes/Enigme_plaques.unity
   - Assets/Scenes/Intro/Starting_Scenes.unity
   - Assets/Scenes/Intro/BIOMES SOLVED.unity
-  playerPath: D:/Utilisateur/Bureau/Nouveau dossier (3)/Polypoly.exe
+  playerPath: D:/Utilisateur/Bureau/JeuPoly/Polypoly.exe

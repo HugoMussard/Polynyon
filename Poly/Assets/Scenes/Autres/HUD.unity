@@ -308,7 +308,6 @@ MonoBehaviour:
   txt: {fileID: 2102785575}
   ping: {fileID: 499193038}
   txt2: {fileID: 1812094317}
-  mainTimer: 60
 --- !u!4 &470121528
 Transform:
   m_ObjectHideFlags: 0
@@ -568,7 +567,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -213, y: 0}
+  m_AnchoredPosition: {x: -266.6, y: -172.8}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1812094317

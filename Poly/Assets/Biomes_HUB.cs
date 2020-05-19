@@ -5,22 +5,19 @@ using Photon.Pun;
 using Photon.Realtime;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Events;
-using UnityEngine.UI;
-using Random = System.Random;
 using UnityEngine.SceneManagement; 
-using UnityEngine;
 
-public class Biomes_HUB : MonoBehaviour
+
+public class Biomes_HUB : MonoBehaviourPunCallbacks
 {
     public void _FstRoom()
     {
         SceneManager.LoadScene("premiere_salle"); 
     }
-
+    
     public void _Bombe()
     {
-        SceneManager.LoadScene("IleBombe"); 
+        SceneManager.LoadScene("IleBombe");
     }
 
     public void Hub()

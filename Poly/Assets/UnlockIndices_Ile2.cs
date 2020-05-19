@@ -31,18 +31,16 @@ public class UnlockIndices_Ile2 : MonoBehaviourPunCallbacks
         coll_tente_verte.SetActive(false);
         explosion_planche.Stop(true);
     }
-
-    [PunRPC]
-    public void Set_act_coll()
+    
+    public void Set_act_coll(GameObject collider)
     {
-        coll_trappe.SetActive(true);
+        collider.SetActive(true);
     }
-    
-    
-    [PunRPC]
-    public void Set_act_coll2()
+
+    public void Explosion_FX()
     {
-        coll_tente_verte.SetActive(true);
+        if (!explosion_planche.isPlaying) 
+            explosion_planche.Play(true);
     }
 
     // Update is called once per frame
@@ -58,15 +56,15 @@ public class UnlockIndices_Ile2 : MonoBehaviourPunCallbacks
             if (nb == 2)
             {
                 anim2.SetBool("Trappe_bool", true);
-                photonView.RPC("Set_act_coll", RpcTarget.All);
+                Set_act_coll(coll_trappe);
                 nb = 0; 
             }
 
             if (nb == 3)
             {
-                if (!explosion_planche.isPlaying) explosion_planche.Play(true);
                 anim3.SetBool("Explosion_bool", true);
-                photonView.RPC("Set_act_coll2", RpcTarget.All);
+                Invoke("Explosion_FX", 1.7f);
+                Set_act_coll(coll_tente_verte);
                 nb = 0;
             }
         

@@ -27,7 +27,7 @@ public class HUD : MonoBehaviour
 
     private void Start()
     {
-        timer = 8.0f; 
+        timer = 0.0f; 
     }
 
     void Update()
@@ -41,27 +41,31 @@ public class HUD : MonoBehaviour
 
         if (SceneManager.GetSceneByName("IleBombe").isLoaded)
         {
-            if (timer >= 0.0f && canCount)
+            if (PlayerPrefs.GetInt("Malus_bool") == 1)
             {
-                timer -= Time.deltaTime;
-                if (timer >= 0.0f) txt2.text = $"{minutes}:{timer:F}";
+                PlayerPrefs.SetInt("Malus_bool", 0);
+                PlayerPrefs.Save();
+                minutes -= 5; 
             }
 
-            else if (timer <= 0.0f && !doOnce)
+            if (minutes > 0)
             {
-                if (minutes > 0)
+                if (timer >= 0.0f)
+                {
+                    timer -= Time.deltaTime;
+                    if (timer >= 0.0f) txt2.text = $"{minutes}:{timer:F}";
+                }
+
+                else if (timer < 0.0f)
                 {
                     minutes--;
                     timer = 60.0f;
                 }
-                else
-                {
-                    canCount = false;
-                    doOnce = true;
-                    txt2.text = "0.00";
-                    timer = 0.0f;
-                }
-
+            }
+            else
+            {
+                txt2.text = "0.00";
+                timer = 0.0f;
             }
         }
     }

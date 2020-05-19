@@ -31,7 +31,7 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
     private void Awake()
     {
         lobby = this;
-        PhotonNetwork.AutomaticallySyncScene = true;
+        PhotonNetwork.AutomaticallySyncScene = true; 
     }
     
     private void Start()
@@ -73,7 +73,7 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
         PlayerPrefs.SetString("roomname", nomchambre);
         PlayerPrefs.Save();
         RoomOptions RoomOps = new RoomOptions {IsVisible = true, IsOpen = true, MaxPlayers = 2};
-        Debug.Log("On cree une chambre ID : " +nomchambre);
+        Debug.Log("On cree une chambre ID : " + nomchambre);
         PhotonNetwork.JoinOrCreateRoom(nomchambre, RoomOps, TypedLobby.Default);
 
     }
@@ -89,7 +89,7 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         Debug.Log("On est dans une room + "+ PhotonNetwork.CurrentRoom.Name
-        + "avec {1} joueurs" +PhotonNetwork.CurrentRoom.Players.Count);
+        + "avec {1} joueurs" + PhotonNetwork.CurrentRoom.Players.Count);
         
     }
 
@@ -97,8 +97,6 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
     {
         if (PhotonNetwork.InRoom)
         {
-            //Debug.Log(Convert.ToString(PhotonNetwork.CurrentRoom.Players.Count));
-
             if (PhotonNetwork.CurrentRoom.PlayerCount == 1)
             {
                 InfoOnConnection.text = "Waiting for a player";

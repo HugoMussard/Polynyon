@@ -12,6 +12,8 @@ using UnityEngine.UI;
 using Random = System.Random;
 using UnityEngine.SceneManagement; 
 using UnityEngine;
+using UnityEngine.UIElements;
+using Cursor = UnityEngine.Cursor;
 using Object = System.Object;
 
 public class Spawn_script : MonoBehaviourPunCallbacks
@@ -24,7 +26,15 @@ public class Spawn_script : MonoBehaviourPunCallbacks
    private GameObject clone1;
    private GameObject clone2;
    private camscript script1; 
-   private camscript script2; 
+   private camscript script2;
+
+   public GameObject cam1;
+   public GameObject cam2;
+   public GameObject cam3;
+
+   private bool cam1_bool; 
+   private bool cam2_bool; 
+   private bool cam3_bool; 
    
    
    private void Start()
@@ -38,14 +48,15 @@ public class Spawn_script : MonoBehaviourPunCallbacks
             SceneManager.LoadSceneAsync("Blackscreen", LoadSceneMode.Additive);
       if (!SceneManager.GetSceneByName("HelloUnity3D").isLoaded)
             SceneManager.LoadSceneAsync("HelloUnity3D", LoadSceneMode.Additive);
+      
    }
 
    public void Spawn()
    {
       if (PhotonNetwork.IsMasterClient)
       {
-            clone1 = PhotonNetwork.Instantiate(player_prefab, spawn_point.position, spawn_point.rotation);
-            script1 = clone1.transform.Find("Character").transform.Find("GameObject").transform.Find("player_cam")
+         clone1 = PhotonNetwork.Instantiate(player_prefab, spawn_point.position, spawn_point.rotation);
+         script1 = clone1.transform.Find("Character").transform.Find("GameObject").transform.Find("player_cam")
                .GetComponent<camscript>();
       }
       else
@@ -57,8 +68,6 @@ public class Spawn_script : MonoBehaviourPunCallbacks
 
    }
    
- 
-
    public void Resume()
    {
       if (PhotonNetwork.IsMasterClient)
@@ -70,11 +79,58 @@ public class Spawn_script : MonoBehaviourPunCallbacks
       SceneManager.UnloadSceneAsync("TranspaESC"); 
       SceneManager.LoadScene("HUD", LoadSceneMode.Additive);
    }
+
+   
+   
+   private void Set_UnsetCam(bool state)
+   {
+      if (PhotonNetwork.IsMasterClient)
+         clone1.transform.Find("Character").transform.Find("GameObject").transform.Find("player_cam").gameObject.SetActive(state);
+      else clone2.transform.Find("Character").transform.Find("GameObject").transform.Find("player_cam2").gameObject.SetActive(state);
+   }
+   
+   private IEnumerator Bakto_normalcam(GameObject camera, float delay)
+   {
+      yield return new WaitForSeconds(delay); 
+      Set_UnsetCam(true);
+      camera.SetActive(false);
+   }
+   
+   private void Cam_cinematique(GameObject camera, float delay)
+   {
+      Set_UnsetCam(false);
+      camera.SetActive(true);
+      StartCoroutine(Bakto_normalcam(camera, delay)); 
+   }
+   
    
    
 
    void Update()
    {
+      if (PlayerPrefs.HasKey("anim"))
+      {
+         if (PlayerPrefs.GetInt("anim") == 1 && !cam1_bool)
+         {
+            Cam_cinematique(cam1, 4);
+            cam1_bool = true; 
+         }
+
+         if (PlayerPrefs.GetInt("anim") == 2 && !cam2_bool)
+         {
+            Cam_cinematique(cam2, 4);
+            cam2_bool = true;
+         }
+
+         if (PlayerPrefs.GetInt("anim") == 3 && !cam3_bool)
+         {
+            Cam_cinematique(cam3, 6);
+            cam3_bool = true;
+         }
+           
+         
+      }
+      
       if (Input.GetKeyDown(KeyCode.Escape))
       {
          if (!SceneManager.GetSceneByName("BackFromGame").isLoaded)

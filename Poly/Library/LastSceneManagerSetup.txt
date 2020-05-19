@@ -7,6 +7,10 @@ sceneSetups:
   isLoaded: 0
   isActive: 0
   isSubScene: 0
+- path: Assets/Scenes/Intro/lobby.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
 - path: Assets/Scenes/Intro/MENUOK.unity
   isLoaded: 0
   isActive: 0
@@ -16,6 +20,10 @@ sceneSetups:
   isActive: 0
   isSubScene: 0
 - path: Assets/Scenes/Options/KeyBind.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/Intro/Load_NewGame.unity
   isLoaded: 0
   isActive: 0
   isSubScene: 0
@@ -31,15 +39,7 @@ sceneSetups:
   isLoaded: 0
   isActive: 0
   isSubScene: 0
-- path: Assets/Scenes/Intro/Load_NewGame.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/Autres/Pop Up.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/Intro/lobby.unity
+- path: Assets/Scenes/Autres/BackFromGame.unity
   isLoaded: 0
   isActive: 0
   isSubScene: 0
@@ -47,7 +47,7 @@ sceneSetups:
   isLoaded: 0
   isActive: 0
   isSubScene: 0
-- path: Assets/Scenes/Autres/BackFromGame.unity
+- path: Assets/Scenes/Autres/Pop Up.unity
   isLoaded: 0
   isActive: 0
   isSubScene: 0
@@ -63,11 +63,11 @@ sceneSetups:
   isLoaded: 0
   isActive: 0
   isSubScene: 0
-- path: Assets/Scenes/enigma1-1.unity
+- path: Assets/Scenes/Enigmes/Enigme_plaques.unity
   isLoaded: 0
   isActive: 0
   isSubScene: 0
-- path: Assets/Scenes/Enigmes/Enigme_plaques.unity
+- path: Assets/Scenes/enigma1-1.unity
   isLoaded: 0
   isActive: 0
   isSubScene: 0
