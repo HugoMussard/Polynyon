@@ -1,13 +1,17 @@
 sceneSetups:
 - path: Assets/Scenes/Intro/Starting_Scenes.unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
-- path: Assets/Scenes/Intro/Polynon Scene.unity
   isLoaded: 0
   isActive: 0
   isSubScene: 0
+<<<<<<< HEAD
 - path: Assets/Scenes/Intro/lobby.unity
+=======
+- path: Assets/Scenes/Intro/Polynon Scene.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
+- path: Assets/Scenes/Intro/MENUOK.unity
+>>>>>>> enigme1-1_finalisation
   isLoaded: 0
   isActive: 0
   isSubScene: 0
@@ -55,15 +59,19 @@ sceneSetups:
   isLoaded: 0
   isActive: 0
   isSubScene: 0
-- path: Assets/Scenes/premiere_ile/HUB.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
 - path: Assets/Scenes/premiere_salle/premiere_salle.unity
   isLoaded: 0
   isActive: 0
   isSubScene: 0
+- path: Assets/Scenes/enigma1-1.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+<<<<<<< HEAD
 - path: Assets/Scenes/Enigmes/Enigme_plaques.unity
+=======
+- path: Assets/Scenes/premiere_ile/HUB.unity
+>>>>>>> enigme1-1_finalisation
   isLoaded: 0
   isActive: 0
   isSubScene: 0
@@ -72,6 +80,10 @@ sceneSetups:
   isActive: 0
   isSubScene: 0
 - path: Assets/Scenes/premiere_ile/IleBombe.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/final-enigma/final-enigma.unity
   isLoaded: 0
   isActive: 0
   isSubScene: 0

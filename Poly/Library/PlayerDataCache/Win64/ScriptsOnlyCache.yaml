@@ -37,17 +37,20 @@ ScriptsOnlyBuild:
     - Starting_scenes
     - TP_Ile2
     - UnlockIndices_Ile2
-    - antigrille
     - camscript
+    - colider_die
     - glypheenigma
     - goenigm
     - gohub
-    - grilles
     - indice
     - interactonoff
     - moves
+<<<<<<< HEAD
     PhotonUnityNetworking.Editor.dll:
     - Photon.Pun.PunSceneSettings
+=======
+    - outofbound
+>>>>>>> enigme1-1_finalisation
     PhotonUnityNetworking.Utilities.dll:
     - Photon.Pun.UtilityScripts.SmoothSyncMovement
     PhotonUnityNetworking.dll:
@@ -124,7 +127,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13042}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 13494}
+=======
+      Script: {instanceID: 13496}
+>>>>>>> enigme1-1_finalisation
     - Class: 114
       Script: {instanceID: 14062}
     - Class: 115
@@ -167,9 +174,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12756}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 13126}
     - Class: 114
       Script: {instanceID: 13494}
+=======
+      Script: {instanceID: 13128}
+    - Class: 114
+      Script: {instanceID: 13496}
+>>>>>>> enigme1-1_finalisation
     - Class: 114
       Script: {instanceID: 14006}
     - Class: 115
@@ -204,11 +217,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11578}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 13098}
     - Class: 114
       Script: {instanceID: 13408}
     - Class: 114
       Script: {instanceID: 13494}
+=======
+      Script: {instanceID: 13100}
+    - Class: 114
+      Script: {instanceID: 13410}
+    - Class: 114
+      Script: {instanceID: 13496}
+>>>>>>> enigme1-1_finalisation
     - Class: 114
       Script: {instanceID: 14088}
     - Class: 115
@@ -249,11 +270,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12168}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 13098}
     - Class: 114
       Script: {instanceID: 13408}
     - Class: 114
       Script: {instanceID: 13494}
+=======
+      Script: {instanceID: 13100}
+    - Class: 114
+      Script: {instanceID: 13410}
+    - Class: 114
+      Script: {instanceID: 13496}
+>>>>>>> enigme1-1_finalisation
     - Class: 114
       Script: {instanceID: 14062}
     - Class: 115
@@ -318,7 +347,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12942}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 13270}
+=======
+      Script: {instanceID: 13272}
+>>>>>>> enigme1-1_finalisation
     - Class: 114
       Script: {instanceID: 13844}
     - Class: 115
@@ -357,6 +390,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12756}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 13098}
     - Class: 114
       Script: {instanceID: 13408}
@@ -365,6 +399,14 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13966}
     - Class: 114
+=======
+      Script: {instanceID: 13100}
+    - Class: 114
+      Script: {instanceID: 13410}
+    - Class: 114
+      Script: {instanceID: 13496}
+    - Class: 114
+>>>>>>> enigme1-1_finalisation
       Script: {instanceID: 14062}
     - Class: 115
       Script: {instanceID: 0}
@@ -414,11 +456,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12756}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 13098}
     - Class: 114
       Script: {instanceID: 13408}
     - Class: 114
       Script: {instanceID: 13494}
+=======
+      Script: {instanceID: 13100}
+    - Class: 114
+      Script: {instanceID: 13410}
+    - Class: 114
+      Script: {instanceID: 13496}
+>>>>>>> enigme1-1_finalisation
     - Class: 114
       Script: {instanceID: 14006}
     - Class: 114
@@ -473,6 +523,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12756}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 13098}
     - Class: 114
       Script: {instanceID: 13126}
@@ -480,6 +531,15 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13408}
     - Class: 114
       Script: {instanceID: 13494}
+=======
+      Script: {instanceID: 13100}
+    - Class: 114
+      Script: {instanceID: 13128}
+    - Class: 114
+      Script: {instanceID: 13410}
+    - Class: 114
+      Script: {instanceID: 13496}
+>>>>>>> enigme1-1_finalisation
     - Class: 114
       Script: {instanceID: 14006}
     - Class: 114
@@ -562,11 +622,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12822}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 13098}
     - Class: 114
       Script: {instanceID: 13116}
     - Class: 114
       Script: {instanceID: 13212}
+=======
+      Script: {instanceID: 13048}
+    - Class: 114
+      Script: {instanceID: 13100}
+    - Class: 114
+      Script: {instanceID: 13118}
+    - Class: 114
+      Script: {instanceID: 13214}
+>>>>>>> enigme1-1_finalisation
     - Class: 114
       Script: {instanceID: 13746}
     - Class: 114
@@ -660,11 +730,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12756}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 13098}
     - Class: 114
       Script: {instanceID: 13408}
     - Class: 114
       Script: {instanceID: 13494}
+=======
+      Script: {instanceID: 13100}
+    - Class: 114
+      Script: {instanceID: 13410}
+    - Class: 114
+      Script: {instanceID: 13496}
+>>>>>>> enigme1-1_finalisation
     - Class: 114
       Script: {instanceID: 14006}
     - Class: 114
@@ -701,7 +779,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11578}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 13494}
+=======
+      Script: {instanceID: 13496}
+>>>>>>> enigme1-1_finalisation
     - Class: 114
       Script: {instanceID: 13554}
     - Class: 115
@@ -746,11 +828,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12756}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 13098}
     - Class: 114
       Script: {instanceID: 13408}
     - Class: 114
       Script: {instanceID: 13494}
+=======
+      Script: {instanceID: 13100}
+    - Class: 114
+      Script: {instanceID: 13410}
+    - Class: 114
+      Script: {instanceID: 13496}
+>>>>>>> enigme1-1_finalisation
     - Class: 114
       Script: {instanceID: 14006}
     - Class: 114
@@ -805,9 +895,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12756}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 13126}
     - Class: 114
       Script: {instanceID: 13494}
+=======
+      Script: {instanceID: 13128}
+    - Class: 114
+      Script: {instanceID: 13496}
+>>>>>>> enigme1-1_finalisation
     - Class: 114
       Script: {instanceID: 14006}
     - Class: 114
@@ -858,7 +954,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12168}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 13494}
+=======
+      Script: {instanceID: 13496}
+>>>>>>> enigme1-1_finalisation
     - Class: 114
       Script: {instanceID: 14062}
     - Class: 115
@@ -907,6 +1007,7 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 12168}
     - Class: 114
       Script: {instanceID: 12336}
@@ -924,6 +1025,21 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13844}
     - Class: 114
       Script: {instanceID: 13966}
+=======
+      Script: {instanceID: 12088}
+    - Class: 114
+      Script: {instanceID: 12168}
+    - Class: 114
+      Script: {instanceID: 12660}
+    - Class: 114
+      Script: {instanceID: 13072}
+    - Class: 114
+      Script: {instanceID: 13222}
+    - Class: 114
+      Script: {instanceID: 13464}
+    - Class: 114
+      Script: {instanceID: 13844}
+>>>>>>> enigme1-1_finalisation
     - Class: 114
       Script: {instanceID: 14062}
     - Class: 115
@@ -937,6 +1053,29 @@ ScriptsOnlyBuild:
     - Class: 198
       Script: {instanceID: 0}
     - Class: 199
+      Script: {instanceID: 0}
+    Assets/Scenes/final-enigma/final-enigma.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
       Script: {instanceID: 0}
     Assets/Scenes/premiere_ile/HUB.unity:
     - Class: 1
@@ -968,9 +1107,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12660}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 13070}
     - Class: 114
       Script: {instanceID: 13462}
+=======
+      Script: {instanceID: 13072}
+    - Class: 114
+      Script: {instanceID: 13464}
+>>>>>>> enigme1-1_finalisation
     - Class: 114
       Script: {instanceID: 14062}
     - Class: 115
@@ -1021,6 +1166,7 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 12112}
     - Class: 114
       Script: {instanceID: 12274}
@@ -1043,6 +1189,22 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13966}
     - Class: 114
+=======
+      Script: {instanceID: 12274}
+    - Class: 114
+      Script: {instanceID: 12660}
+    - Class: 114
+      Script: {instanceID: 12700}
+    - Class: 114
+      Script: {instanceID: 13066}
+    - Class: 114
+      Script: {instanceID: 13498}
+    - Class: 114
+      Script: {instanceID: 13844}
+    - Class: 114
+      Script: {instanceID: 13864}
+    - Class: 114
+>>>>>>> enigme1-1_finalisation
       Script: {instanceID: 14120}
     - Class: 115
       Script: {instanceID: 0}
@@ -1096,7 +1258,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12670}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 13238}
+=======
+      Script: {instanceID: 13240}
+>>>>>>> enigme1-1_finalisation
     - Class: 114
       Script: {instanceID: 13586}
     - Class: 114
@@ -1494,6 +1660,12 @@ ScriptsOnlyBuild:
     className: CullArea
   - hash:
       serializedVersion: 2
+      Hash: 86f42bb37219f717ddd85de4276e1b36
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: colider_die
+  - hash:
+      serializedVersion: 2
       Hash: b25c2463ba9144686d18d7707733226b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1864,6 +2036,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: InputField
+  - hash:
+      serializedVersion: 2
+      Hash: 676fa6628dd96fa7d353fe3c232bda61
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: outofbound
   - hash:
       serializedVersion: 2
       Hash: c9a8b80298a116835b51ba1cf9284367
@@ -2407,4 +2585,9 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Enigmes/Enigme_plaques.unity
   - Assets/Scenes/Intro/Starting_Scenes.unity
   - Assets/Scenes/Intro/BIOMES SOLVED.unity
+<<<<<<< HEAD
   playerPath: D:/Utilisateur/Bureau/JeuPoly/Polypoly.exe
+=======
+  - Assets/Scenes/final-enigma/final-enigma.unity
+  playerPath: C:/Users/tidje/Bureau/build/Polypoly.exe
+>>>>>>> enigme1-1_finalisation

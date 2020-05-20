@@ -14,14 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 3}
+  - {fileID: 13}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD
     width: 1920
     height: 947
   m_MinSize: {x: 603, y: 342}
   m_MaxSize: {x: 12003, y: 8042}
+=======
+    width: 1366
+    height: 635
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
+>>>>>>> enigme1-1_finalisation
   vertical: 0
   controlID: -1
 --- !u!114 &2
@@ -45,10 +53,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 999
     y: 73
     width: 920
     height: 583
+=======
+    x: 309
+    y: 73
+    width: 631
+    height: 343
+>>>>>>> enigme1-1_finalisation
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewsNames: []
   m_SerializedViewsValues: []
@@ -56,7 +71,11 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+<<<<<<< HEAD
   m_TargetSize: {x: 920, y: 518}
+=======
+  m_TargetSize: {x: 572, y: 322}
+>>>>>>> enigme1-1_finalisation
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -70,10 +89,17 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
     m_HBaseRangeMin: -460
     m_HBaseRangeMax: 460
     m_VBaseRangeMin: -259
     m_VBaseRangeMax: 259
+=======
+    m_HBaseRangeMin: -286
+    m_HBaseRangeMax: 286
+    m_VBaseRangeMin: -161
+    m_VBaseRangeMax: 161
+>>>>>>> enigme1-1_finalisation
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -91,16 +117,24 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
+<<<<<<< HEAD
       width: 920
       height: 562
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 460, y: 281}
+=======
+      width: 631
+      height: 322
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 315.5, y: 161}
+>>>>>>> enigme1-1_finalisation
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -460
       y: -281
       width: 920
@@ -108,6 +142,15 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 920, y: 583}
+=======
+      x: -315.5
+      y: -161
+      width: 631
+      height: 322
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 631, y: 343}
+>>>>>>> enigme1-1_finalisation
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -127,15 +170,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 4}
+<<<<<<< HEAD
   - {fileID: 12}
+=======
+  - {fileID: 10}
+>>>>>>> enigme1-1_finalisation
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1920
     height: 947
   m_MinSize: {x: 603, y: 342}
   m_MaxSize: {x: 12003, y: 8042}
+=======
+    width: 942
+    height: 635
+  m_MinSize: {x: 403, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
+>>>>>>> enigme1-1_finalisation
   vertical: 1
   controlID: -1
 --- !u!114 &4
@@ -153,15 +207,25 @@ MonoBehaviour:
   m_Children:
   - {fileID: 5}
   - {fileID: 7}
+<<<<<<< HEAD
   - {fileID: 11}
+=======
+>>>>>>> enigme1-1_finalisation
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1920
     height: 604
   m_MinSize: {x: 603, y: 221}
   m_MaxSize: {x: 12003, y: 4021}
+=======
+    width: 942
+    height: 364
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
+>>>>>>> enigme1-1_finalisation
   vertical: 0
   controlID: -1
 --- !u!114 &5
@@ -181,8 +245,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 346
     height: 604
+=======
+    width: 309
+    height: 364
+>>>>>>> enigme1-1_finalisation
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 6}
@@ -213,15 +282,26 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
+<<<<<<< HEAD
     width: 345
     height: 583
+=======
+    width: 308
+    height: 343
+>>>>>>> enigme1-1_finalisation
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 2efbffff
       m_LastClickedID: 0
       m_ExpandedIDs: de88fdff0089fdff4c8afdff508afdff0293fdff6e9efdff80a1fdffa4a1fdff12aafdff24aafdff2caafdff34aafdff38aafdff44aafdff4aaafdff78aafdff7caafdff90aafdff9caafdffb8aafdffc0aafdffe82cfeff0a2dfeff5e2efeff622efeff1437feff8042feff9245feffba45feff284efeff3a4efeff424efeff4a4efeff4e4efeff5a4efeff604efeff8e4efeff924efeffa64efeffb24efeffce4efeffd64efefff674feff1875feff6476feff6876feff1a7ffeff868afeff988dfeffbc8dfeff2a96feff3c96feff4496feff4c96feff5096feff5c96feff6296feff9096feff9496feffa896feffb496feffd096feffd896feffb8a8feffd0a9feffeca9feff38abfeff3cabfeffeeb3feff5abffeff6cc2feff90c2fefffecafeff10cbfeff18cbfeff20cbfeff24cbfeff30cbfeff36cbfeff64cbfeff68cbfeff7ccbfeff88cbfeffa4cbfeffaccbfeff2eeafeff50eafeff9cebfeffa0ebfeff52f4feffbefffeffd002fffff402ffff620bffff740bffff7c0bffff840bffff880bffff940bffff9a0bffffc80bffffcc0bffffe00bffffec0bffff080cffff100cffff101fffff321fffff7e20ffff8220ffff3429ffffa034ffffb237ffffd637ffff4440ffff5640ffff5e40ffff6640ffff6a40ffff7640ffff7c40ffffaa40ffffae40ffffc240ffffce40ffffea40fffff240ffff725fffff945fffffe060ffffe460ffff9669ffff0275ffff1478ffff3878ffffa680ffffb880ffffc080ffffc880ffffcc80ffffd880ffffde80ffff0c81ffff1081ffff2481ffff3081ffff4c81ffff5481ffff2498ffff4698ffff9299ffff9699ffff48a2ffffb4adffffc6b0ffffeab0ffff58b9ffff6ab9ffff72b9ffff7ab9ffff7eb9ffff8ab9ffff90b9ffffbeb9ffffc2b9ffffd6b9ffffe2b9fffffeb9ffff06baffff90c7ffffb2c7fffffec8ffff02c9ffffb4d1ffff20ddffff32e0ffff56e0ffffc4e8ffffd6e8ffffdee8ffffe6e8ffffeae8fffff6e8fffffce8ffff2ae9ffff2ee9ffff42e9ffff4ee9ffff6ae9ffff72e9ffff2efbfffff26401001a690100766a010086d40100d2d6010040da0100d2dd0100108a0200608c02005a8e0200ce8f0200609302002ee302007ae50200e8e802007aec0200923f0300de410300d84303004c45030068470300de480300ce49030090ab0300dcad0300d6af03004ab10300d8b4030090b50400dcb704004abb0400d8be0400
+=======
+      m_SelectedIDs: b0f5ffff
+      m_LastClickedID: 0
+      m_ExpandedIDs: b0f5ffffcef5ffffc2960000
+>>>>>>> enigme1-1_finalisation
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -255,11 +335,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 346
     y: 0
     width: 653
@@ -273,6 +354,21 @@ MonoBehaviour:
   - {fileID: 10}
   m_Selected: 0
   m_LastSelected: 2
+=======
+    x: 309
+    y: 0
+    width: 633
+    height: 364
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 2}
+  m_Panes:
+  - {fileID: 8}
+  - {fileID: 9}
+  - {fileID: 2}
+  m_Selected: 2
+  m_LastSelected: 0
+>>>>>>> enigme1-1_finalisation
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -294,10 +390,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 346
     y: 73
     width: 651
     height: 583
+=======
+    x: 309
+    y: 73
+    width: 631
+    height: 343
+>>>>>>> enigme1-1_finalisation
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 4710f4ce9bc665444858e0f5366da554
@@ -309,9 +412,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 19.950794, y: 9.320775, z: -42.596504}
     speed: 2
     m_Value: {x: 19.950794, y: 9.320775, z: -42.596504}
+=======
+    m_Target: {x: 9.19427, y: 3.4640923, z: -27.62052}
+    speed: 2
+    m_Value: {x: 9.19427, y: 3.4640923, z: -27.62052}
+>>>>>>> enigme1-1_finalisation
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -357,6 +466,7 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: 0.009823286, y: -0.67882663, z: -0.0092622945, w: -0.734312}
     speed: 2
     m_Value: {x: 0.009822294, y: -0.6787581, z: -0.009261359, w: -0.73423785}
@@ -364,6 +474,15 @@ MonoBehaviour:
     m_Target: 5.01897
     speed: 2
     m_Value: 5.01897
+=======
+    m_Target: {x: -0.55789375, y: -0.010449956, z: 0.0070257564, w: -0.8298176}
+    speed: 2
+    m_Value: {x: -0.5578934, y: -0.01044995, z: 0.007025752, w: -0.8298171}
+  m_Size:
+    m_Target: 53.525063
+    speed: 2
+    m_Value: 53.525063
+>>>>>>> enigme1-1_finalisation
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -422,6 +541,7 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+<<<<<<< HEAD
   m_EditorHideFlags: 0
   m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -540,11 +660,17 @@ MonoBehaviour:
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: AnimationWindow
+=======
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: ProjectBrowser
+>>>>>>> enigme1-1_finalisation
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 0
     width: 1281
     height: 343
@@ -558,6 +684,20 @@ MonoBehaviour:
   m_Selected: 2
   m_LastSelected: 0
 --- !u!114 &14
+=======
+    y: 364
+    width: 942
+    height: 271
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 11}
+  m_Panes:
+  - {fileID: 11}
+  - {fileID: 12}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &11
+>>>>>>> enigme1-1_finalisation
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -579,9 +719,15 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 677
     width: 1280
     height: 322
+=======
+    y: 437
+    width: 941
+    height: 250
+>>>>>>> enigme1-1_finalisation
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -596,10 +742,15 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets
+=======
+    - Assets/Scripts/enigme_1-1
+>>>>>>> enigme1-1_finalisation
   m_ViewMode: 1
-  m_StartGridSize: 64
+  m_StartGridSize: 96
   m_LastFolders:
+<<<<<<< HEAD
   - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\hugom\Polynyon\Poly
@@ -610,6 +761,18 @@ MonoBehaviour:
     m_SelectedIDs: 58490000
     m_LastClickedID: 18776
     m_ExpandedIDs: 00000000584900005a4900005c4900005e490000604900006249000064490000664900008449000000ca9a3b
+=======
+  - Assets/Scripts/enigme_1-1
+  m_LastFoldersGridSize: 96
+  m_LastProjectPath: C:\polynyon\Poly
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 554}
+    m_SelectedIDs: d44f0000
+    m_LastClickedID: 20436
+    m_ExpandedIDs: 00000000aa4c0000ac4c0000ae4c0000b04c0000b24c0000b44c0000b64c0000b84c0000ba4c0000bc4c0000be4c0000c04c0000c24c0000c44c0000c64c000000ca9a3b
+>>>>>>> enigme1-1_finalisation
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -637,7 +800,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000584900005a4900005c4900005e49000060490000624900006449000066490000
+=======
+    m_ExpandedIDs: 00000000aa4c0000ac4c0000ae4c0000b04c0000b24c0000b44c0000b64c0000b84c0000ba4c0000bc4c0000be4c0000c04c0000c24c0000c44c0000c64c0000
+>>>>>>> enigme1-1_finalisation
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -662,8 +829,13 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 6ebb0400
     m_LastClickedInstanceID: 310126
+=======
+    m_SelectedInstanceIDs: b0f5ffff
+    m_LastClickedInstanceID: -2640
+>>>>>>> enigme1-1_finalisation
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
@@ -681,7 +853,11 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
+<<<<<<< HEAD
       m_ClientGUIView: {fileID: 13}
+=======
+      m_ClientGUIView: {fileID: 10}
+>>>>>>> enigme1-1_finalisation
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -689,11 +865,16 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 64
+    m_ScrollPosition: {x: 0, y: 68}
+    m_GridSize: 96
   m_SkipHiddenPackages: 0
+<<<<<<< HEAD
   m_DirectoriesAreaWidth: 115
 --- !u!114 &15
+=======
+  m_DirectoriesAreaWidth: 207
+--- !u!114 &12
+>>>>>>> enigme1-1_finalisation
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -715,6 +896,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 677
     width: 1280
     height: 322
@@ -749,6 +931,13 @@ MonoBehaviour:
     m_IsLocked: 0
   m_LastSelectedObjectID: 310126
 --- !u!114 &17
+=======
+    y: 587
+    width: 941
+    height: 100
+  m_ViewDataDictionary: {fileID: 0}
+--- !u!114 &13
+>>>>>>> enigme1-1_finalisation
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -763,6 +952,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1281
     y: 0
     width: 639
@@ -775,6 +965,20 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &18
+=======
+    x: 942
+    y: 0
+    width: 424
+    height: 635
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 14}
+  m_Panes:
+  - {fileID: 14}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &14
+>>>>>>> enigme1-1_finalisation
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -795,10 +999,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1281
     y: 677
     width: 638
     height: 322
+=======
+    x: 942
+    y: 73
+    width: 423
+    height: 614
+>>>>>>> enigme1-1_finalisation
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
   m_ObjectsLockedBeforeSerialization: []
