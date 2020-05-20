@@ -1,38 +1,77 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Intro/Starting_Scenes.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-<<<<<<< HEAD
-- path: Assets/Scenes/Intro/lobby.unity
-=======
-- path: Assets/Scenes/Intro/Polynon Scene.unity
+- path: Assets/Scenes/Starting_Scenes.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
-- path: Assets/Scenes/Intro/MENUOK.unity
->>>>>>> enigme1-1_finalisation
+- path: Assets/Scenes/BackFromGame.unity
   isLoaded: 0
   isActive: 0
   isSubScene: 0
-- path: Assets/Scenes/Intro/MENUOK.unity
+- path: Assets/Scenes/BIOMES SOLVED.unity
   isLoaded: 0
   isActive: 0
   isSubScene: 0
-- path: Assets/Scenes/Options/Options.unity
+- path: Assets/Scenes/Blackscreen.unity
   isLoaded: 0
   isActive: 0
   isSubScene: 0
-- path: Assets/Scenes/Options/KeyBind.unity
+- path: Assets/Scenes/enigma1-1.unity
   isLoaded: 0
   isActive: 0
   isSubScene: 0
-- path: Assets/Scenes/Intro/Load_NewGame.unity
+- path: Assets/Scenes/Enigme_plaques.unity
   isLoaded: 0
   isActive: 0
   isSubScene: 0
-- path: Assets/Scenes/Intro/BIOMES SOLVED.unity
+- path: Assets/Scenes/final-enigma.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/HUB.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/HUD.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/IleBombe.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/KeyBind.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/lobby.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/MENUOK.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/Load_NewGame.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/Options.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/Polynon Scene.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/Pop Up.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/premiere_salle.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/Scene princ.unity
   isLoaded: 0
   isActive: 0
   isSubScene: 0
@@ -40,57 +79,3 @@ sceneSetups:
   isLoaded: 0
   isActive: 0
   isSubScene: 0
-- path: Assets/Scenes/Options/Blackscreen.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/Autres/BackFromGame.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/Autres/HUD.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/Autres/Pop Up.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/AgoraEngine/Demo/HelloUnity3D.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/premiere_salle/premiere_salle.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/enigma1-1.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-<<<<<<< HEAD
-- path: Assets/Scenes/Enigmes/Enigme_plaques.unity
-=======
-- path: Assets/Scenes/premiere_ile/HUB.unity
->>>>>>> enigme1-1_finalisation
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/enigma1-1.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/premiere_ile/IleBombe.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/final-enigma/final-enigma.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-=======
-- path: Assets/Scenes/3eme enigme/Scene princ.unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
->>>>>>> Martin

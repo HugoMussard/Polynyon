@@ -40,5 +40,12 @@ public class Load_Newgame : MonoBehaviourPunCallbacks
         SceneManager.UnloadSceneAsync("Load_NewGame"); 
         SceneManager.LoadScene("BIOMES SOLVED", LoadSceneMode.Additive); 
     }
+
+    public void Back()
+    {
+        PhotonNetwork.Disconnect();
+        SceneManager.UnloadSceneAsync("Load_NewGame");
+        SceneManager.LoadScene("lobby", LoadSceneMode.Additive); 
+    }
     
 }

@@ -25,17 +25,11 @@ public class Spawn_script : MonoBehaviourPunCallbacks
 
    public GameObject clone1;
    public GameObject clone2;
-<<<<<<< HEAD
    
    private camscript cam1; 
    private camscript cam2;
 
 
-
-=======
-   private camscript script1; 
-   private camscript script2; 
->>>>>>> enigme1-1_finalisation
    
    
    private void Start()

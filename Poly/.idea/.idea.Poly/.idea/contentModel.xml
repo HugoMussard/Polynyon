@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-<<<<<<< HEAD
     <e p="C:\Users\hugom\.Rider2019.3\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\hugom\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Poly.-1596253593.00" t="ExcludeRecursive" />
     <e p="C:\Users\hugom\Polynyon\Poly" t="IncludeRecursive">
-=======
-    <e p="C:\Users\martin\AppData\local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\martin\AppData\local\JetBrains\Rider2020.1\resharper-host\local\Transient\ReSharperHost\v201\SolutionCaches\_Poly.-2099444804.00" t="ExcludeRecursive" />
-    <e p="C:\Users\martin\Documents\Polynyon\Poly" t="IncludeRecursive">
->>>>>>> Martin
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -57,9 +51,6 @@
             </e>
           </e>
         </e>
-        <e p="Biomes_HUB.cs" t="Include" />
-        <e p="Cinematique_Pose_bombe.cs" t="Include" />
-        <e p="Cinematique_unlock_indice.cs" t="Include" />
         <e p="Ile" t="Include">
           <e p="Rotation.cs" t="Include" />
         </e>
@@ -245,12 +236,6 @@
         <e p="PolygonCity" t="Include">
           <e p="Change_Log.txt" t="Include" />
         </e>
-        <e p="Scenes" t="Include">
-          <e p="3eme enigme" t="Include">
-            <e p="Simon2.cs" t="Include" />
-            <e p="Simonsays.cs" t="Include" />
-          </e>
-        </e>
         <e p="Scripts" t="Include">
           <e p="all the game" t="Include">
             <e p="gohub.cs" t="Include" />
@@ -259,14 +244,22 @@
             <e p="Interaction.cs" t="Include" />
             <e p="interactonoff.cs" t="Include" />
             <e p="moves.cs" t="Include" />
+            <e p="outofbound.cs" t="Include" />
             <e p="PopUp.cs" t="Include" />
             <e p="pression_plate_hub.cs" t="Include" />
             <e p="Spawn_script.cs" t="Include" />
+            <e p="Starting_scenes.cs" t="Include" />
+          </e>
+          <e p="Biomes_solved" t="Include">
+            <e p="Biomes_HUB.cs" t="Include" />
           </e>
           <e p="enigme_1-1" t="Include">
-            <e p="antigrille.cs" t="Include" />
+            <e p="Activity.cs" t="Include" />
+            <e p="first_step.cs" t="Include" />
             <e p="grilles.cs" t="Include" />
             <e p="Jewel.cs" t="Include" />
+            <e p="Killing.cs" t="Include" />
+            <e p="reset.cs" t="Include" />
           </e>
           <e p="Enigme_Chemin_pic" t="Include">
             <e p="ButtonPush.cs" t="Include" />
@@ -277,14 +270,23 @@
             <e p="Spikes.cs" t="Include" />
           </e>
           <e p="HUB" t="Include">
+            <e p="enigmas_finished.cs" t="Include" />
             <e p="goenigm.cs" t="Include" />
             <e p="GoGo.cs" t="Include" />
           </e>
           <e p="Ile2" t="Include">
+            <e p="Cinematique_Pose_bombe.cs" t="Include" />
+            <e p="Cinematique_unlock_indice.cs" t="Include" />
             <e p="FilsManager.cs" t="Include" />
             <e p="LetterUPDOWN.cs" t="Include" />
             <e p="Levier.cs" t="Include" />
             <e p="MainCable.cs" t="Include" />
+            <e p="TP_Ile2.cs" t="Include" />
+            <e p="UnlockIndices_Ile2.cs" t="Include" />
+          </e>
+          <e p="Martin_enigme" t="Include">
+            <e p="Simon2.cs" t="Include" />
+            <e p="Simonsays.cs" t="Include" />
           </e>
           <e p="Scripts_lobby" t="Include">
             <e p="CreateUserName.cs" t="Include" />
@@ -300,7 +302,6 @@
             <e p="Overlay.cs" t="Include" />
             <e p="SoundScript.cs" t="Include" />
           </e>
-          <e p="Starting_scenes.cs" t="Include" />
         </e>
         <e p="SpeedTutor_Full_Menu_System" t="Include">
           <e p="GUI Elements" t="Include">
@@ -395,7 +396,6 @@
             </e>
           </e>
         </e>
-        <e p="TP_Ile2.cs" t="Include" />
         <e p="UnityGrassGeometryShader-master" t="Include">
           <e p="Assets" t="Include">
             <e p="Grass.shader" t="Include" />
@@ -408,7 +408,6 @@
             <e p="ProjectVersion.txt" t="Include" />
           </e>
         </e>
-        <e p="UnlockIndices_Ile2.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />

@@ -32,5 +32,10 @@ MonoBehaviour:
   - ClickRpc
   - DestroyRpc
   - Descente
+  - Malus
+  - SetBool
+  - Swap_cinematique
+  - Unlock
+  - UnsetBool
   DisableAutoOpenWizard: 1
   ShowSettings: 1
