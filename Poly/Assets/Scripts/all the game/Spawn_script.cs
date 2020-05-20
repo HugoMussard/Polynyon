@@ -21,8 +21,8 @@ public class Spawn_script : MonoBehaviourPunCallbacks
    public Transform spawn_point;
    public Transform spawn_point2;
 
-   private GameObject clone1;
-   private GameObject clone2;
+   public GameObject clone1;
+   public GameObject clone2;
    private camscript script1; 
    private camscript script2; 
    

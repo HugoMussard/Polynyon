@@ -99,6 +99,7 @@
     <Compile Include="Assets\Scripts\Enigme_Chemin_pic\Plateforme.cs" />
     <Compile Include="Assets\Scripts\Enigme_Chemin_pic\Spikes.cs" />
     <Compile Include="Assets\Scripts\HUB\GoGo.cs" />
+    <Compile Include="Assets\Scripts\HUB\enigmas_finished.cs" />
     <Compile Include="Assets\Scripts\HUB\goenigm.cs" />
     <Compile Include="Assets\Scripts\Ile2\FilsManager.cs" />
     <Compile Include="Assets\Scripts\Ile2\LetterUPDOWN.cs" />
@@ -125,11 +126,12 @@
     <Compile Include="Assets\Scripts\all the game\moves.cs" />
     <Compile Include="Assets\Scripts\all the game\outofbound.cs" />
     <Compile Include="Assets\Scripts\all the game\pression_plate_hub.cs" />
+    <Compile Include="Assets\Scripts\enigme_1-1\Activity.cs" />
     <Compile Include="Assets\Scripts\enigme_1-1\Jewel.cs" />
-    <Compile Include="Assets\Scripts\enigme_1-1\colider_die.cs" />
+    <Compile Include="Assets\Scripts\enigme_1-1\Killing.cs" />
     <Compile Include="Assets\Scripts\enigme_1-1\first_step.cs" />
     <Compile Include="Assets\Scripts\enigme_1-1\grilles.cs" />
-    <Compile Include="Assets\Scripts\enigme_1-1\étapes.cs" />
+    <Compile Include="Assets\Scripts\enigme_1-1\reset.cs" />
     <Compile Include="Assets\SpeedTutor_Full_Menu_System\GUI Elements\UI_BrightnessShader\Brightness.cs" />
     <Compile Include="Assets\SpeedTutor_Full_Menu_System\MenuScripts\Init_LoadPreferences.cs" />
     <Compile Include="Assets\SpeedTutor_Full_Menu_System\MenuScripts\MenuController.cs" />

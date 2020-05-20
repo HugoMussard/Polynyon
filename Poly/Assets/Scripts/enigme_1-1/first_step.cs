@@ -20,7 +20,6 @@ public class first_step : MonoBehaviour
     {
         if(button1.state || button2.state || button3.state)
         {
-            coll.isTrigger = false;
             coll.enabled = false;
         }
     }
