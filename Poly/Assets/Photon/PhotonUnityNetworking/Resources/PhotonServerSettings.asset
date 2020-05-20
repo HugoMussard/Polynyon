@@ -31,15 +31,8 @@ MonoBehaviour:
   RpcList:
   - ClickRpc
   - DestroyRpc
-  - Setbool1
-  - SetBool
-  - UnsetBool
-  - Set_act_coll
-  - Set_act_coll2
-  - Explosion_FX
-  - Swap_cinematique
-  - bomba
-  - Unlock
   - Malus
+  - Swap_cinematique
+  - Unlock
   DisableAutoOpenWizard: 1
   ShowSettings: 0

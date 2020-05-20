@@ -29,10 +29,10 @@ public class Morpiege : MonoBehaviour
     {
         SceneManager.LoadScene("Die", LoadSceneMode.Additive);
         if (PhotonNetwork.IsMasterClient)
-            spawn.script1.enabled = false;
+            spawn.cam1.enabled = false;
         else
         {
-            spawn.script2.enabled = false;
+            spawn.cam2.enabled = false;
         }
 
         

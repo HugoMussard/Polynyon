@@ -1,9 +1,0 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":false,"showMaterialUpdate":false,"showSkybox":false,"showFlares":false,"showImageEffects":false,"showParticleSystems":false},"in2DMode":false,"pivot":{"x":-7.58265495300293,"y":9.092137336730957,"z":-56.933128356933597},"rotation":{"x":-0.1132231280207634,"y":-0.24223531782627107,"z":0.028498366475105287,"w":-0.963330864906311},"size":3.1153371334075929,"orthographic":false}
-=======
-﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":15.484875679016114,"y":25.400588989257814,"z":-44.33206558227539},"rotation":{"x":0.17420506477355958,"y":-0.672042191028595,"z":0.16723959147930146,"w":0.700033962726593},"size":0.9495379328727722,"orthographic":false}
->>>>>>> enigme1-1_finalisation
-=======
-﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":1.1000001430511475,"y":2.7360000610351564,"z":-25.20400047302246},"rotation":{"x":0.14501285552978517,"y":0.7777856588363648,"z":-0.19422343373298646,"w":0.5800201892852783},"size":6.539575099945068,"orthographic":false}
->>>>>>> Martin
