@@ -62,4 +62,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Intro/BIOMES SOLVED.unity
     guid: 915a8a0abf88dfe409389144b13a7724
+  - enabled: 1
+    path: Assets/Scenes/Enigmes/Die.unity
+    guid: 7bf02089f563e034d83c98eb202746dc
   m_configObjects: {}

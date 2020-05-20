@@ -3,9 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using UnityEngine.SceneManagement;
 
 public class Morpiege : MonoBehaviour
 {
+    public Spawn_script spawn;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,20 @@ public class Morpiege : MonoBehaviour
     
     void Die()
     {
-        PhotonNetwork.LoadLevel("Enigme_plaques");
+        SceneManager.LoadScene("Die", LoadSceneMode.Additive);
+        if (PhotonNetwork.IsMasterClient)
+            spawn.script1.enabled = false;
+        else
+        {
+            spawn.script2.enabled = false;
+        }
+
+        
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        if (SceneManager.GetSceneByName("HUD").isLoaded)
+        {
+            SceneManager.UnloadSceneAsync("HUD");
+        }
     }
 }
