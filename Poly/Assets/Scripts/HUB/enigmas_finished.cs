@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class enigmas_finished : MonoBehaviour
 {
-    public Animator anim;
+    private Animator anim;
     public GameObject Door;
-    public Spawn_script spawn;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +16,7 @@ public class enigmas_finished : MonoBehaviour
     // Update is called once per frame
     private void OnTriggerEnter(Collider other)
     {
-        anim.SetBool("finished_enigmas", true);
+        anim.enabled = true;
     }
     void Update()
     {
