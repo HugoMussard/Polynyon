@@ -269,9 +269,6 @@ MonoBehaviour:
   jumphigh: 3
   parent: {fileID: 7362143612910217909}
   Anim: {fileID: 8795732428264628786}
-  trapmask:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!114 &8263823287175323135
 MonoBehaviour:
   m_ObjectHideFlags: 0

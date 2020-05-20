@@ -23,6 +23,7 @@ public class Spawn_script : MonoBehaviourPunCallbacks
    public Transform spawn_point;
    public Transform spawn_point2;
 
+<<<<<<< HEAD
    public GameObject clone1;
    public GameObject clone2;
    
@@ -31,6 +32,12 @@ public class Spawn_script : MonoBehaviourPunCallbacks
 
 
    
+=======
+   private GameObject clone1;
+   private GameObject clone2;
+   public camscript script1; 
+   public camscript script2;
+>>>>>>> Animation
    
    private void Start()
    {
@@ -88,13 +95,40 @@ public class Spawn_script : MonoBehaviourPunCallbacks
 
    void Update()
    {
+      
       if (Input.GetKeyDown(KeyCode.Escape))
       {
          if (!SceneManager.GetSceneByName("BackFromGame").isLoaded)
+<<<<<<< HEAD
             Resume(false);
          else 
             Resume(true);
       }
+=======
+         {
+            if (PhotonNetwork.IsMasterClient)
+               script1.enabled = false;
+            else script2.enabled = false;
+            Cursor.visible = true; 
+            Cursor.lockState = CursorLockMode.None;
+            SceneManager.UnloadSceneAsync("HUD");
+            SceneManager.LoadScene("TranspaESC", LoadSceneMode.Additive);
+            SceneManager.LoadScene("BackFromGame", LoadSceneMode.Additive);   
+         }
+         else Resume();
+      }
+      if (SceneManager.GetSceneByName("Die").isLoaded)
+      {
+         if (PhotonNetwork.IsMasterClient)
+         {
+            script1.enabled = false;
+            Debug.Log("script disabled");
+         }
+
+         else script2.enabled = false;
+      }
+      
+>>>>>>> Animation
    }
    
    

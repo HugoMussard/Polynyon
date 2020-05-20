@@ -63,6 +63,11 @@ EditorBuildSettings:
     path: Assets/Scenes/BIOMES SOLVED.unity
     guid: 915a8a0abf88dfe409389144b13a7724
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Scenes/final-enigma.unity
     guid: 8bc57e376ec0ac244925a7269b7b0cba
+=======
+    path: Assets/Scenes/Enigmes/Die.unity
+    guid: 7bf02089f563e034d83c98eb202746dc
+>>>>>>> Animation
   m_configObjects: {}
