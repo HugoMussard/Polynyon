@@ -23,24 +23,18 @@ public class Spawn_script : MonoBehaviourPunCallbacks
    public Transform spawn_point;
    public Transform spawn_point2;
 
-   private GameObject clone1;
-   private GameObject clone2;
-   private camscript script1; 
-   private camscript script2;
+   public GameObject clone1;
+   public GameObject clone2;
+   
+   private camscript cam1; 
+   private camscript cam2;
 
-   public GameObject cam1;
-   public GameObject cam2;
-   public GameObject cam3;
 
-   private bool cam1_bool; 
-   private bool cam2_bool; 
-   private bool cam3_bool; 
+
    
    
    private void Start()
    {
-      script1 = null;
-      script2 = null;
       Spawn();
       if(!SceneManager.GetSceneByName("HUD").isLoaded)
         SceneManager.LoadSceneAsync("HUD", LoadSceneMode.Additive);
@@ -56,98 +50,55 @@ public class Spawn_script : MonoBehaviourPunCallbacks
       if (PhotonNetwork.IsMasterClient)
       {
          clone1 = PhotonNetwork.Instantiate(player_prefab, spawn_point.position, spawn_point.rotation);
-         script1 = clone1.transform.Find("Character").transform.Find("GameObject").transform.Find("player_cam")
+         cam1 = clone1.transform.Find("Character").transform.Find("GameObject").transform.Find("player_cam")
                .GetComponent<camscript>();
       }
       else
-      {
-            clone2 = PhotonNetwork.Instantiate(player_prefab2, spawn_point2.position, spawn_point.rotation);
-            script2 = clone2.transform.Find("Character").transform.Find("GameObject").transform.Find("player_cam2")
+      { 
+         clone2 = PhotonNetwork.Instantiate(player_prefab2, spawn_point2.position, spawn_point.rotation);
+         cam2 = clone2.transform.Find("Character").transform.Find("GameObject").transform.Find("player_cam2")
                .GetComponent<camscript>();
       }
 
    }
    
-   public void Resume()
+   
+   
+   public void Resume(bool state)
    {
       if (PhotonNetwork.IsMasterClient)
-         script1.enabled = true;
-      else script2.enabled = true;
-      Cursor.visible = false; 
-      Cursor.lockState = CursorLockMode.Locked;
-      SceneManager.UnloadSceneAsync("BackFromGame");
-      SceneManager.UnloadSceneAsync("TranspaESC"); 
-      SceneManager.LoadScene("HUD", LoadSceneMode.Additive);
+         cam1.enabled = state;
+      else cam2.enabled = state;
+      Cursor.visible = !state;
+      if (!state)
+      {
+         Cursor.lockState = CursorLockMode.None;
+         SceneManager.UnloadSceneAsync("HUD");
+         SceneManager.LoadScene("TranspaESC", LoadSceneMode.Additive);
+         SceneManager.LoadScene("BackFromGame", LoadSceneMode.Additive);
+      }
+      else
+      {
+         Cursor.lockState = CursorLockMode.Locked;
+         SceneManager.UnloadSceneAsync("BackFromGame");
+         SceneManager.UnloadSceneAsync("TranspaESC"); 
+         SceneManager.LoadScene("HUD", LoadSceneMode.Additive);
+      }
    }
-
-   
-   
-   private void Set_UnsetCam(bool state)
-   {
-      if (PhotonNetwork.IsMasterClient)
-         clone1.transform.Find("Character").transform.Find("GameObject").transform.Find("player_cam").gameObject.SetActive(state);
-      else clone2.transform.Find("Character").transform.Find("GameObject").transform.Find("player_cam2").gameObject.SetActive(state);
-   }
-   
-   private IEnumerator Bakto_normalcam(GameObject camera, float delay)
-   {
-      yield return new WaitForSeconds(delay); 
-      Set_UnsetCam(true);
-      camera.SetActive(false);
-   }
-   
-   private void Cam_cinematique(GameObject camera, float delay)
-   {
-      Set_UnsetCam(false);
-      camera.SetActive(true);
-      StartCoroutine(Bakto_normalcam(camera, delay)); 
-   }
-   
-   
    
 
    void Update()
    {
-      if (PlayerPrefs.HasKey("anim"))
-      {
-         if (PlayerPrefs.GetInt("anim") == 1 && !cam1_bool)
-         {
-            Cam_cinematique(cam1, 4);
-            cam1_bool = true; 
-         }
-
-         if (PlayerPrefs.GetInt("anim") == 2 && !cam2_bool)
-         {
-            Cam_cinematique(cam2, 4);
-            cam2_bool = true;
-         }
-
-         if (PlayerPrefs.GetInt("anim") == 3 && !cam3_bool)
-         {
-            Cam_cinematique(cam3, 6);
-            cam3_bool = true;
-         }
-           
-         
-      }
-      
       if (Input.GetKeyDown(KeyCode.Escape))
       {
          if (!SceneManager.GetSceneByName("BackFromGame").isLoaded)
-         {
-            if (PhotonNetwork.IsMasterClient)
-               script1.enabled = false;
-            else script2.enabled = false;
-            Cursor.visible = true; 
-            Cursor.lockState = CursorLockMode.None;
-            SceneManager.UnloadSceneAsync("HUD");
-            SceneManager.LoadScene("TranspaESC", LoadSceneMode.Additive);
-            SceneManager.LoadScene("BackFromGame", LoadSceneMode.Additive);
-         }
-         else Resume();
+            Resume(false);
+         else 
+            Resume(true);
       }
-      
    }
+   
+   
 }
 
 

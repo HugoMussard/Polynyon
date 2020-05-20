@@ -131,7 +131,6 @@ public class MainCable : MonoBehaviourPunCallbacks
         _tw5 = rnd.Next(2);
         _tw6 = rnd.Next(2);
         
-
         _ak1 = rnd.Next(2); 
         _ak2 = rnd.Next(2);
         _ak3 = rnd.Next(2);
@@ -174,12 +173,16 @@ public class MainCable : MonoBehaviourPunCallbacks
         _tws = new List<GameObject>() {tw1, tw2, tw3, tw4, tw5, tw6};
         _aks = new List<GameObject>() {ak1, ak2, ak3, ak4, ak5, ak6};
         
+        nb_rnd = rnd.Next(10); 
+        nb_rnd_GO.transform.Find(Convert.ToString(nb_rnd)).gameObject.SetActive(true);
+        
         do
         {
             Init();
         } while (_annexeStart() != 3);
 
         validCables = _annexeStart();
+        
 
         material_principal.color = new Color(255, 255, 255, 0);
         
@@ -189,9 +192,6 @@ public class MainCable : MonoBehaviourPunCallbacks
         coul4.color = new Color(coul4.color.r, coul4.color.g, coul4.color.b, 1);
         coul5.color = new Color(coul5.color.r, coul5.color.g, coul5.color.b, 1);
         coul6.color = new Color(coul6.color.r, coul6.color.g, coul6.color.b, 1);
-
-        nb_rnd = rnd.Next(10); 
-        nb_rnd_GO.transform.Find(Convert.ToString(nb_rnd)).gameObject.SetActive(true);
         
         PlayerPrefs.SetInt("anim", 0);
         PlayerPrefs.SetInt("LTcables", 0);
@@ -205,19 +205,18 @@ public class MainCable : MonoBehaviourPunCallbacks
         Color couleur = cable.GetComponent<Renderer>().sharedMaterial.color;
         if (couleur.b == 1)
         {
-            if (symb2.activeSelf && nb_rnd % 2 == 0)
+            if (symb2.activeSelf && !symb1.activeSelf && nb_rnd % 2 == 0)
                 return true;
             if (symb1.activeSelf && symb2.activeSelf)
-                return true; 
+                return true;
         }
-        
         if (couleur.r == 1)
         {
             if (!symb1.activeSelf && !symb2.activeSelf)
                 return true;
             if (symb2.activeSelf && !symb1.activeSelf)
                 return true;
-            if (symb1.activeSelf && nb_rnd % 2 != 0)
+            if (symb1.activeSelf && !symb2.activeSelf && nb_rnd % 2 != 0)
                 return true;
         }
         return false;
