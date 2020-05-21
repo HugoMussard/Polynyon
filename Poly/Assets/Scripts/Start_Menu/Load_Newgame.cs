@@ -30,8 +30,13 @@ public class Load_Newgame : MonoBehaviourPunCallbacks
 
     public void NewGame()
     {
-        if (save != "") Debug.Log("Etes vous sur de vouloir écraser votre sauvegarde ?"); 
-        SceneManager.LoadScene("premiere_salle");
+        if (save != "") Debug.Log("Etes vous sur de vouloir écraser votre sauvegarde ?");
+        PlayerPrefs.DeleteKey("1-1");
+        PlayerPrefs.DeleteKey("1-2");
+        PlayerPrefs.DeleteKey("1-3");
+        PlayerPrefs.DeleteKey("1-4");
+        PlayerPrefs.Save();
+        SceneManager.LoadScene("final-enigma");
 
     }
 

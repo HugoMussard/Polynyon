@@ -1568,7 +1568,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   load:
-    m_Handle: 8
+    m_Handle: 17
 --- !u!23 &431430742
 MeshRenderer:
   m_ObjectHideFlags: 0
