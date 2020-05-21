@@ -142,6 +142,7 @@
     <Compile Include="Assets\Scripts\enigme_1-1\first_step.cs" />
     <Compile Include="Assets\Scripts\enigme_1-1\grilles.cs" />
     <Compile Include="Assets\Scripts\enigme_1-1\reset.cs" />
+    <Compile Include="Assets\Scripts\enigme_1-1\savefinished.cs" />
     <Compile Include="Assets\SpeedTutor_Full_Menu_System\GUI Elements\UI_BrightnessShader\Brightness.cs" />
     <Compile Include="Assets\SpeedTutor_Full_Menu_System\MenuScripts\Init_LoadPreferences.cs" />
     <Compile Include="Assets\SpeedTutor_Full_Menu_System\MenuScripts\MenuController.cs" />

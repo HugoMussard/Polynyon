@@ -16,7 +16,8 @@ public class enigmas_finished : MonoBehaviour
     // Update is called once per frame
     private void OnTriggerEnter(Collider other)
     {
-        anim.enabled = true;
+        if (PlayerPrefs.GetInt("1-1",0) != 0)
+            anim.enabled = true;
     }
     void Update()
     {
