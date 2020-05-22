@@ -36,7 +36,7 @@ public class Load_Newgame : MonoBehaviourPunCallbacks
         PlayerPrefs.DeleteKey("1-3");
         PlayerPrefs.DeleteKey("1-4");
         PlayerPrefs.Save();
-        SceneManager.LoadScene("final-enigma");
+        SceneManager.LoadScene("final_enigma");
 
     }
 

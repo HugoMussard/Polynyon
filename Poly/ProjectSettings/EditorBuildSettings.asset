@@ -69,6 +69,6 @@ EditorBuildSettings:
     path: Assets/Scenes/IleBombe.unity
     guid: 2d37c02265a0714419ede70b0cb56b5a
   - enabled: 1
-    path: Assets/Scenes/final enigma/final-enigma.unity
+    path: Assets/Scenes/final enigma/final_enigma.unity
     guid: e70ead5f2ea586f48b3ef971d9190a72
   m_configObjects: {}
