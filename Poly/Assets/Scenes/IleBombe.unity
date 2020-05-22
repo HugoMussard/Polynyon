@@ -7708,10 +7708,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 175073681}
+  - component: {fileID: 175073684}
   - component: {fileID: 175073680}
   - component: {fileID: 175073682}
   - component: {fileID: 175073683}
-  - component: {fileID: 175073684}
   - component: {fileID: 175073685}
   - component: {fileID: 175073686}
   m_Layer: 0
@@ -7823,6 +7823,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam_pose_bombe: {fileID: 1671157645}
   spawn: {fileID: 175073680}
+  cheatcode: 0
 --- !u!114 &175073686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60235,7 +60236,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!20 &1824775965
 Camera:
   m_ObjectHideFlags: 0

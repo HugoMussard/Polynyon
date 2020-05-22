@@ -10,9 +10,11 @@ public class Cinematique_Pose_bombe : MonoBehaviour
 
     public Spawn_script spawn;
 
+    public float cheatcode = 11.0f; 
+
     private void Start()
     {
-        Invoke("Wait_spawn", 11.0f);
+        Invoke("Wait_spawn", cheatcode);
     }
 
     public void Wait_spawn()
