@@ -8,8 +8,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 using Random = System.Random;
-using UnityEngine.SceneManagement; 
-using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HUD : MonoBehaviour
 {

@@ -5,8 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement; 
 public class Die : MonoBehaviourPunCallbacks
 {
-    
-   
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,15 +24,21 @@ public class Die : MonoBehaviourPunCallbacks
     }
     public void BackToMenu()
     {
-        if (SceneManager.GetSceneByName("Polynon Scene").isLoaded)
+        if (PhotonNetwork.IsMasterClient)
         {
-            SceneManager.UnloadSceneAsync("Options");
-            SceneManager.LoadScene("MENUOK", LoadSceneMode.Additive);
+            if (PhotonNetwork.CurrentRoom.Players.Count <= 1)
+            {
+                PhotonNetwork.Disconnect();
+                SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
+                SceneManager.LoadScene("Polynon Scene");
+            }
+            else Debug.Log("All players must be disconnected first");
         }
         else
         {
-            SceneManager.UnloadSceneAsync("Options");
-            SceneManager.LoadScene("BackFromGame", LoadSceneMode.Additive);
+            PhotonNetwork.Disconnect();
+            SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
+            SceneManager.LoadScene("Polynon Scene");
         }
         
     }

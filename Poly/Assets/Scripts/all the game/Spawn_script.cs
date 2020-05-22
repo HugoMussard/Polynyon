@@ -28,7 +28,7 @@ public class Spawn_script : MonoBehaviourPunCallbacks
    
    public camscript cam1; 
    public camscript cam2;
-   
+
    
    private void Start()
    {
@@ -48,13 +48,13 @@ public class Spawn_script : MonoBehaviourPunCallbacks
       {
          clone1 = PhotonNetwork.Instantiate(player_prefab, spawn_point.position, spawn_point.rotation);
          cam1 = clone1.transform.Find("Character").transform.Find("GameObject").transform.Find("player_cam")
-               .GetComponent<camscript>();
+            .GetComponent<camscript>();
       }
       else
       { 
          clone2 = PhotonNetwork.Instantiate(player_prefab2, spawn_point2.position, spawn_point.rotation);
          cam2 = clone2.transform.Find("Character").transform.Find("GameObject").transform.Find("player_cam2")
-               .GetComponent<camscript>();
+            .GetComponent<camscript>();
       }
 
    }

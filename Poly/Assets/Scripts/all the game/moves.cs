@@ -24,8 +24,9 @@ public class moves : MonoBehaviourPunCallbacks
     private double x = 0;
     private double z = 0;
     private float sp = 0.1f;
+    private float horizontal;
 
-    
+
 
     private void Start()
     {
@@ -49,7 +50,14 @@ public class moves : MonoBehaviourPunCallbacks
         if (!photonView.IsMine) return;
 
         Anim.SetFloat("vertical", Input.GetAxis("Vertical"));
+        Anim.SetFloat("horizontal", Input.GetAxis("Horizontal"));
 
+        if (Morpiege.die)
+        {
+            Anim.SetBool("Die", true);
+        }
+        
+        
 
         isgrounded = Physics.CheckSphere(groundCheck.position, groundis, groundmask);
         if (isgrounded && velocity.y < 0)
@@ -63,8 +71,16 @@ public class moves : MonoBehaviourPunCallbacks
         else if (x > 0) x -= 0.1f;
         else if (x < 0) x += 0.1f;
 
-        if (Input.GetKey(runCode) && isgrounded) speed = 12f;
-        else speed = 8f;
+        if (Input.GetKey(runCode))
+        {
+            speed = 12f;
+            Anim.SetBool("Sprint", true);
+        }    
+        else
+        {
+            speed = 8f;
+            Anim.SetBool("Sprint", false);
+        }
 
         if (Input.GetKey(upCode) && z < 1) z += sp;
         else if (Input.GetKey(downCode) && z > -1) z -= sp;
@@ -72,10 +88,37 @@ public class moves : MonoBehaviourPunCallbacks
         else if (z > 0) z -= 0.1f;
         else if (z < 0) z += 0.1f;
 
+        
         if (Input.GetButtonDown("Jump") && isgrounded)
+        {
             velocity.y = Mathf.Sqrt(jumphigh * (-2f) * gravity);
+            Anim.SetBool("Jump", true);
+        }
+        else
+        {
+            Anim.SetBool("Jump", false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            Anim.SetBool("Coucou", true);
+        }
+        else
+        {
+            Anim.SetBool("Coucou", false);
+        }
         
-        
+        if (Input.GetKey(KeyCode.M))
+        {
+            Anim.SetBool("Macarena", true);
+        }    
+        else
+        {
+            Anim.SetBool("Macarena", false);
+        }
+
+
+
         Vector3 move = transform.right * (float) x + transform.forward * (float) z;
         control.Move(move * (speed * Time.deltaTime));
 
