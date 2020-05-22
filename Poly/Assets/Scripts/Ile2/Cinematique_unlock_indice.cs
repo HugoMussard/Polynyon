@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Photon.Pun;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Cinematique_unlock_indice : MonoBehaviourPunCallbacks
 {
@@ -18,6 +19,8 @@ public class Cinematique_unlock_indice : MonoBehaviourPunCallbacks
     // Start is called before the first frame update
     void Start()
     {
+        PlayerPrefs.SetInt("CinematiqueON", 0);
+        PlayerPrefs.Save();
         
     }
     
@@ -49,8 +52,10 @@ public class Cinematique_unlock_indice : MonoBehaviourPunCallbacks
     {
         Set_UnsetCam(false);
         Set_UnsetMov(false);
+        PlayerPrefs.SetInt("CinematiqueON", 1);
+        PlayerPrefs.Save();
         camera.SetActive(true);
-        StartCoroutine(Bakto_normal(camera, delay)); 
+        StartCoroutine(Bakto_normal(camera, delay));
     }
 
     
@@ -64,19 +69,30 @@ public class Cinematique_unlock_indice : MonoBehaviourPunCallbacks
             {
                 Cam_cinematique(cam1, 4);
                 cam1_bool = true; 
+                Invoke("Crosshair_Back", 4);
             }
 
             if (PlayerPrefs.GetInt("anim") == 2 && !cam2_bool)
             {
                 Cam_cinematique(cam2, 4);
                 cam2_bool = true;
+                Invoke("Crosshair_Back", 4);
             }
 
             if (PlayerPrefs.GetInt("anim") == 3 && !cam3_bool)
             {
                 Cam_cinematique(cam3, 6);
                 cam3_bool = true;
+                Invoke("Crosshair_Back", 6);
             }
         }
+        
     }
+
+    private void Crosshair_Back()
+    {
+        PlayerPrefs.SetInt("CinematiqueON", 0);
+        PlayerPrefs.Save();
+    }
+    
 }

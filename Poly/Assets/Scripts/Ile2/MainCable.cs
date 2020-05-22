@@ -10,6 +10,8 @@ public class MainCable : MonoBehaviourPunCallbacks
     #region Variables
     public Material material_principal;
 
+    private bool fin; 
+    
     public GameObject cable1;
     public GameObject cable2; 
     public GameObject cable3; 
@@ -17,11 +19,15 @@ public class MainCable : MonoBehaviourPunCallbacks
     public GameObject cable5; 
     public GameObject cable6;
 
-    public Material coul1; 
+    public Material coul1B; 
+    public Material coul1R;
+    public Material coul1BL;
     public Material coul2; 
     public Material coul3; 
     public Material coul4; 
-    public Material coul5; 
+    public Material coul5B;
+    public Material coul5R;
+    public Material coul5BL;
     public Material coul6; 
     
     public Interactable lever1;
@@ -85,8 +91,14 @@ public class MainCable : MonoBehaviourPunCallbacks
     private int nb_rnd;
     public GameObject nb_rnd_GO;
     
+    public Cinematique_End script_end;
+
+    public GameObject cam3; 
+    
     #endregion
 
+    
+    
     [PunRPC]
     private void Unlock()
     {
@@ -107,6 +119,13 @@ public class MainCable : MonoBehaviourPunCallbacks
         PlayerPrefs.SetInt("Malus_bool", 1);
         PlayerPrefs.Save();
     }
+
+    [PunRPC]
+    private void End()
+    {
+        script_end.FinishFils = true;
+    }
+    
     
     private void Init()
     {
@@ -182,16 +201,24 @@ public class MainCable : MonoBehaviourPunCallbacks
         } while (_annexeStart() != 3);
 
         validCables = _annexeStart();
-        
 
-        material_principal.color = new Color(255, 255, 255, 0);
+        #region setColor
+        material_principal.color = new Color(1, 1, 1, 1);
         
-        coul1.color = new Color(coul1.color.r, coul1.color.g, coul1.color.b, 1);
+        coul1B.color = new Color(coul1B.color.r, coul1B.color.g, coul1B.color.b, 1);
+        coul1R.color = new Color(coul1R.color.r, coul1R.color.g, coul1R.color.b, 1);
+        coul1BL.color = new Color(coul1BL.color.r, coul1BL.color.g, coul1BL.color.b, 1);
         coul2.color = new Color(coul2.color.r, coul2.color.g, coul2.color.b, 1);
         coul3.color = new Color(coul3.color.r, coul3.color.g, coul3.color.b, 1);
         coul4.color = new Color(coul4.color.r, coul4.color.g, coul4.color.b, 1);
-        coul5.color = new Color(coul5.color.r, coul5.color.g, coul5.color.b, 1);
+        coul5B.color = new Color(coul5B.color.r, coul5B.color.g, coul5B.color.b, 1);
+        coul5R.color = new Color(coul5R.color.r, coul5R.color.g, coul5R.color.b, 1);
+        coul5BL.color = new Color(coul5BL.color.r, coul5BL.color.g, coul5BL.color.b, 1);
         coul6.color = new Color(coul6.color.r, coul6.color.g, coul6.color.b, 1);
+        
+
+        #endregion
+        
         
         PlayerPrefs.SetInt("anim", 0);
         PlayerPrefs.SetInt("LTcables", 0);
@@ -202,24 +229,34 @@ public class MainCable : MonoBehaviourPunCallbacks
 
     private bool ToCut(GameObject symb1, GameObject symb2, GameObject cable)
     {
-        Color couleur = cable.GetComponent<Renderer>().sharedMaterial.color;
-        if (couleur.b == 1)
+        bool check1 = cable.name == "Cylinder_1" || cable.name == "Cylinder_5";
+        if (!check1)
         {
-            if (symb2.activeSelf && !symb1.activeSelf && nb_rnd % 2 == 0)
-                return true;
-            if (symb1.activeSelf && symb2.activeSelf)
-                return true;
+            Color couleur = cable.GetComponent<Renderer>().sharedMaterial.color;
+            if (couleur.b == 1)
+            {
+                if (!symb1.activeSelf && !symb2.activeSelf)
+                    return true;
+            }
+            if (couleur.r == 1)
+            {
+                if (symb1.activeSelf && symb2.activeSelf)
+                    return true;
+                if (symb2.activeSelf && nb_rnd % 2 == 0)
+                    return true;
+                if (nb_rnd % 2 != 0)
+                    return true;
+            }
+            return false;
         }
-        if (couleur.r == 1)
-        {
-            if (!symb1.activeSelf && !symb2.activeSelf)
-                return true;
-            if (symb2.activeSelf && !symb1.activeSelf)
-                return true;
-            if (symb1.activeSelf && !symb2.activeSelf && nb_rnd % 2 != 0)
-                return true;
-        }
-        return false;
+        if (symb2.activeSelf && !symb1.activeSelf)
+            return true;
+        if (symb1.activeSelf && !symb2.activeSelf && nb_rnd % 2 == 0)
+            return true;
+        if (symb1.activeSelf && symb2.activeSelf && nb_rnd % 2 != 0)
+            return true;
+        return false; 
+
     }
     
     
@@ -231,7 +268,9 @@ public class MainCable : MonoBehaviourPunCallbacks
         {
             if (ToCut(_tws[0], _aks[0], _cables[0]))
             {
-                coul1.color = new Color(coul1.color.r, coul1.color.g, coul1.color.b, 0);
+                coul1B.color = new Color(coul1B.color.r, coul1B.color.g, coul1B.color.b, 0);
+                coul1R.color = new Color(coul1R.color.r, coul1R.color.g, coul1R.color.b, 0);
+                coul1BL.color = new Color(coul1BL.color.r, coul1BL.color.g, coul1BL.color.b, 0);
                 photonView.RPC("Unlock", RpcTarget.All);
                 photonView.RPC("Swap_cinematique", RpcTarget.All);
                 i++;
@@ -283,7 +322,9 @@ public class MainCable : MonoBehaviourPunCallbacks
         {
             if (ToCut(_tws[4], _aks[4], _cables[4]))
             {
-                coul5.color = new Color(coul5.color.r, coul5.color.g, coul5.color.b, 0);
+                coul5B.color = new Color(coul5B.color.r, coul5B.color.g, coul5B.color.b, 0);
+                coul5R.color = new Color(coul5R.color.r, coul5R.color.g, coul5R.color.b, 0);
+                coul5BL.color = new Color(coul5BL.color.r, coul5BL.color.g, coul5BL.color.b, 0);
                 photonView.RPC("Unlock", RpcTarget.All);
                 photonView.RPC("Swap_cinematique", RpcTarget.All);
                 i++;
@@ -304,10 +345,27 @@ public class MainCable : MonoBehaviourPunCallbacks
             mybool6 = lever6.state; 
         }
     
-        if (i == validCables)
+        
+        
+        
+        if (i == validCables && !fin)
         {
             material_principal.color = new Color(0, 1, 0);
+            Invoke("JSP", 0.1f);
         }
-           
     }
+
+
+    private void JSP()
+    {
+        if (!cam3.activeSelf)
+        {
+            photonView.RPC("End", RpcTarget.All);
+            fin = true;
+        }
+    }
+    
+    
+    
+    
 }

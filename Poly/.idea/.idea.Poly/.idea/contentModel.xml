@@ -51,9 +51,11 @@
             </e>
           </e>
         </e>
+        <e p="Cinematique_End.cs" t="Include" />
         <e p="Ile" t="Include">
           <e p="Rotation.cs" t="Include" />
         </e>
+        <e p="Mdp_enigme.cs" t="Include" />
         <e p="Photon" t="Include">
           <e p="Photon" t="Include">
             <e p="PhotonChat" t="Include">

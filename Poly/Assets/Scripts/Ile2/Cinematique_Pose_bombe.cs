@@ -10,9 +10,11 @@ public class Cinematique_Pose_bombe : MonoBehaviour
 
     public Spawn_script spawn;
 
+    public float delay = 11.0f; 
+
     private void Start()
     {
-        Invoke("Wait_spawn", 11.0f);
+        Invoke("Wait_spawn", delay);
     }
 
     public void Wait_spawn()
@@ -20,10 +22,5 @@ public class Cinematique_Pose_bombe : MonoBehaviour
         spawn.enabled = true;
         cam_pose_bombe.enabled = false; 
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

@@ -19,6 +19,8 @@ public class HUD : MonoBehaviour
 
     public TextMeshProUGUI txt2;
 
+    public GameObject crosshair; 
+
     private float timer;
     private bool canCount = true;
     private bool doOnce = false;
@@ -38,6 +40,11 @@ public class HUD : MonoBehaviour
         }
         txt.text = $"{PhotonNetwork.GetPing()} ms";
 
+        Debug.Log(PlayerPrefs.GetInt("CinematiqueON"));
+        
+        if (PlayerPrefs.HasKey("CinematiqueON") && PlayerPrefs.GetInt("CinematiqueON") == 1)
+            crosshair.SetActive(false);
+        else crosshair.SetActive(true);
 
         if (SceneManager.GetSceneByName("IleBombe").isLoaded)
         {

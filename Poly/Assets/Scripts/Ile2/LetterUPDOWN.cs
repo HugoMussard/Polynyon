@@ -11,6 +11,10 @@ public class LetterUPDOWN : MonoBehaviour
     public Interactable interactable;
 
     public int Haut_bas; 
+    
+    public GameObject actualLetter;
+
+    public LetterUPDOWN otherOne; 
 
 
     private string[] _tabLettres =
@@ -18,6 +22,8 @@ public class LetterUPDOWN : MonoBehaviour
         "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P",
         "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"
     };
+
+
  
 
     // Update is called once per frame
@@ -25,21 +31,6 @@ public class LetterUPDOWN : MonoBehaviour
     {
         if (interactable.state)
         {
-            int i = 0;
-            bool check = false;
-            GameObject actualLetter = null; 
-            while(i < letter.transform.childCount && !check)
-            {
-                if (letter.transform.GetChild(i).gameObject.activeSelf)
-                {
-                    actualLetter = letter.transform.GetChild(i).gameObject;
-                    check = true; 
-                }
-                i++;
-            }
-
-            
-            
             if (actualLetter != null)
             {
                 int pos = Array.IndexOf(_tabLettres, actualLetter.name);
@@ -49,9 +40,11 @@ public class LetterUPDOWN : MonoBehaviour
                 {
                     newPos = pos - 1;
                     newPos = newPos < 0 ? 26 + newPos : newPos; 
-                } 
+                }
                 actualLetter.SetActive(false);
-                letter.transform.Find(_tabLettres[newPos]).gameObject.SetActive(true);
+                actualLetter = letter.transform.Find(_tabLettres[newPos]).gameObject;
+                otherOne.actualLetter = letter.transform.Find(_tabLettres[newPos]).gameObject;
+                actualLetter.SetActive(true);    
             }
             interactable.state = false; 
         }
