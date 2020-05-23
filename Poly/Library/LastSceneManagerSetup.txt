@@ -69,15 +69,15 @@ sceneSetups:
   isSubScene: 0
 - path: Assets/Scenes/final enigma/final_enigma.unity
   isLoaded: 1
-  isActive: 1
+  isActive: 0
   isSubScene: 0
 - path: Assets/Scenes/Scene princ.unity
   isLoaded: 0
   isActive: 0
   isSubScene: 0
 - path: Assets/Scenes/Starting_Scenes.unity
-  isLoaded: 0
-  isActive: 0
+  isLoaded: 1
+  isActive: 1
   isSubScene: 0
 - path: Assets/Scenes/TranspaESC.unity
   isLoaded: 0

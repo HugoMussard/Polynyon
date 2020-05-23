@@ -157,6 +157,13 @@
     <Compile Include="Assets\Scripts\enigme_1-1\grilles.cs" />
     <Compile Include="Assets\Scripts\enigme_1-1\reset.cs" />
     <Compile Include="Assets\Scripts\enigme_1-1\savefinished.cs" />
+    <Compile Include="Assets\Scripts\final-enigma\Die_final_e.cs" />
+    <Compile Include="Assets\Scripts\final-enigma\Structure.cs" />
+    <Compile Include="Assets\Scripts\final-enigma\anim_trig.cs" />
+    <Compile Include="Assets\Scripts\final-enigma\anims_on_off.cs" />
+    <Compile Include="Assets\Scripts\final-enigma\elevator.cs" />
+    <Compile Include="Assets\Scripts\final-enigma\leviers.cs" />
+    <Compile Include="Assets\Scripts\final-enigma\struc_appears.cs" />
     <Compile Include="Assets\SpeedTutor_Full_Menu_System\GUI Elements\UI_BrightnessShader\Brightness.cs" />
     <Compile Include="Assets\SpeedTutor_Full_Menu_System\MenuScripts\Init_LoadPreferences.cs" />
     <Compile Include="Assets\SpeedTutor_Full_Menu_System\MenuScripts\MenuController.cs" />
@@ -199,12 +206,14 @@
     <Compile Include="Assets\Textures\Ile2\Premiere_salle\glypheenigma.cs" />
     <Compile Include="Assets\Textures\Ile2\Premiere_salle\indice.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+    <None Include="Assets\PolygonPrototype\Shaders\Prototype_Glass_Global.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\UnityGrassGeometryShader-master\Assets\Grass.shader" />
     <None Include="Assets\Photon\Photon\PhotonUnityNetworking\changelog.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\BOXOPHOBIC\Skybox Cubemap Extended\Core\Shaders\Skybox Cubemap Extended.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
+    <None Include="Assets\PolygonPrototype\Shaders\Prototype_Object.shader" />
     <None Include="Assets\UnityGrassGeometryShader-master\ProjectSettings\ProjectVersion.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
     <None Include="Assets\UnityGrassGeometryShader-master\Assets\Shaders\CustomTessellation.cginc" />
@@ -224,6 +233,7 @@
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Photon\Photon\PhotonLibs\Photon3Unity3D.xml" />
+    <None Include="Assets\PolygonPrototype\Shaders\Prototype_Glass_Object.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\PolygonCity\Change_Log.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
@@ -231,6 +241,7 @@
     <None Include="Assets\Photon\Photon\PhotonUnityNetworking\link.xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\UnityGrassGeometryShader-master\Assets\Shaders\TessellationExample.shader" />
+    <None Include="Assets\PolygonPrototype\Shaders\Prototype_Global.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
     <Reference Include="Unity.Timeline.Editor">
