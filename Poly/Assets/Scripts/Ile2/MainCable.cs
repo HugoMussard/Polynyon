@@ -93,7 +93,8 @@ public class MainCable : MonoBehaviourPunCallbacks
     
     public Cinematique_End script_end;
 
-    public GameObject cam3; 
+    public GameObject cam3;
+    
     
     #endregion
 

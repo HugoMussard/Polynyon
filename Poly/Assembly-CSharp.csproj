@@ -71,9 +71,8 @@
      <Compile Include="Assets\AgoraEngine\Scripts\AgoraGamingSDK\rawData\VideoRawDataManager.cs" />
      <Compile Include="Assets\AgoraEngine\Scripts\AgoraGamingSDK\videoRender\VideoRender.cs" />
      <Compile Include="Assets\AgoraEngine\Scripts\AgoraGamingSDK\videoRender\VideoSurface.cs" />
-     <Compile Include="Assets\Cinematique_End.cs" />
+     <Compile Include="Assets\Fail_Bombe.cs" />
      <Compile Include="Assets\Ile\Rotation.cs" />
-     <Compile Include="Assets\Mdp_enigme.cs" />
      <Compile Include="Assets\Photon\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
      <Compile Include="Assets\Photon\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
      <Compile Include="Assets\Photon\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
@@ -99,12 +98,16 @@
      <Compile Include="Assets\Scripts\HUB\GoGo.cs" />
      <Compile Include="Assets\Scripts\HUB\enigmas_finished.cs" />
      <Compile Include="Assets\Scripts\HUB\goenigm.cs" />
+     <Compile Include="Assets\Scripts\Ile2\Cinematique_End.cs" />
      <Compile Include="Assets\Scripts\Ile2\Cinematique_Pose_bombe.cs" />
      <Compile Include="Assets\Scripts\Ile2\Cinematique_unlock_indice.cs" />
      <Compile Include="Assets\Scripts\Ile2\FilsManager.cs" />
+     <Compile Include="Assets\Scripts\Ile2\Kart.cs" />
      <Compile Include="Assets\Scripts\Ile2\LetterUPDOWN.cs" />
      <Compile Include="Assets\Scripts\Ile2\Levier.cs" />
      <Compile Include="Assets\Scripts\Ile2\MainCable.cs" />
+     <Compile Include="Assets\Scripts\Ile2\Mdp4.cs" />
+     <Compile Include="Assets\Scripts\Ile2\Mdp_enigme.cs" />
      <Compile Include="Assets\Scripts\Ile2\TP_Ile2.cs" />
      <Compile Include="Assets\Scripts\Ile2\UnlockIndices_Ile2.cs" />
      <Compile Include="Assets\Scripts\Martin_enigme\Simon2.cs" />

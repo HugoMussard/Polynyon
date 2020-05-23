@@ -14,8 +14,9 @@ public class Cinematique_unlock_indice : MonoBehaviourPunCallbacks
 
     private bool cam1_bool; 
     private bool cam2_bool; 
-    private bool cam3_bool; 
+    private bool cam3_bool;
     
+
     // Start is called before the first frame update
     void Start()
     {

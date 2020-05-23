@@ -70,7 +70,8 @@ public class Spawn_script : MonoBehaviourPunCallbacks
       if (!state)
       {
          Cursor.lockState = CursorLockMode.None;
-         SceneManager.UnloadSceneAsync("HUD");
+         PlayerPrefs.SetInt("CinematiqueON", 1);
+         PlayerPrefs.Save();
          SceneManager.LoadScene("TranspaESC", LoadSceneMode.Additive);
          SceneManager.LoadScene("BackFromGame", LoadSceneMode.Additive);
       }
@@ -79,7 +80,8 @@ public class Spawn_script : MonoBehaviourPunCallbacks
          Cursor.lockState = CursorLockMode.Locked;
          SceneManager.UnloadSceneAsync("BackFromGame");
          SceneManager.UnloadSceneAsync("TranspaESC"); 
-         SceneManager.LoadScene("HUD", LoadSceneMode.Additive);
+         PlayerPrefs.SetInt("CinematiqueON", 0);
+         PlayerPrefs.Save();
       }
    }
    
