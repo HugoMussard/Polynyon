@@ -21,23 +21,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Die.unity
     guid: 7bf02089f563e034d83c98eb202746dc
   - enabled: 1
-    path: Assets/Scenes/enigma1-1.unity
-    guid: bce6fb1bb63d8d54e82a52f55f16b03b
-  - enabled: 1
-    path: Assets/Scenes/Enigme_plaques.unity
-    guid: de6430ff342f4934ba90e3f93ef81b87
-  - enabled: 1
-    path: Assets/Scenes/final-enigma.unity
-    guid: 8bc57e376ec0ac244925a7269b7b0cba
-  - enabled: 1
-    path: Assets/Scenes/HUB.unity
-    guid: 906e3b84d1eb32249bef56ea7c272eed
-  - enabled: 1
     path: Assets/Scenes/HUD.unity
     guid: c54b7e495e6d85440aabf94b09a38112
-  - enabled: 1
-    path: Assets/Scenes/IleBombe.unity
-    guid: 2d37c02265a0714419ede70b0cb56b5a
   - enabled: 1
     path: Assets/Scenes/KeyBind.unity
     guid: dd6d119ea72940844b0e31832e9acde1
@@ -60,15 +45,30 @@ EditorBuildSettings:
     path: Assets/Scenes/Pop Up.unity
     guid: 5af1f4b61daae7549a5225a642e02817
   - enabled: 1
-    path: Assets/Scenes/premiere_salle.unity
-    guid: efb492ba44058b44887f3ad80decda00
-  - enabled: 1
-    path: Assets/Scenes/Scene princ.unity
-    guid: eba584e504828544dac5f60b3a8c841b
+    path: Assets/AgoraEngine/Demo/HelloUnity3D.unity
+    guid: cf0f0349488134449a67eea42ac82665
   - enabled: 1
     path: Assets/Scenes/TranspaESC.unity
     guid: 9b386980f0d59624ca265c18c124fbd0
   - enabled: 1
-    path: Assets/AgoraEngine/Demo/HelloUnity3D.unity
-    guid: cf0f0349488134449a67eea42ac82665
+    path: Assets/Scenes/Scene princ.unity
+    guid: eba584e504828544dac5f60b3a8c841b
+  - enabled: 1
+    path: Assets/Scenes/premiere_salle.unity
+    guid: efb492ba44058b44887f3ad80decda00
+  - enabled: 1
+    path: Assets/Scenes/HUB.unity
+    guid: 906e3b84d1eb32249bef56ea7c272eed
+  - enabled: 1
+    path: Assets/Scenes/enigma1-1.unity
+    guid: bce6fb1bb63d8d54e82a52f55f16b03b
+  - enabled: 1
+    path: Assets/Scenes/Enigme_plaques.unity
+    guid: de6430ff342f4934ba90e3f93ef81b87
+  - enabled: 1
+    path: Assets/Scenes/IleBombe.unity
+    guid: 2d37c02265a0714419ede70b0cb56b5a
+  - enabled: 1
+    path: Assets/Scenes/final enigma/final_enigma.unity
+    guid: e70ead5f2ea586f48b3ef971d9190a72
   m_configObjects: {}

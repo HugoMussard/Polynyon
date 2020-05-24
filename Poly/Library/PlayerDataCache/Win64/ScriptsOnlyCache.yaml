@@ -10,6 +10,7 @@ ScriptsOnlyBuild:
     - CreateUserName
     - Cross_Menu
     - Die
+    - Die_final_e
     - Doors
     - FilsManager
     - Fin_enigme
@@ -41,18 +42,31 @@ ScriptsOnlyBuild:
     - Starting_scenes
     - TP_Ile2
     - UnlockIndices_Ile2
+    - anim_trig
     - camscript
+<<<<<<< HEAD
     - enigmas_finished
+=======
+    - elevator
+    - enigmas_finished
+    - final_door_simon
+>>>>>>> save_solved+final_enigma
     - glypheenigma
     - goenigm
     - gohub
     - grilles
     - indice
     - interactonoff
+    - leviers
     - moves
     - outofbound
     - reset
+    - save_solved
+    - savefinished
+    - struc_appears
     - trigger_simon_pic
+    PhotonUnityNetworking.Editor.dll:
+    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.Utilities.dll:
     - Photon.Pun.UtilityScripts.SmoothSyncMovement
     PhotonUnityNetworking.dll:
@@ -115,6 +129,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 11250}
     - Class: 114
       Script: {instanceID: 11516}
@@ -134,6 +149,27 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13506}
     - Class: 114
       Script: {instanceID: 14076}
+=======
+      Script: {instanceID: 11264}
+    - Class: 114
+      Script: {instanceID: 11532}
+    - Class: 114
+      Script: {instanceID: 11590}
+    - Class: 114
+      Script: {instanceID: 12200}
+    - Class: 114
+      Script: {instanceID: 12556}
+    - Class: 114
+      Script: {instanceID: 12820}
+    - Class: 114
+      Script: {instanceID: 12840}
+    - Class: 114
+      Script: {instanceID: 13112}
+    - Class: 114
+      Script: {instanceID: 13584}
+    - Class: 114
+      Script: {instanceID: 14170}
+>>>>>>> save_solved+final_enigma
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -170,6 +206,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 11250}
     - Class: 114
       Script: {instanceID: 11342}
@@ -189,6 +226,27 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13980}
     - Class: 114
       Script: {instanceID: 14076}
+=======
+      Script: {instanceID: 11264}
+    - Class: 114
+      Script: {instanceID: 11358}
+    - Class: 114
+      Script: {instanceID: 11590}
+    - Class: 114
+      Script: {instanceID: 12200}
+    - Class: 114
+      Script: {instanceID: 12820}
+    - Class: 114
+      Script: {instanceID: 13170}
+    - Class: 114
+      Script: {instanceID: 13496}
+    - Class: 114
+      Script: {instanceID: 13584}
+    - Class: 114
+      Script: {instanceID: 14072}
+    - Class: 114
+      Script: {instanceID: 14170}
+>>>>>>> save_solved+final_enigma
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -217,6 +275,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 11250}
     - Class: 114
       Script: {instanceID: 11516}
@@ -228,6 +287,19 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13506}
     - Class: 114
       Script: {instanceID: 14020}
+=======
+      Script: {instanceID: 11264}
+    - Class: 114
+      Script: {instanceID: 11532}
+    - Class: 114
+      Script: {instanceID: 12820}
+    - Class: 114
+      Script: {instanceID: 13200}
+    - Class: 114
+      Script: {instanceID: 13584}
+    - Class: 114
+      Script: {instanceID: 14114}
+>>>>>>> save_solved+final_enigma
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -254,6 +326,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 11250}
     - Class: 114
       Script: {instanceID: 11574}
@@ -261,6 +334,15 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13506}
     - Class: 114
       Script: {instanceID: 13568}
+=======
+      Script: {instanceID: 11264}
+    - Class: 114
+      Script: {instanceID: 11590}
+    - Class: 114
+      Script: {instanceID: 13584}
+    - Class: 114
+      Script: {instanceID: 13648}
+>>>>>>> save_solved+final_enigma
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -287,6 +369,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 11250}
     - Class: 114
       Script: {instanceID: 11516}
@@ -306,6 +389,27 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14020}
     - Class: 114
       Script: {instanceID: 14076}
+=======
+      Script: {instanceID: 11264}
+    - Class: 114
+      Script: {instanceID: 11532}
+    - Class: 114
+      Script: {instanceID: 11778}
+    - Class: 114
+      Script: {instanceID: 12200}
+    - Class: 114
+      Script: {instanceID: 12820}
+    - Class: 114
+      Script: {instanceID: 13170}
+    - Class: 114
+      Script: {instanceID: 13496}
+    - Class: 114
+      Script: {instanceID: 13584}
+    - Class: 114
+      Script: {instanceID: 14114}
+    - Class: 114
+      Script: {instanceID: 14170}
+>>>>>>> save_solved+final_enigma
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -356,6 +460,7 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 11338}
     - Class: 114
       Script: {instanceID: 11470}
@@ -377,6 +482,29 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13980}
     - Class: 114
       Script: {instanceID: 14146}
+=======
+      Script: {instanceID: 11354}
+    - Class: 114
+      Script: {instanceID: 11486}
+    - Class: 114
+      Script: {instanceID: 11686}
+    - Class: 114
+      Script: {instanceID: 12302}
+    - Class: 114
+      Script: {instanceID: 12534}
+    - Class: 114
+      Script: {instanceID: 12724}
+    - Class: 114
+      Script: {instanceID: 12808}
+    - Class: 114
+      Script: {instanceID: 13010}
+    - Class: 114
+      Script: {instanceID: 13942}
+    - Class: 114
+      Script: {instanceID: 14072}
+    - Class: 114
+      Script: {instanceID: 14240}
+>>>>>>> save_solved+final_enigma
     - Class: 115
       Script: {instanceID: 0}
     - Class: 136
@@ -421,6 +549,7 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 11470}
     - Class: 114
       Script: {instanceID: 12168}
@@ -436,6 +565,23 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13980}
     - Class: 114
       Script: {instanceID: 14076}
+=======
+      Script: {instanceID: 11486}
+    - Class: 114
+      Script: {instanceID: 12200}
+    - Class: 114
+      Script: {instanceID: 12536}
+    - Class: 114
+      Script: {instanceID: 12724}
+    - Class: 114
+      Script: {instanceID: 13142}
+    - Class: 114
+      Script: {instanceID: 13550}
+    - Class: 114
+      Script: {instanceID: 14072}
+    - Class: 114
+      Script: {instanceID: 14170}
+>>>>>>> save_solved+final_enigma
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -460,6 +606,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 11250}
     - Class: 114
       Script: {instanceID: 11574}
@@ -471,6 +618,19 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13506}
     - Class: 114
       Script: {instanceID: 14102}
+=======
+      Script: {instanceID: 11264}
+    - Class: 114
+      Script: {instanceID: 11590}
+    - Class: 114
+      Script: {instanceID: 13170}
+    - Class: 114
+      Script: {instanceID: 13496}
+    - Class: 114
+      Script: {instanceID: 13584}
+    - Class: 114
+      Script: {instanceID: 14196}
+>>>>>>> save_solved+final_enigma
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -525,6 +685,7 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 12112}
     - Class: 114
       Script: {instanceID: 12274}
@@ -548,6 +709,31 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13980}
     - Class: 114
       Script: {instanceID: 14134}
+=======
+      Script: {instanceID: 12144}
+    - Class: 114
+      Script: {instanceID: 12312}
+    - Class: 114
+      Script: {instanceID: 12666}
+    - Class: 114
+      Script: {instanceID: 12724}
+    - Class: 114
+      Script: {instanceID: 12764}
+    - Class: 114
+      Script: {instanceID: 13136}
+    - Class: 114
+      Script: {instanceID: 13586}
+    - Class: 114
+      Script: {instanceID: 13608}
+    - Class: 114
+      Script: {instanceID: 13942}
+    - Class: 114
+      Script: {instanceID: 13962}
+    - Class: 114
+      Script: {instanceID: 14072}
+    - Class: 114
+      Script: {instanceID: 14228}
+>>>>>>> save_solved+final_enigma
     - Class: 115
       Script: {instanceID: 0}
     - Class: 137
@@ -576,6 +762,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 11250}
     - Class: 114
       Script: {instanceID: 11476}
@@ -601,6 +788,33 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14020}
     - Class: 114
       Script: {instanceID: 14076}
+=======
+      Script: {instanceID: 11264}
+    - Class: 114
+      Script: {instanceID: 11492}
+    - Class: 114
+      Script: {instanceID: 11532}
+    - Class: 114
+      Script: {instanceID: 11590}
+    - Class: 114
+      Script: {instanceID: 11622}
+    - Class: 114
+      Script: {instanceID: 11906}
+    - Class: 114
+      Script: {instanceID: 12200}
+    - Class: 114
+      Script: {instanceID: 12820}
+    - Class: 114
+      Script: {instanceID: 13170}
+    - Class: 114
+      Script: {instanceID: 13496}
+    - Class: 114
+      Script: {instanceID: 13584}
+    - Class: 114
+      Script: {instanceID: 14114}
+    - Class: 114
+      Script: {instanceID: 14170}
+>>>>>>> save_solved+final_enigma
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -639,6 +853,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 11250}
     - Class: 114
       Script: {instanceID: 11574}
@@ -658,6 +873,27 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14020}
     - Class: 114
       Script: {instanceID: 14076}
+=======
+      Script: {instanceID: 11264}
+    - Class: 114
+      Script: {instanceID: 11590}
+    - Class: 114
+      Script: {instanceID: 11998}
+    - Class: 114
+      Script: {instanceID: 12200}
+    - Class: 114
+      Script: {instanceID: 12820}
+    - Class: 114
+      Script: {instanceID: 13170}
+    - Class: 114
+      Script: {instanceID: 13496}
+    - Class: 114
+      Script: {instanceID: 13584}
+    - Class: 114
+      Script: {instanceID: 14114}
+    - Class: 114
+      Script: {instanceID: 14170}
+>>>>>>> save_solved+final_enigma
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -700,6 +936,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 11250}
     - Class: 114
       Script: {instanceID: 11574}
@@ -719,6 +956,27 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14020}
     - Class: 114
       Script: {instanceID: 14076}
+=======
+      Script: {instanceID: 11264}
+    - Class: 114
+      Script: {instanceID: 11590}
+    - Class: 114
+      Script: {instanceID: 12200}
+    - Class: 114
+      Script: {instanceID: 12820}
+    - Class: 114
+      Script: {instanceID: 13170}
+    - Class: 114
+      Script: {instanceID: 13200}
+    - Class: 114
+      Script: {instanceID: 13496}
+    - Class: 114
+      Script: {instanceID: 13584}
+    - Class: 114
+      Script: {instanceID: 14114}
+    - Class: 114
+      Script: {instanceID: 14170}
+>>>>>>> save_solved+final_enigma
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -757,6 +1015,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 11250}
     - Class: 114
       Script: {instanceID: 11410}
@@ -780,6 +1039,31 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14076}
     - Class: 114
       Script: {instanceID: 14124}
+=======
+      Script: {instanceID: 11264}
+    - Class: 114
+      Script: {instanceID: 11426}
+    - Class: 114
+      Script: {instanceID: 11532}
+    - Class: 114
+      Script: {instanceID: 11590}
+    - Class: 114
+      Script: {instanceID: 12200}
+    - Class: 114
+      Script: {instanceID: 12750}
+    - Class: 114
+      Script: {instanceID: 12820}
+    - Class: 114
+      Script: {instanceID: 13200}
+    - Class: 114
+      Script: {instanceID: 13584}
+    - Class: 114
+      Script: {instanceID: 14114}
+    - Class: 114
+      Script: {instanceID: 14170}
+    - Class: 114
+      Script: {instanceID: 14218}
+>>>>>>> save_solved+final_enigma
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -836,9 +1120,15 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 11962}
     - Class: 114
       Script: {instanceID: 13220}
+=======
+      Script: {instanceID: 11990}
+    - Class: 114
+      Script: {instanceID: 13292}
+>>>>>>> save_solved+final_enigma
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -871,6 +1161,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 11250}
     - Class: 114
       Script: {instanceID: 11574}
@@ -886,6 +1177,23 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13506}
     - Class: 114
       Script: {instanceID: 14076}
+=======
+      Script: {instanceID: 11264}
+    - Class: 114
+      Script: {instanceID: 11590}
+    - Class: 114
+      Script: {instanceID: 11972}
+    - Class: 114
+      Script: {instanceID: 12200}
+    - Class: 114
+      Script: {instanceID: 13170}
+    - Class: 114
+      Script: {instanceID: 13496}
+    - Class: 114
+      Script: {instanceID: 13584}
+    - Class: 114
+      Script: {instanceID: 14170}
+>>>>>>> save_solved+final_enigma
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -905,8 +1213,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 4
       Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
     - Class: 23
@@ -923,16 +1229,44 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
-    - Class: 81
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 13484}
     - Class: 114
       Script: {instanceID: 13856}
+=======
+      Script: {instanceID: 11486}
+    - Class: 114
+      Script: {instanceID: 12200}
+    - Class: 114
+      Script: {instanceID: 12370}
+    - Class: 114
+      Script: {instanceID: 12724}
+    - Class: 114
+      Script: {instanceID: 13142}
+    - Class: 114
+      Script: {instanceID: 13550}
+    - Class: 114
+      Script: {instanceID: 13562}
+    - Class: 114
+      Script: {instanceID: 13942}
+    - Class: 114
+      Script: {instanceID: 14072}
+    - Class: 114
+      Script: {instanceID: 14078}
+    - Class: 114
+      Script: {instanceID: 14170}
+>>>>>>> save_solved+final_enigma
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -971,6 +1305,7 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 11470}
     - Class: 114
       Script: {instanceID: 12034}
@@ -998,6 +1333,35 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13980}
     - Class: 114
       Script: {instanceID: 13994}
+=======
+      Script: {instanceID: 11486}
+    - Class: 114
+      Script: {instanceID: 12064}
+    - Class: 114
+      Script: {instanceID: 12252}
+    - Class: 114
+      Script: {instanceID: 12504}
+    - Class: 114
+      Script: {instanceID: 12652}
+    - Class: 114
+      Script: {instanceID: 12666}
+    - Class: 114
+      Script: {instanceID: 12886}
+    - Class: 114
+      Script: {instanceID: 13118}
+    - Class: 114
+      Script: {instanceID: 13170}
+    - Class: 114
+      Script: {instanceID: 13190}
+    - Class: 114
+      Script: {instanceID: 13842}
+    - Class: 114
+      Script: {instanceID: 14016}
+    - Class: 114
+      Script: {instanceID: 14072}
+    - Class: 114
+      Script: {instanceID: 14088}
+>>>>>>> save_solved+final_enigma
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1024,6 +1388,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 11250}
     - Class: 114
       Script: {instanceID: 11574}
@@ -1033,6 +1398,17 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13506}
     - Class: 114
       Script: {instanceID: 14076}
+=======
+      Script: {instanceID: 11264}
+    - Class: 114
+      Script: {instanceID: 11590}
+    - Class: 114
+      Script: {instanceID: 12200}
+    - Class: 114
+      Script: {instanceID: 13584}
+    - Class: 114
+      Script: {instanceID: 14170}
+>>>>>>> save_solved+final_enigma
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -1079,6 +1455,7 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 11654}
     - Class: 114
       Script: {instanceID: 12168}
@@ -1100,6 +1477,31 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13856}
     - Class: 114
       Script: {instanceID: 14076}
+=======
+      Script: {instanceID: 11676}
+    - Class: 114
+      Script: {instanceID: 11684}
+    - Class: 114
+      Script: {instanceID: 12200}
+    - Class: 114
+      Script: {instanceID: 12686}
+    - Class: 114
+      Script: {instanceID: 12724}
+    - Class: 114
+      Script: {instanceID: 13142}
+    - Class: 114
+      Script: {instanceID: 13300}
+    - Class: 114
+      Script: {instanceID: 13320}
+    - Class: 114
+      Script: {instanceID: 13550}
+    - Class: 114
+      Script: {instanceID: 13864}
+    - Class: 114
+      Script: {instanceID: 13942}
+    - Class: 114
+      Script: {instanceID: 14170}
+>>>>>>> save_solved+final_enigma
     - Class: 115
       Script: {instanceID: 0}
     - Class: 137
@@ -1112,28 +1514,64 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 199
       Script: {instanceID: 0}
-    Assets/Scenes/final-enigma.unity:
+    Assets/Scenes/final enigma/final_enigma.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
       Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
     - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
       Script: {instanceID: 0}
     - Class: 28
       Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 81
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 12554}
+    - Class: 114
+      Script: {instanceID: 12666}
+    - Class: 114
+      Script: {instanceID: 12724}
+    - Class: 114
+      Script: {instanceID: 13222}
+    - Class: 114
+      Script: {instanceID: 13942}
+    - Class: 114
+      Script: {instanceID: 14072}
+    - Class: 114
+      Script: {instanceID: 554152}
+    - Class: 114
+      Script: {instanceID: 554164}
+    - Class: 114
+      Script: {instanceID: 554178}
+    - Class: 115
+      Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     Assets/Scenes/lobby.unity:
     - Class: 1
@@ -1159,6 +1597,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 11250}
     - Class: 114
       Script: {instanceID: 11516}
@@ -1186,6 +1625,35 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14020}
     - Class: 114
       Script: {instanceID: 14076}
+=======
+      Script: {instanceID: 11264}
+    - Class: 114
+      Script: {instanceID: 11532}
+    - Class: 114
+      Script: {instanceID: 11544}
+    - Class: 114
+      Script: {instanceID: 11590}
+    - Class: 114
+      Script: {instanceID: 11622}
+    - Class: 114
+      Script: {instanceID: 11906}
+    - Class: 114
+      Script: {instanceID: 12028}
+    - Class: 114
+      Script: {instanceID: 12200}
+    - Class: 114
+      Script: {instanceID: 12820}
+    - Class: 114
+      Script: {instanceID: 13170}
+    - Class: 114
+      Script: {instanceID: 13496}
+    - Class: 114
+      Script: {instanceID: 13584}
+    - Class: 114
+      Script: {instanceID: 14114}
+    - Class: 114
+      Script: {instanceID: 14170}
+>>>>>>> save_solved+final_enigma
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1228,6 +1696,7 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 11260}
     - Class: 114
       Script: {instanceID: 11738}
@@ -1251,6 +1720,31 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13980}
     - Class: 114
       Script: {instanceID: 14076}
+=======
+      Script: {instanceID: 11274}
+    - Class: 114
+      Script: {instanceID: 11762}
+    - Class: 114
+      Script: {instanceID: 12200}
+    - Class: 114
+      Script: {instanceID: 12666}
+    - Class: 114
+      Script: {instanceID: 12724}
+    - Class: 114
+      Script: {instanceID: 12734}
+    - Class: 114
+      Script: {instanceID: 13318}
+    - Class: 114
+      Script: {instanceID: 13682}
+    - Class: 114
+      Script: {instanceID: 13942}
+    - Class: 114
+      Script: {instanceID: 14028}
+    - Class: 114
+      Script: {instanceID: 14072}
+    - Class: 114
+      Script: {instanceID: 14170}
+>>>>>>> save_solved+final_enigma
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -1300,6 +1794,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: d3793dfb77ea989691f964dce7b3368e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Structure
   - hash:
       serializedVersion: 2
       Hash: 5bde86af80fd02448adfaacda49ef2ab
@@ -1480,6 +1980,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Activity
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: savefinished
   - hash:
       serializedVersion: 2
       Hash: 7d55c9381620741e5155d935e12c3215
@@ -1728,6 +2234,12 @@ ScriptsOnlyBuild:
     className: TMP_TextEventHandler
   - hash:
       serializedVersion: 2
+      Hash: 48a7f0aa1e09fb60df047423c974aa5d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Boxophobic.Utils
+    className: SettingsData
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -1762,6 +2274,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Changecolor
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: save_solved
   - hash:
       serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
@@ -1816,6 +2334,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 7805dbebd103341782f3d6071ec8690f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: struc_appears
   - hash:
       serializedVersion: 2
       Hash: c79da8b40f3b674de48f584319ea0f66
@@ -2124,6 +2648,12 @@ ScriptsOnlyBuild:
     className: TMP_TextSelector_A
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Die_final_e
+  - hash:
+      serializedVersion: 2
       Hash: ae1347d9113eee8b83c5c8047dcf31a8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -2244,7 +2774,7 @@ ScriptsOnlyBuild:
     className: AudioTrack
   - hash:
       serializedVersion: 2
-      Hash: 6ed32fac2f9492abcd655a8e4031668b
+      Hash: e324f8755541d832310638a6c27938c8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Simon2
@@ -2484,10 +3014,22 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StyledMonoBehaviour
+  - hash:
+      serializedVersion: 2
       Hash: d9864ada3db659b8d6f66a20aff414b3
     assemblyName: PhotonUnityNetworking.dll
     namespaceName: Photon.Pun
     className: PhotonView
+  - hash:
+      serializedVersion: 2
+      Hash: 593f2f8dcd43c99d30a8feff37371c06
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: final_door_simon
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
@@ -2596,6 +3138,24 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 659d6ceab26f9e4237abaaf29249f293
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: leviers
+  - hash:
+      serializedVersion: 2
+      Hash: 659d6ceab26f9e4237abaaf29249f293
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: anim_trig
+  - hash:
+      serializedVersion: 2
+      Hash: 6300f3f78d7e157d9d070e5de563613e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: elevator
   platform: 19
   scenePathNames:
   - Assets/Scenes/Starting_Scenes.unity
@@ -2603,12 +3163,7 @@ ScriptsOnlyBuild:
   - Assets/Scenes/BIOMES SOLVED.unity
   - Assets/Scenes/Blackscreen.unity
   - Assets/Scenes/Die.unity
-  - Assets/Scenes/enigma1-1.unity
-  - Assets/Scenes/Enigme_plaques.unity
-  - Assets/Scenes/final-enigma.unity
-  - Assets/Scenes/HUB.unity
   - Assets/Scenes/HUD.unity
-  - Assets/Scenes/IleBombe.unity
   - Assets/Scenes/KeyBind.unity
   - Assets/Scenes/Load_NewGame.unity
   - Assets/Scenes/lobby.unity
@@ -2616,8 +3171,17 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Options.unity
   - Assets/Scenes/Polynon Scene.unity
   - Assets/Scenes/Pop Up.unity
-  - Assets/Scenes/premiere_salle.unity
-  - Assets/Scenes/Scene princ.unity
-  - Assets/Scenes/TranspaESC.unity
   - Assets/AgoraEngine/Demo/HelloUnity3D.unity
+<<<<<<< HEAD
   playerPath: C:/Users/sdefo/Bureau/polygame/Polypoly.exe
+=======
+  - Assets/Scenes/TranspaESC.unity
+  - Assets/Scenes/Scene princ.unity
+  - Assets/Scenes/premiere_salle.unity
+  - Assets/Scenes/HUB.unity
+  - Assets/Scenes/enigma1-1.unity
+  - Assets/Scenes/Enigme_plaques.unity
+  - Assets/Scenes/IleBombe.unity
+  - Assets/Scenes/final enigma/final_enigma.unity
+  playerPath: C:/Users/tidje/Bureau/build/Polypoly.exe
+>>>>>>> save_solved+final_enigma

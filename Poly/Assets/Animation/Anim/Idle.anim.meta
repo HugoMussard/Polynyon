@@ -1,8 +1,16 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Poly/Assets/Animation/Anim/Idle.anim.meta
 guid: 7aacaa467f3b57d408e84071f44564b1
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 0
+=======
+guid: 3c215c40cea7f1d42852b50150f79a0f
+folderAsset: yes
+timeCreated: 1547170076
+licenseType: Store
+DefaultImporter:
+>>>>>>> save_solved+final_enigma:Poly/Assets/PolygonPrototype/Materials/Triplanar_ObjectSpace.meta
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -25,6 +25,7 @@ public class Simon2 : MonoBehaviour
     public Material couleurVerte;
     public Material couleurBleue;
     public Material couleurJaune;
+    public bool finished;
     // Start is called before the first frame update
 
     void lighton(int color)
@@ -123,6 +124,7 @@ public class Simon2 : MonoBehaviour
         }
         
         display(lights[0]);
+        finished = false;
         
     }
 
@@ -142,7 +144,7 @@ public class Simon2 : MonoBehaviour
     void Update()
     {
         if (level == 4)
-            return;
+            finished = true;
             //exitfunction
         Debug.Log("ping");
         if (levierRouge.state)

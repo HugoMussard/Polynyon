@@ -1,8 +1,16 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Poly/Assets/Animation/Anim/Die.anim.meta
 guid: 3b0b293cbbaa11d43b9ec5d0a61a4bb9
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 0
+=======
+guid: dd3d61fb7c8e2e94b93f260dbca89d33
+folderAsset: yes
+timeCreated: 1547439172
+licenseType: Store
+DefaultImporter:
+>>>>>>> save_solved+final_enigma:Poly/Assets/PolygonPrototype/Materials/Misc.meta
   userData: 
   assetBundleName: 
   assetBundleVariant: 
