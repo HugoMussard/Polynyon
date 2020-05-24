@@ -31,10 +31,6 @@ sceneSetups:
   isLoaded: 0
   isActive: 0
   isSubScene: 0
-- path: Assets/Scenes/IleBombe.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
 - path: Assets/Scenes/KeyBind.unity
   isLoaded: 0
   isActive: 0
@@ -80,6 +76,10 @@ sceneSetups:
   isActive: 1
   isSubScene: 0
 - path: Assets/Scenes/TranspaESC.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/IleBombe.unity
   isLoaded: 0
   isActive: 0
   isSubScene: 0

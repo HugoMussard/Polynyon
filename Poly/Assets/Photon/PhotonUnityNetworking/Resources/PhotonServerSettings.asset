@@ -34,5 +34,8 @@ MonoBehaviour:
   - Malus
   - Swap_cinematique
   - Unlock
+  - Cam_cinematique
+  - End
+  - ChangeColor
   DisableAutoOpenWizard: 1
   ShowSettings: 0

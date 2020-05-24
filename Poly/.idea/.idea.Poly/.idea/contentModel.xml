@@ -51,7 +51,11 @@
             </e>
           </e>
         </e>
+<<<<<<< HEAD
         <e p="Floater.cs" t="Include" />
+=======
+        <e p="Fail_Bombe.cs" t="Include" />
+>>>>>>> Fin_Ile2
         <e p="Ile" t="Include">
           <e p="Rotation.cs" t="Include" />
         </e>
@@ -291,12 +295,16 @@
             <e p="GoGo.cs" t="Include" />
           </e>
           <e p="Ile2" t="Include">
+            <e p="Cinematique_End.cs" t="Include" />
             <e p="Cinematique_Pose_bombe.cs" t="Include" />
             <e p="Cinematique_unlock_indice.cs" t="Include" />
             <e p="FilsManager.cs" t="Include" />
+            <e p="Kart.cs" t="Include" />
             <e p="LetterUPDOWN.cs" t="Include" />
             <e p="Levier.cs" t="Include" />
             <e p="MainCable.cs" t="Include" />
+            <e p="Mdp4.cs" t="Include" />
+            <e p="Mdp_enigme.cs" t="Include" />
             <e p="TP_Ile2.cs" t="Include" />
             <e p="UnlockIndices_Ile2.cs" t="Include" />
           </e>

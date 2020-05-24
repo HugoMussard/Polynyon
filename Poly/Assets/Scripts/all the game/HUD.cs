@@ -18,6 +18,8 @@ public class HUD : MonoBehaviour
 
     public TextMeshProUGUI txt2;
 
+    public GameObject crosshair; 
+
     private float timer;
     private bool canCount = true;
     private bool doOnce = false;
@@ -27,6 +29,8 @@ public class HUD : MonoBehaviour
     private void Start()
     {
         timer = 0.0f; 
+        PlayerPrefs.SetInt("Fail", 0);
+        PlayerPrefs.Save();
     }
 
     void Update()
@@ -37,14 +41,22 @@ public class HUD : MonoBehaviour
         }
         txt.text = $"{PhotonNetwork.GetPing()} ms";
 
+        Debug.Log(PlayerPrefs.GetInt("CinematiqueON"));
+        
+        if (PlayerPrefs.HasKey("CinematiqueON") && PlayerPrefs.GetInt("CinematiqueON") == 1)
+            crosshair.SetActive(false);
+        else crosshair.SetActive(true);
+        
 
         if (SceneManager.GetSceneByName("IleBombe").isLoaded)
         {
             if (PlayerPrefs.GetInt("Malus_bool") == 1)
             {
+                txt2.GetComponent<TextMeshProUGUI>().color = Color.red;
                 PlayerPrefs.SetInt("Malus_bool", 0);
                 PlayerPrefs.Save();
                 minutes -= 5; 
+                Invoke("BackToWh", 2);
             }
 
             if (minutes > 0)
@@ -65,7 +77,15 @@ public class HUD : MonoBehaviour
             {
                 txt2.text = "0.00";
                 timer = 0.0f;
+                PlayerPrefs.SetInt("Fail", 1);
+                PlayerPrefs.Save();
             }
         }
+        
+    }
+    
+    private void BackToWh()
+    {
+        txt2.GetComponent<TextMeshProUGUI>().color = Color.white; 
     }
 }

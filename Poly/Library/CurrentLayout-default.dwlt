@@ -14,11 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 252
     y: 548
     width: 967.2
     height: 337.6
   m_ShowMode: 0
+=======
+    x: 0
+    y: 43
+    width: 1920
+    height: 997
+  m_ShowMode: 4
+>>>>>>> Fin_Ile2
   m_Title: 
 <<<<<<< HEAD
   m_RootView: {fileID: 4}
@@ -55,10 +63,16 @@ MonoBehaviour:
   m_RootView: {fileID: 7}
 =======
     y: 0
+<<<<<<< HEAD
     width: 1366
     height: 685
 >>>>>>> save_solved+final_enigma
   m_MinSize: {x: 875, y: 392}
+=======
+    width: 1920
+    height: 997
+  m_MinSize: {x: 875, y: 300}
+>>>>>>> Fin_Ile2
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &3
@@ -78,6 +92,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 968
     height: 338
   m_MinSize: {x: 275, y: 50}
@@ -87,6 +102,13 @@ MonoBehaviour:
   - {fileID: 22}
   m_Selected: 0
   m_LastSelected: 0
+=======
+    width: 1920
+    height: 30
+  m_MinSize: {x: 0, y: 0}
+  m_MaxSize: {x: 0, y: 0}
+  m_LastLoadedLayoutName: 
+>>>>>>> Fin_Ile2
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -104,6 +126,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 0
     width: 968
     height: 338
@@ -111,6 +134,13 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   vertical: 0
   controlID: 2099
+=======
+    y: 977
+    width: 1920
+    height: 20
+  m_MinSize: {x: 0, y: 0}
+  m_MaxSize: {x: 0, y: 0}
+>>>>>>> Fin_Ile2
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -130,6 +160,7 @@ MonoBehaviour:
     x: 0
     y: 30
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1536
     height: 731
   m_MinSize: {x: 602, y: 342}
@@ -144,6 +175,14 @@ MonoBehaviour:
   vertical: 0
   controlID: 128
 >>>>>>> save_solved+final_enigma
+=======
+    width: 1920
+    height: 947
+  m_MinSize: {x: 679, y: 342}
+  m_MaxSize: {x: 12004, y: 8042}
+  vertical: 0
+  controlID: 14629
+>>>>>>> Fin_Ile2
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -162,6 +201,7 @@ MonoBehaviour:
     x: 825
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 711
     height: 460
   m_MinSize: {x: 200, y: 200}
@@ -179,6 +219,14 @@ MonoBehaviour:
   vertical: 1
   controlID: 129
 >>>>>>> save_solved+final_enigma
+=======
+    width: 1225
+    height: 947
+  m_MinSize: {x: 403, y: 342}
+  m_MaxSize: {x: 8003, y: 8042}
+  vertical: 1
+  controlID: 14598
+>>>>>>> Fin_Ile2
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -200,6 +248,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1536
     height: 781
   m_MinSize: {x: 875, y: 300}
@@ -212,6 +261,14 @@ MonoBehaviour:
   vertical: 0
   controlID: 130
 >>>>>>> save_solved+final_enigma
+=======
+    width: 1225
+    height: 545
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
+  vertical: 0
+  controlID: 14599
+>>>>>>> Fin_Ile2
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -230,6 +287,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1536
     height: 30
   m_MinSize: {x: 0, y: 0}
@@ -241,8 +299,15 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
+=======
+    width: 388
+    height: 545
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 15}
+>>>>>>> Fin_Ile2
   m_Panes:
-  - {fileID: 13}
+  - {fileID: 15}
   m_Selected: 0
   m_LastSelected: 0
 >>>>>>> save_solved+final_enigma
@@ -334,6 +399,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 0
     y: 0
     width: 285
@@ -350,8 +416,18 @@ MonoBehaviour:
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
 >>>>>>> save_solved+final_enigma
+=======
+    x: 388
+    y: 0
+    width: 837
+    height: 545
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 16}
+>>>>>>> Fin_Ile2
   m_Panes:
   - {fileID: 16}
+  - {fileID: 17}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &13
@@ -365,14 +441,19 @@ MonoBehaviour:
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Name: SceneView
 =======
   m_Name: AnimationWindow
 >>>>>>> save_solved+final_enigma
+=======
+  m_Name: AnimationWindow
+>>>>>>> Fin_Ile2
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: 285
     y: 0
@@ -381,9 +462,18 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 17}
+=======
+    x: 0
+    y: 545
+    width: 1225
+    height: 402
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 20}
+>>>>>>> Fin_Ile2
   m_Panes:
-  - {fileID: 17}
   - {fileID: 18}
+<<<<<<< HEAD
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &14
@@ -399,6 +489,10 @@ MonoBehaviour:
   - {fileID: 17}
   - {fileID: 18}
   - {fileID: 19}
+=======
+  - {fileID: 19}
+  - {fileID: 20}
+>>>>>>> Fin_Ile2
   m_Selected: 2
   m_LastSelected: 1
 --- !u!114 &11
@@ -410,6 +504,7 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+<<<<<<< HEAD
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
@@ -417,10 +512,41 @@ MonoBehaviour:
 =======
   m_Name: InspectorWindow
 >>>>>>> save_solved+final_enigma
+=======
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+>>>>>>> Fin_Ile2
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 12}
+  - {fileID: 13}
+  m_Position:
+    serializedVersion: 2
+    x: 1225
+    y: 0
+    width: 695
+    height: 947
+  m_MinSize: {x: 276, y: 292}
+  m_MaxSize: {x: 4001, y: 8042}
+  vertical: 1
+  controlID: 14630
+--- !u!114 &12
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: 0
     y: 460
@@ -450,6 +576,47 @@ MonoBehaviour:
   m_LastSelected: 0
 --- !u!114 &12
 >>>>>>> save_solved+final_enigma
+=======
+    x: 0
+    y: 0
+    width: 695
+    height: 618
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 14}
+  m_Panes:
+  - {fileID: 14}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &13
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: InspectorWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 618
+    width: 695
+    height: 329
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 21}
+  m_Panes:
+  - {fileID: 21}
+  - {fileID: 22}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &14
+>>>>>>> Fin_Ile2
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -471,6 +638,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 824.8
     y: 73.6
     width: 710
@@ -481,6 +649,12 @@ MonoBehaviour:
     width: 731
     height: 339
 >>>>>>> save_solved+final_enigma
+=======
+    x: 1225
+    y: 73
+    width: 694
+    height: 597
+>>>>>>> Fin_Ile2
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewsNames: []
   m_SerializedViewsValues: []
@@ -489,10 +663,14 @@ MonoBehaviour:
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_TargetSize: {x: 710, y: 399}
 =======
   m_TargetSize: {x: 565, y: 318}
 >>>>>>> save_solved+final_enigma
+=======
+  m_TargetSize: {x: 694, y: 390}
+>>>>>>> Fin_Ile2
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -507,6 +685,7 @@ MonoBehaviour:
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_HBaseRangeMin: -284
     m_HBaseRangeMax: 284
     m_VBaseRangeMin: -159.6
@@ -517,6 +696,12 @@ MonoBehaviour:
     m_VBaseRangeMin: -159
     m_VBaseRangeMax: 159
 >>>>>>> save_solved+final_enigma
+=======
+    m_HBaseRangeMin: -347
+    m_HBaseRangeMax: 347
+    m_VBaseRangeMin: -195
+    m_VBaseRangeMax: 195
+>>>>>>> Fin_Ile2
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -535,6 +720,7 @@ MonoBehaviour:
       x: 0
       y: 21
 <<<<<<< HEAD
+<<<<<<< HEAD
       width: 710
       height: 418
     m_Scale: {x: 1, y: 1}
@@ -545,12 +731,19 @@ MonoBehaviour:
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 365.5, y: 159}
 >>>>>>> save_solved+final_enigma
+=======
+      width: 694
+      height: 576
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 347, y: 288}
+>>>>>>> Fin_Ile2
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
       x: -355
       y: -209
@@ -568,12 +761,25 @@ MonoBehaviour:
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 731, y: 339}
 >>>>>>> save_solved+final_enigma
+=======
+      x: -347
+      y: -288
+      width: 694
+      height: 576
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 694, y: 597}
+>>>>>>> Fin_Ile2
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
+<<<<<<< HEAD
 --- !u!114 &16
+=======
+--- !u!114 &15
+>>>>>>> Fin_Ile2
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -596,13 +802,20 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 73.6
     width: 284
     height: 439
+=======
+    y: 73
+    width: 387
+    height: 524
+>>>>>>> Fin_Ile2
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: 
@@ -618,6 +831,11 @@ MonoBehaviour:
       m_LastClickedID: 41352
       m_ExpandedIDs: 30fbffff20a300009ca40000
 >>>>>>> save_solved+final_enigma
+=======
+      m_SelectedIDs: 28fbffff
+      m_LastClickedID: -1240
+      m_ExpandedIDs: ca6cffff4675ffff5a77ffff167effff1e7fffff2e7fffff407fffff3a86ffff0292ffffb493ffff2e99ffff3c9afffff6e3ffff28fbffff3cfbffff40fbffff4efbffff58fd000042a30100b2aa01008caf01009c2402005e380200a4a502003ec4020064db020080190300da1e030080840300da89030084be0300a4f10300fef603000e260400682b0400485b0400a2600400467c0400b28f04000c950400b2b004007cca040038010500021b0500c6a9050034b90500123306006c380600
+>>>>>>> Fin_Ile2
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -634,10 +852,14 @@ MonoBehaviour:
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
         m_ClientGUIView: {fileID: 12}
 =======
         m_ClientGUIView: {fileID: 8}
 >>>>>>> save_solved+final_enigma
+=======
+        m_ClientGUIView: {fileID: 8}
+>>>>>>> Fin_Ile2
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -645,7 +867,11 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 076ac7471a36e8c45ac699e741a83d9e
+<<<<<<< HEAD
 --- !u!114 &17
+=======
+--- !u!114 &16
+>>>>>>> Fin_Ile2
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -667,6 +893,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 284.80002
     y: 73.6
     width: 538
@@ -677,6 +904,12 @@ MonoBehaviour:
     width: 731
     height: 339
 >>>>>>> save_solved+final_enigma
+=======
+    x: 388
+    y: 73
+    width: 835
+    height: 524
+>>>>>>> Fin_Ile2
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: b197e8f6666df0e41a959478776d09fa
@@ -689,6 +922,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: -6.79708, y: 4.252221, z: 6.6180544}
     speed: 2
     m_Value: {x: -6.79708, y: 4.252221, z: 6.6180544}
@@ -697,6 +931,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -12.907227, y: 6.21875, z: -214.60938}
 >>>>>>> save_solved+final_enigma
+=======
+    m_Target: {x: -3.2614088, y: 18.655941, z: -84.3333}
+    speed: 2
+    m_Value: {x: -3.2614088, y: 18.655941, z: -84.3333}
+>>>>>>> Fin_Ile2
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -743,6 +982,7 @@ MonoBehaviour:
     m_gridOpacity: 0.5
   m_Rotation:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 0.30391264, y: 0.21612771, z: -0.070998855, w: 0.9251407}
     speed: 2
     m_Value: {x: 0.046767086, y: 0.7885978, z: -0.0604457, w: 0.61014146}
@@ -759,13 +999,27 @@ MonoBehaviour:
     speed: 2
     m_Value: 10.300981
 >>>>>>> save_solved+final_enigma
+=======
+    m_Target: {x: 0.06412413, y: -0.3260795, z: -0.022837976, w: -0.94318044}
+    speed: 2
+    m_Value: {x: 0.06410649, y: -0.32598975, z: -0.022831691, w: -0.9429209}
+  m_Size:
+    m_Target: 22
+    speed: 2
+    m_Value: 22
+>>>>>>> Fin_Ile2
   m_Ortho:
     m_Target: 1
     speed: 2
     m_Value: 1
   m_CameraSettings:
+<<<<<<< HEAD
     m_Speed: 0.9
     m_SpeedNormalized: 0.47
+=======
+    m_Speed: 0.8
+    m_SpeedNormalized: 0.38
+>>>>>>> Fin_Ile2
     m_SpeedMin: 0.01
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -783,7 +1037,11 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
+<<<<<<< HEAD
 --- !u!114 &18
+=======
+--- !u!114 &17
+>>>>>>> Fin_Ile2
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -804,6 +1062,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: 284.80002
     y: 73.6
@@ -961,6 +1220,14 @@ MonoBehaviour:
   m_LayerEditor:
     m_SelectedLayerIndex: 0
 --- !u!114 &20
+=======
+    x: 358
+    y: 73
+    width: 768
+    height: 451
+  m_ViewDataDictionary: {fileID: 0}
+--- !u!114 &18
+>>>>>>> Fin_Ile2
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -983,6 +1250,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 533.60004
     width: 1536
     height: 250
@@ -991,6 +1259,11 @@ MonoBehaviour:
     width: 1089
     height: 254
 >>>>>>> save_solved+final_enigma
+=======
+    y: 618
+    width: 1224
+    height: 381
+>>>>>>> Fin_Ile2
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -1006,13 +1279,18 @@ MonoBehaviour:
     m_SearchArea: 1
     m_Folders:
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets/Resources
 =======
     - Assets/Scripts/enigme_1-1
 >>>>>>> save_solved+final_enigma
+=======
+    - Assets/Resources
+>>>>>>> Fin_Ile2
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
+<<<<<<< HEAD
 <<<<<<< HEAD
   - Assets/Resources
   m_LastFoldersGridSize: -1
@@ -1036,6 +1314,18 @@ MonoBehaviour:
     m_LastClickedID: 20930
     m_ExpandedIDs: 00000000184e00001a4e00001c4e00001e4e0000204e0000224e0000244e0000264e0000bc51000000ca9a3b
 >>>>>>> save_solved+final_enigma
+=======
+  - Assets/Resources
+  m_LastFoldersGridSize: -1
+  m_LastProjectPath: C:\Users\hugom\Polynyon\Poly
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 791}
+    m_SelectedIDs: a0c00000
+    m_LastClickedID: 49312
+    m_ExpandedIDs: 000000009449000096490000984900009a4900009c4900009e490000a049000000ca9a3b
+>>>>>>> Fin_Ile2
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1064,10 +1354,14 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000e0490000e2490000e4490000e6490000e8490000ea490000
 =======
     m_ExpandedIDs: 00000000184e00001a4e00001c4e00001e4e0000204e0000224e0000244e0000264e0000
 >>>>>>> save_solved+final_enigma
+=======
+    m_ExpandedIDs: 000000009449000096490000984900009a4900009c4900009e490000a049000000ca9a3b
+>>>>>>> Fin_Ile2
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1093,6 +1387,7 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
@@ -1102,6 +1397,12 @@ MonoBehaviour:
     m_HadKeyboardFocusLastEvent: 0
 >>>>>>> save_solved+final_enigma
     m_ExpandedInstanceIDs: c6230000
+=======
+    m_SelectedInstanceIDs: 5eafffff
+    m_LastClickedInstanceID: -20642
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c623000000000000
+>>>>>>> Fin_Ile2
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1129,7 +1430,11 @@ MonoBehaviour:
     m_GridSize: 96
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 218
+<<<<<<< HEAD
 --- !u!114 &21
+=======
+--- !u!114 &19
+>>>>>>> Fin_Ile2
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1152,6 +1457,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 533.60004
     width: 1536
     height: 250
@@ -1162,6 +1468,13 @@ MonoBehaviour:
 >>>>>>> save_solved+final_enigma
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &22
+=======
+    y: 618
+    width: 1224
+    height: 381
+  m_ViewDataDictionary: {fileID: 0}
+--- !u!114 &20
+>>>>>>> Fin_Ile2
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1183,6 +1496,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 433
     width: 1089
     height: 254
@@ -1191,6 +1505,16 @@ MonoBehaviour:
     m_IsLocked: 0
   m_LastSelectedObjectID: 41352
 --- !u!114 &20
+=======
+    y: 618
+    width: 1224
+    height: 381
+  m_ViewDataDictionary: {fileID: 0}
+  m_LockTracker:
+    m_IsLocked: 0
+  m_LastSelectedObjectID: 425486
+--- !u!114 &21
+>>>>>>> Fin_Ile2
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1212,6 +1536,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 252
     y: 548
     width: 967
@@ -1222,6 +1547,12 @@ MonoBehaviour:
     width: 275
     height: 614
 >>>>>>> save_solved+final_enigma
+=======
+    x: 1225
+    y: 691
+    width: 694
+    height: 308
+>>>>>>> Fin_Ile2
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
   m_ObjectsLockedBeforeSerialization: []
@@ -1229,9 +1560,39 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewResizer:
+<<<<<<< HEAD
     m_CachedPref: 195
+=======
+    m_CachedPref: -290
+>>>>>>> Fin_Ile2
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
+--- !u!114 &22
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12079, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 390, y: 390}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Lighting
+    m_Image: {fileID: 8394858894532624064, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1128
+    y: 609
+    width: 791
+    height: 390
+  m_ViewDataDictionary: {fileID: 0}

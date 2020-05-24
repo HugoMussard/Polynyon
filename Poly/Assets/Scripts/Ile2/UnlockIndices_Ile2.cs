@@ -63,7 +63,7 @@ public class UnlockIndices_Ile2 : MonoBehaviourPunCallbacks
             if (nb == 3)
             {
                 anim3.SetBool("Explosion_bool", true);
-                Invoke("Explosion_FX", 1.7f);
+                Invoke("Explosion_FX", 1.85f);
                 Set_act_coll(coll_tente_verte);
                 nb = 0;
             }
