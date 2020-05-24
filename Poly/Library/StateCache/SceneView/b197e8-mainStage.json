@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":-6.797080039978027,"y":4.25222110748291,"z":6.618054389953613},"rotation":{"x":0.3039126396179199,"y":0.21612770855426789,"z":-0.07099885493516922,"w":0.9251406788825989},"size":2.151332139968872,"orthographic":false}
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":-12.9072265625,"y":6.21875,"z":-214.609375},"rotation":{"x":-0.24906371533870698,"y":-0.7092447280883789,"z":0.30103325843811037,"w":-0.5868025422096252},"size":10.764524459838868,"orthographic":true}
@@ -7,3 +8,6 @@
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":-3.261408805847168,"y":18.655941009521486,"z":-84.33329772949219},"rotation":{"x":0.06412412971258164,"y":-0.32607948780059817,"z":-0.02283797599375248,"w":-0.9431804418563843},"size":22.0,"orthographic":false}
 >>>>>>> Fin_Ile2
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":6.7866926193237309,"y":6.6070876121521,"z":23.424278259277345},"rotation":{"x":0.3602920174598694,"y":0.19515357911586762,"z":-0.07735906541347504,"w":0.9089124798774719},"size":13.62343978881836,"orthographic":false}
+>>>>>>> Animations

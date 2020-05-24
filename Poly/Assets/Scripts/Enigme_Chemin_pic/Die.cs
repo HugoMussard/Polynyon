@@ -5,11 +5,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement; 
 public class Die : MonoBehaviourPunCallbacks
 {
+    string scene;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        scene = SceneManager.GetActiveScene().name;
     }
 
     // Update is called once per frame
@@ -22,6 +24,7 @@ public class Die : MonoBehaviourPunCallbacks
     {
         SceneManager.LoadScene("Enigme_plaques");
     }
+
     public void BackToMenu()
     {
         if (PhotonNetwork.IsMasterClient)

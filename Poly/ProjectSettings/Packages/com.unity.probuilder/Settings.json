@@ -53,6 +53,7 @@
             {
                 "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "editor.toolbarIconGUI",
+<<<<<<< HEAD
                 "value": "{\"m_Value\":true}"
             },
             {
@@ -205,6 +206,9 @@
                 "key": "WeldVertices.weldDistance",
                 "value": "{\"m_Value\":0.009999999776482582}"
 >>>>>>> Fin_Ile2
+=======
+                "value": "{\"m_Value\":false}"
+>>>>>>> Animations
             }
         ]
     }
