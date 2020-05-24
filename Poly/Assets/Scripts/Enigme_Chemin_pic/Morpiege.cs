@@ -9,12 +9,19 @@ using UnityEngine.SceneManagement;
 public class Morpiege : MonoBehaviour
 {
     public Spawn_script spawn;
+    Animator anim;
 
-    public static bool die;
+
     // Start is called before the first frame update
     void Start()
     {
-        die = false;
+        Invoke("waitforSpawn", 2.1f);
+    }
+
+    void waitforSpawn()
+    {
+        anim = spawn.clone1.transform.Find("Character").GetComponent<Animator>();
+        
     }
 
     // Update is called once per frame
@@ -27,11 +34,18 @@ public class Morpiege : MonoBehaviour
     {
         Die();
     }
-    
+    private void Set_UnsetMov(bool state)
+    {
+        if (PhotonNetwork.IsMasterClient)
+            spawn.clone1.GetComponent<moves>().enabled = state; 
+        else 
+            spawn.clone2.GetComponent<moves>().enabled = state; 
+    }
     void Die()
     {
-        die = true;
-        SceneManager.LoadScene("Die", LoadSceneMode.Additive);
+        anim.SetBool("Die", true);
+        Set_UnsetMov(false);
+        Invoke("jsp", 2);
         if (PhotonNetwork.IsMasterClient)
             spawn.cam1.enabled = false;
         else
@@ -46,5 +60,10 @@ public class Morpiege : MonoBehaviour
         {
             SceneManager.UnloadSceneAsync("HUD");
         }
+    }
+
+    void jsp()
+    {
+        SceneManager.LoadScene("Die");
     }
 }
