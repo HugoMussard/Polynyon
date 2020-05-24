@@ -49,13 +49,10 @@ public class moves : MonoBehaviourPunCallbacks
         
         if (!photonView.IsMine) return;
 
+        horizontal = Input.GetAxis("Horizontal");
         Anim.SetFloat("vertical", Input.GetAxis("Vertical"));
-        Anim.SetFloat("horizontal", Input.GetAxis("Horizontal"));
-
-        if (Morpiege.die)
-        {
-            Anim.SetBool("Die", true);
-        }
+        Anim.SetFloat("horizontal", horizontal);
+        
         
         
 
