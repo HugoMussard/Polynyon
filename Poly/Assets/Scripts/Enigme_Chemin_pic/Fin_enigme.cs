@@ -5,16 +5,13 @@ using UnityEngine;
 
 public class Fin_enigme : MonoBehaviour
 {
-    public Transform rocher;
-    public GameObject smoke;
-    public Spawn_script spawn_script;
-    private Renderer rd;
-    public GameObject camdie;
+    private Animator anim;
+    public GameObject rocher;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        anim = rocher.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -25,12 +22,8 @@ public class Fin_enigme : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        bouge();
-    }
-
-    void bouge()
-    {
-        rocher.Translate(Vector3.down * (Time.deltaTime * 1.0f));
-    }
+        anim.SetBool("Fini", true);
+    }    
+    
     
 }

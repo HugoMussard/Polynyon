@@ -46,13 +46,6 @@ public class Morpiege : MonoBehaviour
         anim.SetBool("Die", true);
         Set_UnsetMov(false);
         Invoke("jsp", 2);
-        if (PhotonNetwork.IsMasterClient)
-            spawn.cam1.enabled = false;
-        else
-        {
-            spawn.cam2.enabled = false;
-        }
-
         
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
