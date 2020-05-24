@@ -9,8 +9,7 @@ public class GoGo : MonoBehaviour
     // Start is called before the first frame update
     public goenigm go1;
     public goenigm go2;
-    public Scene load;
-    public Scene unload;
+    public string load;
     bool go;
     float time;
     void Start()
@@ -37,7 +36,7 @@ public class GoGo : MonoBehaviour
         }
         if (go)
         {
-            SceneManager.LoadScene(load.handle);
+            SceneManager.LoadScene(load);
         }
     }
 }
