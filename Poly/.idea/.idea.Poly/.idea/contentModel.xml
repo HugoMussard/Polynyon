@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\martin\AppData\local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\martin\AppData\local\JetBrains\Rider2020.1\resharper-host\local\Transient\ReSharperHost\v201\SolutionCaches\_Poly.-2099444804.00" t="ExcludeRecursive" />
-    <e p="C:\Users\martin\Documents\Polynyon\Poly" t="IncludeRecursive">
+    <e p="C:\Users\hugom\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\hugom\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Poly.-1596253593.00" t="ExcludeRecursive" />
+    <e p="C:\Users\hugom\Polynyon\Poly" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -51,11 +51,85 @@
             </e>
           </e>
         </e>
-<<<<<<< HEAD
-        <e p="Floater.cs" t="Include" />
-=======
+        <e p="BOXOPHOBIC" t="Include">
+          <e p="Skybox Cubemap Extended" t="Include">
+            <e p="Core" t="Include">
+              <e p="Shaders" t="Include">
+                <e p="Skybox Cubemap Extended.shader" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Utils" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="BoxophobicUtils" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="GetBoxophobicFolder.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Constants" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="Constants.cs" t="Include" />
+                </e>
+              </e>
+              <e p="SettingsUtils" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="LoadSettingsData.cs" t="Include" />
+                  <e p="SaveSettingsData.cs" t="Include" />
+                </e>
+                <e p="SettingsData.cs" t="Include" />
+              </e>
+              <e p="StyledGUI" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="DrawInspectorBanner.cs" t="Include" />
+                  <e p="DrawInspectorCategory.cs" t="Include" />
+                  <e p="DrawWindowBanner.cs" t="Include" />
+                  <e p="DrawWindowCategory.cs" t="Include" />
+                </e>
+              </e>
+              <e p="StyledInspector" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="StyledBannerDrawer.cs" t="Include" />
+                  <e p="StyledCategoryDrawer.cs" t="Include" />
+                  <e p="StyledInteractiveDrawer.cs" t="Include" />
+                  <e p="StyledMessageDrawer.cs" t="Include" />
+                  <e p="StyledPopupArrayDrawer.cs" t="Include" />
+                  <e p="StyledPopupLayersDrawer.cs" t="Include" />
+                  <e p="StyledRangeOptionsDrawer.cs" t="Include" />
+                  <e p="StyledSpaceDrawer.cs" t="Include" />
+                  <e p="StyledTexturePreviewDrawer.cs" t="Include" />
+                </e>
+                <e p="StyledBanner.cs" t="Include" />
+                <e p="StyledCategory.cs" t="Include" />
+                <e p="StyledInteractive.cs" t="Include" />
+                <e p="StyledMessage.cs" t="Include" />
+                <e p="StyledPopupArray.cs" t="Include" />
+                <e p="StyledPopupLayers.cs" t="Include" />
+                <e p="StyledRangeOptions.cs" t="Include" />
+                <e p="StyledSpace.cs" t="Include" />
+                <e p="StyledTexturePreview.cs" t="Include" />
+              </e>
+              <e p="StyledMaterial" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="StyledBannerDrawer.cs" t="Include" />
+                  <e p="StyledCategoryDrawer.cs" t="Include" />
+                  <e p="StyledDiffusionMaterialDrawer.cs" t="Include" />
+                  <e p="StyledInteractiveDrawer.cs" t="Include" />
+                  <e p="StyledMessageDrawer.cs" t="Include" />
+                  <e p="StyledSpaceDrawer.cs" t="Include" />
+                </e>
+              </e>
+              <e p="StyledMono" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="StyledMonoBehaviourEditor.cs" t="Include" />
+                </e>
+                <e p="StyledMonoBehaviour.cs" t="Include" />
+                <e p="StyledMonoHideScriptField.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="Fail_Bombe.cs" t="Include" />
->>>>>>> Fin_Ile2
+        <e p="Floater.cs" t="Include" />
         <e p="Ile" t="Include">
           <e p="Rotation.cs" t="Include" />
         </e>
@@ -241,6 +315,14 @@
         <e p="PolygonCity" t="Include">
           <e p="Change_Log.txt" t="Include" />
         </e>
+        <e p="PolygonPrototype" t="Include">
+          <e p="Shaders" t="Include">
+            <e p="Prototype_Glass_Global.shader" t="Include" />
+            <e p="Prototype_Glass_Object.shader" t="Include" />
+            <e p="Prototype_Global.shader" t="Include" />
+            <e p="Prototype_Object.shader" t="Include" />
+          </e>
+        </e>
         <e p="Scenes" t="Include">
           <e p="3eme enigme" t="Include">
             <e p="Changecolor.cs" t="Include" />
@@ -278,6 +360,7 @@
             <e p="Jewel.cs" t="Include" />
             <e p="Killing.cs" t="Include" />
             <e p="reset.cs" t="Include" />
+            <e p="savefinished.cs" t="Include" />
           </e>
           <e p="Enigme_Chemin_pic" t="Include">
             <e p="ButtonPush.cs" t="Include" />
@@ -288,6 +371,15 @@
             <e p="Murdepics.cs" t="Include" />
             <e p="Plateforme.cs" t="Include" />
             <e p="trigger_simon_pic.cs" t="Include" />
+          </e>
+          <e p="final-enigma" t="Include">
+            <e p="anim_trig.cs" t="Include" />
+            <e p="anims_on_off.cs" t="Include" />
+            <e p="Die_final_e.cs" t="Include" />
+            <e p="elevator.cs" t="Include" />
+            <e p="leviers.cs" t="Include" />
+            <e p="struc_appears.cs" t="Include" />
+            <e p="Structure.cs" t="Include" />
           </e>
           <e p="HUB" t="Include">
             <e p="enigmas_finished.cs" t="Include" />
@@ -315,6 +407,10 @@
           <e p="Scripts_lobby" t="Include">
             <e p="CreateUserName.cs" t="Include" />
             <e p="PhotonLobby.cs" t="Include" />
+          </e>
+          <e p="Simon" t="Include">
+            <e p="final_door_simon.cs" t="Include" />
+            <e p="save_solved.cs" t="Include" />
           </e>
           <e p="Start_Menu" t="Include">
             <e p="Blackscreen.cs" t="Include" />

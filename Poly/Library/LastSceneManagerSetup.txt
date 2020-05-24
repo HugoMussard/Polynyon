@@ -1,4 +1,8 @@
 sceneSetups:
+- path: Assets/Scenes/Starting_Scenes.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
 - path: Assets/Scenes/BackFromGame.unity
   isLoaded: 0
   isActive: 0
@@ -19,10 +23,6 @@ sceneSetups:
   isLoaded: 0
   isActive: 0
   isSubScene: 0
-- path: Assets/PolygonSamurai/Scenes/Demo.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
 - path: Assets/Scenes/Enigme_plaques.unity
   isLoaded: 0
   isActive: 0
@@ -32,6 +32,10 @@ sceneSetups:
   isActive: 0
   isSubScene: 0
 - path: Assets/Scenes/HUD.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/IleBombe.unity
   isLoaded: 0
   isActive: 0
   isSubScene: 0
@@ -67,23 +71,19 @@ sceneSetups:
   isLoaded: 0
   isActive: 0
   isSubScene: 0
-- path: Assets/Scenes/final enigma/final_enigma.unity
-  isLoaded: 1
-  isActive: 0
-  isSubScene: 0
 - path: Assets/Scenes/Scene princ.unity
   isLoaded: 0
   isActive: 0
   isSubScene: 0
-- path: Assets/Scenes/Starting_Scenes.unity
-  isLoaded: 1
-  isActive: 1
+- path: Assets/Scenes/Test.unity
+  isLoaded: 0
+  isActive: 0
   isSubScene: 0
 - path: Assets/Scenes/TranspaESC.unity
   isLoaded: 0
   isActive: 0
   isSubScene: 0
-- path: Assets/Scenes/IleBombe.unity
+- path: Assets/Scenes/premiere_salle/premiere_salle.unity
   isLoaded: 0
   isActive: 0
   isSubScene: 0

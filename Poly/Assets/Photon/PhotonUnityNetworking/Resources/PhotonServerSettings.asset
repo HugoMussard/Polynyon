@@ -31,11 +31,9 @@ MonoBehaviour:
   RpcList:
   - ClickRpc
   - DestroyRpc
+  - End
   - Malus
   - Swap_cinematique
   - Unlock
-  - Cam_cinematique
-  - End
-  - ChangeColor
   DisableAutoOpenWizard: 1
   ShowSettings: 0

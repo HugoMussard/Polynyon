@@ -16,9 +16,6 @@ public class Cinematique_unlock_indice : MonoBehaviourPunCallbacks
     private bool cam2_bool; 
     private bool cam3_bool;
     
-<<<<<<< HEAD
-=======
-
     // Start is called before the first frame update
     void Start()
     {
@@ -26,8 +23,7 @@ public class Cinematique_unlock_indice : MonoBehaviourPunCallbacks
         PlayerPrefs.Save();
         
     }
->>>>>>> Fin_Ile2
-    
+
     private void Set_UnsetCam(bool state)
     {
         if (PhotonNetwork.IsMasterClient)

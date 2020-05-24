@@ -10,14 +10,7 @@ public class Cinematique_Pose_bombe : MonoBehaviour
     public Camera cam_pose_bombe;
 
     public Spawn_script spawn;
-
-<<<<<<< HEAD
-    public float cheatcode = 11.0f; 
-
-    private void Start()
-    {
-        Invoke("Wait_spawn", cheatcode);
-=======
+    
     public float delay = 10.6f;
 
     public GameObject cam_Sim1;
@@ -26,7 +19,6 @@ public class Cinematique_Pose_bombe : MonoBehaviour
     private void Start()
     {
         Invoke("Cam_Sim", 10.6f);
->>>>>>> Fin_Ile2
     }
 
     private void Cam_Sim()
