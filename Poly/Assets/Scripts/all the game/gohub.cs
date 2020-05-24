@@ -7,10 +7,10 @@ using UnityEngine.SceneManagement;
 
 public class gohub : MonoBehaviourPunCallbacks
 {
-    public Scene load;
+    public string load;
     private void OnTriggerEnter(Collider collider)
     {
-        SceneManager.LoadScene(load.handle);
+        SceneManager.LoadScene(load);
     }
     
 }

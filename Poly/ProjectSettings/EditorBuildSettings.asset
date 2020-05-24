@@ -54,9 +54,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Scene princ.unity
     guid: eba584e504828544dac5f60b3a8c841b
   - enabled: 1
-    path: Assets/Scenes/premiere_salle.unity
-    guid: efb492ba44058b44887f3ad80decda00
-  - enabled: 1
     path: Assets/Scenes/HUB.unity
     guid: 906e3b84d1eb32249bef56ea7c272eed
   - enabled: 1
@@ -71,4 +68,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/final enigma/final_enigma.unity
     guid: e70ead5f2ea586f48b3ef971d9190a72
+  - enabled: 1
+    path: Assets/PolygonSamurai/Scenes/Demo.unity
+    guid: 9a36afe203cf34b4fad518f34185f921
+  - enabled: 1
+    path: Assets/Scenes/premiere_salle/premiere_salle.unity
+    guid: bbdd470b5c33383468686b6a39ab558a
   m_configObjects: {}

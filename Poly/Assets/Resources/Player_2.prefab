@@ -238,12 +238,12 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 2
-  m_Radius: 0.5
+  m_Radius: 0.4
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0, z: 0.2}
 --- !u!114 &8263823287175323129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -374,10 +374,22 @@ MonoBehaviour:
     Name: vertical
   - Type: 4
     SynchronizeType: 0
-    Name: isJumping
+    Name: Die
   - Type: 4
     SynchronizeType: 0
-    Name: isTackling
+    Name: Jump
+  - Type: 4
+    SynchronizeType: 0
+    Name: Sprint
+  - Type: 4
+    SynchronizeType: 0
+    Name: Coucou
+  - Type: 4
+    SynchronizeType: 0
+    Name: Macarena
+  - Type: 1
+    SynchronizeType: 0
+    Name: horizontal
   m_SynchronizeLayers:
   - SynchronizeType: 2
     LayerIndex: 0
