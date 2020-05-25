@@ -355,12 +355,12 @@
           </e>
           <e p="enigme_1-1" t="Include">
             <e p="Activity.cs" t="Include" />
+            <e p="finished.cs" t="Include" />
             <e p="first_step.cs" t="Include" />
             <e p="grilles.cs" t="Include" />
             <e p="Jewel.cs" t="Include" />
             <e p="Killing.cs" t="Include" />
             <e p="reset.cs" t="Include" />
-            <e p="savefinished.cs" t="Include" />
           </e>
           <e p="Enigme_Chemin_pic" t="Include">
             <e p="ButtonPush.cs" t="Include" />
@@ -370,6 +370,7 @@
             <e p="Morpiege.cs" t="Include" />
             <e p="Murdepics.cs" t="Include" />
             <e p="Plateforme.cs" t="Include" />
+            <e p="savefinished.cs" t="Include" />
             <e p="trigger_simon_pic.cs" t="Include" />
           </e>
           <e p="final-enigma" t="Include">

@@ -18,7 +18,7 @@ public class Cinematique_Pose_bombe : MonoBehaviour
 
     private void Start()
     {
-        Invoke("Cam_Sim", 10.6f);
+        Invoke("Cam_Sim", delay);
     }
 
     private void Cam_Sim()

@@ -4,16 +4,11 @@ using UnityEngine;
 
 public class NextSent : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
-       if (Input.GetKeyDown(KeyCode.E))
+       if (Input.GetKeyDown(KeyCode.E) && GetComponent<DialogueManager>().started && GetComponent<Hiel>().check)
            FindObjectOfType<DialogueManager>().DisplayNextSentence();
     }
 }

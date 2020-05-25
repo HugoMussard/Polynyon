@@ -2293,10 +2293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   go1: {fileID: 0}
   go2: {fileID: 0}
-  load:
-    m_Handle: 17
-  unload:
-    m_Handle: 21
+  load: 
 --- !u!4 &856308487
 Transform:
   m_ObjectHideFlags: 0
@@ -6064,7 +6061,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 5346659086357810810}
-  viewIdField: 3
+  viewIdField: 16
   InstantiationId: 0
   isRuntimeInstantiated: 0
 --- !u!95 &5346659086357810812

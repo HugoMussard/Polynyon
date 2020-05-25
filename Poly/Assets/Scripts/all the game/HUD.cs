@@ -41,8 +41,6 @@ public class HUD : MonoBehaviour
         }
         txt.text = $"{PhotonNetwork.GetPing()} ms";
 
-        Debug.Log(PlayerPrefs.GetInt("CinematiqueON"));
-        
         if (PlayerPrefs.HasKey("CinematiqueON") && PlayerPrefs.GetInt("CinematiqueON") == 1)
             crosshair.SetActive(false);
         else crosshair.SetActive(true);

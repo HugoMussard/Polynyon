@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class Hiel : MonoBehaviourPunCallbacks
 {
-    public GameObject mur;
 
     public bool isfinished;
         
@@ -16,11 +15,14 @@ public class Hiel : MonoBehaviourPunCallbacks
 
     public GameObject cam_cine_Hiel;
 
+    public bool check;
+
+    public GameObject pos_joueur;
+    
 
     private void Start()
     {
-       mur.SetActive(false);
-       isfinished = false;
+        isfinished = false;
     }
 
     // Update is called once per frame
@@ -54,11 +56,8 @@ public class Hiel : MonoBehaviourPunCallbacks
             if (diff.x < rad && diff.y < rad && diff.z < rad)
                 Interaction_Hiel();
         }
-
-        if (isfinished)
-        {
-            Bakto_normal(cam_cine_Hiel);
-        }
+        if (isfinished) Bakto_normal(cam_cine_Hiel);
+        
 
     }
 
@@ -82,7 +81,6 @@ public class Hiel : MonoBehaviourPunCallbacks
    
         private void Bakto_normal(GameObject camera)
         {
-
             Set_UnsetCam(true);
             Set_UnsetMov(true);
             camera.SetActive(false);
@@ -102,10 +100,16 @@ public class Hiel : MonoBehaviourPunCallbacks
 
         public void Interaction_Hiel()
         {
-            Cam_cinematique(cam_cine_Hiel, 0);
-            mur.SetActive(true);
-            FindObjectOfType<DialogueTrigger>().TriggerDialog();
-            //StartCoroutine(Bakto_normal(camera, delay));
+            if (!check)
+            {
+                if (PhotonNetwork.IsMasterClient)
+                    spawn.clone1.transform.position = pos_joueur.transform.position;
+                else spawn.clone2.transform.position = pos_joueur.transform.position;
+                check = true; 
+                Cam_cinematique(cam_cine_Hiel, 0);
+                FindObjectOfType<DialogueTrigger>().TriggerDialog();
+            }
         }
+
         
 }
