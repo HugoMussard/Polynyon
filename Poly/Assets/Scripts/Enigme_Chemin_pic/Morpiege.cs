@@ -32,6 +32,7 @@ public class Morpiege : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        anim.SetBool("Die", true);
         Die();
     }
     private void Set_UnsetMov(bool state)
@@ -43,10 +44,17 @@ public class Morpiege : MonoBehaviour
     }
     void Die()
     {
-        anim.SetBool("Die", true);
         Set_UnsetMov(false);
-        Invoke("jsp", 2);
-        
+        SceneManager.LoadScene("Die additive", LoadSceneMode.Additive);
+        Invoke("LoadDieScene", 3);
+        if (PhotonNetwork.IsMasterClient)
+        {
+            spawn.cam1.enabled = false;
+        }
+        else
+        {
+            spawn.cam2.enabled = false;
+        }
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         if (SceneManager.GetSceneByName("HUD").isLoaded)
@@ -55,7 +63,7 @@ public class Morpiege : MonoBehaviour
         }
     }
 
-    void jsp()
+    void LoadDieScene()
     {
         SceneManager.LoadScene("Die");
     }

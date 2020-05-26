@@ -73,5 +73,18 @@ EditorBuildSettings:
     guid: d9f23bf3185517d478334c53a1e16df9
   - enabled: 1
     path: Assets/Scenes/premiere_salle.unity
+<<<<<<< HEAD
     guid: 0ab01f29b5f58d0438195aa3fbe37755
+=======
+    guid: c700acad02952da4fa547b2b9812dfa9
+  - enabled: 1
+    path: Assets/Scenes/Test.unity
+    guid: d9f23bf3185517d478334c53a1e16df9
+  - enabled: 1
+    path: Assets/Scenes/premiere_salle/premiere_salle.unity
+    guid: 0ab01f29b5f58d0438195aa3fbe37755
+  - enabled: 1
+    path: Assets/Scenes/Die additive.unity
+    guid: 3ff7977354dcdc541ae2ec15d94370dc
+>>>>>>> Simon24_05
   m_configObjects: {}
