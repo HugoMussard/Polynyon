@@ -7,6 +7,7 @@ public class Manager2 : MonoBehaviour
 {
 
     public GameObject script_spawn;
+    public Spawn_script spawn;
 
     public GameObject cam_cinematique1;
     public GameObject cam_cinematique2;
@@ -21,17 +22,15 @@ public class Manager2 : MonoBehaviour
         {
             cam_cinematique2.SetActive(true);
         }
-        Invoke("start_spawn_script",2);
+        Invoke("Spawnplayer", 1.6f);
     }
-
-    // Update is called once per frame
-    public void start_spawn_script()
+    
+    void Spawnplayer()
     {
-        cam_cinematique1.SetActive(false);
-        cam_cinematique2.SetActive(false);
-        
         script_spawn.SetActive(true);
     }
+    // Update is called once per frame
+    
     void Update()
     {
             

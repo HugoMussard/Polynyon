@@ -29,6 +29,9 @@ public class Spawn_script : MonoBehaviourPunCallbacks
    public camscript cam1; 
    public camscript cam2;
 
+   public GameObject camobject1;
+   public GameObject camobject2;
+
    
    private void Start()
    {

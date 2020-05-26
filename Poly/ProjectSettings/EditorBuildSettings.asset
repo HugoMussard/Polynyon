@@ -72,6 +72,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Test.unity
     guid: d9f23bf3185517d478334c53a1e16df9
   - enabled: 1
-    path: Assets/Scenes/premiere_salle/premiere_salle.unity
+    path: Assets/Scenes/premiere_salle.unity
     guid: 0ab01f29b5f58d0438195aa3fbe37755
   m_configObjects: {}
