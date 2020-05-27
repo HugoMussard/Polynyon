@@ -42,6 +42,8 @@ public class Spawn_script : MonoBehaviourPunCallbacks
             SceneManager.LoadSceneAsync("Blackscreen", LoadSceneMode.Additive);
       if (!SceneManager.GetSceneByName("HelloUnity3D").isLoaded)
             SceneManager.LoadSceneAsync("HelloUnity3D", LoadSceneMode.Additive);
+      PlayerPrefs.SetString("last_activescene", SceneManager.GetActiveScene().name);
+      PlayerPrefs.Save();
       
    }
 

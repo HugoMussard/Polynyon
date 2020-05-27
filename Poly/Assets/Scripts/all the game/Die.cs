@@ -11,7 +11,7 @@ public class Die : MonoBehaviourPunCallbacks
     // Start is called before the first frame update
     void Start()
     {
-        scene = SceneManager.GetActiveScene().name;
+        scene = PlayerPrefs.GetString("last_activescene");
     }
 
     // Update is called once per frame
