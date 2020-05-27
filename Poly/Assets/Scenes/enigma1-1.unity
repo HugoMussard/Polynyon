@@ -13193,7 +13193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   go1: {fileID: 1128132350}
   go2: {fileID: 1292640690}
-  load: 
+  load: HUB
 --- !u!4 &543831371
 Transform:
   m_ObjectHideFlags: 0

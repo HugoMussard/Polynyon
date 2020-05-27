@@ -2291,9 +2291,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73f0ae1caf446ef44bd2123876f3fb18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  go1: {fileID: 0}
-  go2: {fileID: 0}
-  load: 
+  go1: {fileID: 1987744187}
+  go2: {fileID: 398994875}
+  load: HUB
 --- !u!4 &856308487
 Transform:
   m_ObjectHideFlags: 0
