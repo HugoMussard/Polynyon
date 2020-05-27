@@ -7105,6 +7105,7 @@ MonoBehaviour:
   cam2: {fileID: 0}
   camobject1: {fileID: 0}
   camobject2: {fileID: 0}
+  audioMixer: {fileID: 24100000, guid: 79ced5304d3009b4f98952e281d7784c, type: 2}
 --- !u!4 &398645961
 Transform:
   m_ObjectHideFlags: 0

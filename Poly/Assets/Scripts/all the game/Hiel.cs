@@ -32,7 +32,8 @@ public class Hiel : MonoBehaviourPunCallbacks
         if (Einput)
         {
             Vector3 interact = GetComponent<Interactable>().transform.position;
-            position = spawn.clone1.transform.position;
+            if (PhotonNetwork.IsMasterClient) position = spawn.clone1.transform.position;
+            else  position = spawn.clone2.transform.position;
             Vector3 diff = position - interact;
             #region check if pos is valid
 
