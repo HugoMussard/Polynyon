@@ -28,7 +28,7 @@ public class Cinematique_Pose_bombe : MonoBehaviour
         cam_pose_bombe.enabled = false;
         Debug.Log("camsim");
         Set_UnsetCam(true);
-        Invoke("Wait_spawn", 3.0f);
+        Invoke("Wait_spawn", 1.5f);
         
     }
     
