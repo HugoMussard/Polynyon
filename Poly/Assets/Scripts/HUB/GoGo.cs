@@ -34,7 +34,7 @@ public class GoGo : MonoBehaviour
         {
             time = 0;
         }
-        if (go)
+        if (go && PhotonNetwork.IsMasterClient)
         {
             SceneManager.LoadScene(load);
         }

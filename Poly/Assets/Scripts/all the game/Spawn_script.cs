@@ -38,6 +38,8 @@ public class Spawn_script : MonoBehaviourPunCallbacks
    
    private void Start()
    {
+      PlayerPrefs.SetInt("Fail", 0);
+      PlayerPrefs.Save();
       Spawn();
       if(!SceneManager.GetSceneByName("HUD").isLoaded)
         SceneManager.LoadSceneAsync("HUD", LoadSceneMode.Additive);

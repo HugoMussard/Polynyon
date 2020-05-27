@@ -22,8 +22,8 @@ public class Fail_Bombe : MonoBehaviourPunCallbacks
         check = false;
         explosion_bombe.Stop(true);
         Invoke("waitforSpawn", 14f);
-        PlayerPrefs.SetInt("Fail", 0);
-        PlayerPrefs.Save();
+        //PlayerPrefs.SetInt("Fail", 0);
+        //PlayerPrefs.Save();
     }
     
     void waitforSpawn()
