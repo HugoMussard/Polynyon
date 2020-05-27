@@ -37833,7 +37833,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isfinished: 0
-  spawn: {fileID: 0}
+  spawn: {fileID: 398645960}
   cam_cine_Hiel: {fileID: 1969854471953834327}
   check: 0
   pos_joueur: {fileID: 8154091643726764849}
