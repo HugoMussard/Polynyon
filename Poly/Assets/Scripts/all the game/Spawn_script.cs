@@ -12,6 +12,7 @@ using UnityEngine.UI;
 using Random = System.Random;
 using UnityEngine.SceneManagement; 
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.UIElements;
 using Cursor = UnityEngine.Cursor;
 using Object = System.Object;
@@ -32,6 +33,8 @@ public class Spawn_script : MonoBehaviourPunCallbacks
    public GameObject camobject1;
    public GameObject camobject2;
 
+   
+   public AudioMixer audioMixer;
    
    private void Start()
    {
@@ -101,6 +104,8 @@ public class Spawn_script : MonoBehaviourPunCallbacks
          else if (!SceneManager.GetSceneByName("Options").isLoaded && !SceneManager.GetSceneByName("KeyBind").isLoaded)
             Resume(true);
       }
+      
+      audioMixer.SetFloat("volume", PlayerPrefs.GetFloat("volume"));
    }
    
    

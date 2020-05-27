@@ -65,11 +65,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene princ.unity
     guid: eba584e504828544dac5f60b3a8c841b
-<<<<<<< HEAD
   - enabled: 1
-=======
-  - enabled: 0
->>>>>>> Dernieres_modif
     path: Assets/Scenes/Test.unity
     guid: d9f23bf3185517d478334c53a1e16df9
   - enabled: 1

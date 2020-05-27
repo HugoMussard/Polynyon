@@ -89,9 +89,6 @@
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Users/hugom/Polynyon/Poly/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/sdefo/Projet S2/Polynyon/Poly/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>D:/Program Files(x86)/Unity/2019.3.0f5/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
  </Reference>

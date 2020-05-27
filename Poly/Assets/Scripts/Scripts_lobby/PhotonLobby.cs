@@ -100,11 +100,6 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
             if (PhotonNetwork.CurrentRoom.PlayerCount == 1)
             {
                 InfoOnConnection.text = "Waiting for a player";
-                if (PhotonNetwork.IsMasterClient)
-                {
-                    SceneManager.UnloadSceneAsync("lobby");
-                    SceneManager.LoadSceneAsync("Load_NewGame", LoadSceneMode.Additive); 
-                }  
             }
 
             if (PhotonNetwork.CurrentRoom.PlayerCount == 2)
@@ -114,10 +109,8 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
                     SceneManager.UnloadSceneAsync("lobby");
                     SceneManager.LoadSceneAsync("Load_NewGame", LoadSceneMode.Additive); 
                 }    
-                else
-                    InfoOnConnection.text = "Waiting for Player1"; 
+                else InfoOnConnection.text = "Waiting for Player1"; 
             }
-
         }
     }
 

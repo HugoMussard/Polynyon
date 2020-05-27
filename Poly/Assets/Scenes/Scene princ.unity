@@ -3160,6 +3160,9 @@ MonoBehaviour:
   clone2: {fileID: 0}
   cam1: {fileID: 0}
   cam2: {fileID: 0}
+  camobject1: {fileID: 0}
+  camobject2: {fileID: 0}
+  audioMixer: {fileID: 0}
 --- !u!1 &1185631614
 GameObject:
   m_ObjectHideFlags: 0

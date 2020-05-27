@@ -7,7 +7,7 @@ using UnityEngine.Audio;
 public class SoundManagerBombe : MonoBehaviour
 {
     
-    public AudioMixer audioMixer;
+    
     
     public AudioSource bomb_planted;
 
@@ -32,9 +32,5 @@ public class SoundManagerBombe : MonoBehaviour
     {
         tense_music.Play();
     }
-
-    private void Update()
-    {
-        audioMixer.SetFloat("volume", PlayerPrefs.GetFloat("volume"));
-    }
+    
 }

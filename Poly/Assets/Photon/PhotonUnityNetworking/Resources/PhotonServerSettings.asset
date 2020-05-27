@@ -35,6 +35,5 @@ MonoBehaviour:
   - Malus
   - Swap_cinematique
   - Unlock
-  - Disco
   DisableAutoOpenWizard: 1
   ShowSettings: 0
