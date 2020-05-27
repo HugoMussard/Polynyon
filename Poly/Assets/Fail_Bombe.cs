@@ -19,14 +19,18 @@ public class Fail_Bombe : MonoBehaviourPunCallbacks
     // Start is called before the first frame update
     void Start()
     {
+        check = false;
         explosion_bombe.Stop(true);
-        Invoke("waitforSpawn", 14.0f);
+        Invoke("waitforSpawn", 14f);
+        PlayerPrefs.SetInt("Fail", 0);
+        PlayerPrefs.Save();
     }
     
     void waitforSpawn()
     {
-        if (PhotonNetwork.IsMasterClient) 
+        if (PhotonNetwork.IsMasterClient)
             anim = spawn.clone1.transform.Find("Character").GetComponent<Animator>();
+        else anim = spawn.clone2.transform.Find("Character").GetComponent<Animator>(); 
     }
     
     private void Set_UnsetMov(bool state)

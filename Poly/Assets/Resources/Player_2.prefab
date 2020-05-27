@@ -2599,19 +2599,19 @@ MonoBehaviour:
     SynchronizeType: 2
     Name: Die
   - Type: 4
-    SynchronizeType: 0
+    SynchronizeType: 2
     Name: Jump
   - Type: 4
-    SynchronizeType: 0
+    SynchronizeType: 2
     Name: Sprint
   - Type: 4
-    SynchronizeType: 0
+    SynchronizeType: 2
     Name: Coucou
   - Type: 4
-    SynchronizeType: 0
+    SynchronizeType: 2
     Name: Macarena
   - Type: 1
-    SynchronizeType: 0
+    SynchronizeType: 2
     Name: horizontal
   m_SynchronizeLayers:
   - SynchronizeType: 2

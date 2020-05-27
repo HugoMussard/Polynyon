@@ -37,8 +37,12 @@ public class KeyBind : MonoBehaviour
         Right.text = PlayerPrefs.GetString("right");
         Vocal.text = PlayerPrefs.GetString("vocal");
         Run.text = PlayerPrefs.GetString("run");
-        UpInput.DeactivateInputField();
+        /*UpInput.DeactivateInputField();
         DownInput.DeactivateInputField();
+        LeftInput.DeactivateInputField();
+        RightInput.DeactivateInputField();
+        VocalInput.DeactivateInputField();
+        RunInput.DeactivateInputField();*/
     }
 
     public void Apply()

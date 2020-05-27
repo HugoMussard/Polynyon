@@ -9,12 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Starting_Scenes.unity
     guid: 0dd9c6309bf9b4e4ea28c9f846525fd9
   - enabled: 1
-<<<<<<< HEAD
-    path: Assets/Scenes/IleBombe.unity
-    guid: 2d37c02265a0714419ede70b0cb56b5a
-  - enabled: 1
-=======
->>>>>>> DeadlineAieAieAie
     path: Assets/Scenes/BackFromGame.unity
     guid: 6aa4e87683dea8940b76bae00834d94d
   - enabled: 1
@@ -42,12 +36,9 @@ EditorBuildSettings:
     path: Assets/Scenes/HUD.unity
     guid: c54b7e495e6d85440aabf94b09a38112
   - enabled: 1
-<<<<<<< HEAD
-=======
     path: Assets/Scenes/IleBombe.unity
     guid: 2d37c02265a0714419ede70b0cb56b5a
   - enabled: 1
->>>>>>> DeadlineAieAieAie
     path: Assets/Scenes/KeyBind.unity
     guid: dd6d119ea72940844b0e31832e9acde1
   - enabled: 1
@@ -74,11 +65,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene princ.unity
     guid: eba584e504828544dac5f60b3a8c841b
-<<<<<<< HEAD
   - enabled: 1
-=======
-  - enabled: 0
->>>>>>> DeadlineAieAieAie
     path: Assets/Scenes/Test.unity
     guid: d9f23bf3185517d478334c53a1e16df9
   - enabled: 1

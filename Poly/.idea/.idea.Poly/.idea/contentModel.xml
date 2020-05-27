@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\sdefo\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\sdefo\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Poly.-751983893.00" t="ExcludeRecursive" />
-    <e p="C:\Users\sdefo\Projet S2\Polynyon\Poly" t="IncludeRecursive">
+    <e p="C:\Users\hugom\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\hugom\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Poly.-1596253593.00" t="ExcludeRecursive" />
+    <e p="C:\Users\hugom\Polynyon\Poly" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -125,6 +125,28 @@
                 <e p="StyledMonoBehaviour.cs" t="Include" />
                 <e p="StyledMonoHideScriptField.cs" t="Include" />
               </e>
+            </e>
+          </e>
+        </e>
+        <e p="CamoShadersPack" t="Include">
+          <e p="Shaders" t="Include">
+            <e p="Metallic" t="Include">
+              <e p="CamoMetallicCutout.shader" t="Include" />
+              <e p="CamoMetallicOpaque.shader" t="Include" />
+              <e p="CamoMetallicOptimized.shader" t="Include" />
+              <e p="CamoMetallicTransparent.shader" t="Include" />
+            </e>
+            <e p="Mobile" t="Include">
+              <e p="CamoMobileBumped.shader" t="Include" />
+              <e p="CamoMobileBumpedSpecular.shader" t="Include" />
+              <e p="CamoMobileDiffuse.shader" t="Include" />
+              <e p="CamoMobileSpecular.shader" t="Include" />
+            </e>
+            <e p="Specular" t="Include">
+              <e p="CamoSpecularCutout.shader" t="Include" />
+              <e p="CamoSpecularOpaque.shader" t="Include" />
+              <e p="CamoSpecularOptimized.shader" t="Include" />
+              <e p="CamoSpecularTransparent.shader" t="Include" />
             </e>
           </e>
         </e>

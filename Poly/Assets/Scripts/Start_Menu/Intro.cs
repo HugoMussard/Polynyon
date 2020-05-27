@@ -5,9 +5,10 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 using System.IO;
+using Photon.Pun;
 
 
-public class Intro : MonoBehaviour
+public class Intro : MonoBehaviourPunCallbacks
 {
 
     public AudioMixer audioMixer;
@@ -28,6 +29,7 @@ public class Intro : MonoBehaviour
             PlayerPrefs.SetString("run", "LeftShift");
             PlayerPrefs.Save();
         }
+        PhotonNetwork.Disconnect();
     }
 
     void Start()
