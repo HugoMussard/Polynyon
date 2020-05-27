@@ -2837,7 +2837,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4549022579970771621
 Transform:
   m_ObjectHideFlags: 0
@@ -2866,6 +2866,7 @@ GameObject:
   - component: {fileID: 3774041149337763154}
   - component: {fileID: 1790794616982247914}
   - component: {fileID: 5497328735410458896}
+  - component: {fileID: 4580925438356643807}
   m_Layer: 0
   m_Name: player_cam
   m_TagString: MainCamera
@@ -2981,6 +2982,14 @@ MonoBehaviour:
   m_SynchronizePosition: 1
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
+--- !u!81 &4580925438356643807
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8263823285861699721}
+  m_Enabled: 1
 --- !u!1 &8263823285886614642
 GameObject:
   m_ObjectHideFlags: 0

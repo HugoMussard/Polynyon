@@ -7,11 +7,12 @@ using UnityEngine;
 public class Cinematique_Pose_bombe : MonoBehaviour
 {
 
+    public GameObject Terro; 
     public Camera cam_pose_bombe;
 
     public Spawn_script spawn;
     
-    public float delay = 10.6f;
+    public float delay = 11.0f;
 
     public GameObject cam_Sim1;
     public GameObject cam_Sim2;
@@ -23,6 +24,7 @@ public class Cinematique_Pose_bombe : MonoBehaviour
 
     private void Cam_Sim()
     {
+        Terro.SetActive(false); 
         cam_pose_bombe.enabled = false;
         Debug.Log("camsim");
         Set_UnsetCam(true);

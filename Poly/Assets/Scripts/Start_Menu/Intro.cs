@@ -15,7 +15,7 @@ public class Intro : MonoBehaviour
   
     private void Awake()
     {
-        hg.volume = PlayerPrefs.GetFloat("volume");
+        audioMixer.SetFloat("volume", PlayerPrefs.GetFloat("volume")); 
 
         if (!File.Exists($"{Application.dataPath}/firstrun"))
         {
@@ -38,6 +38,6 @@ public class Intro : MonoBehaviour
 
     private void Update()
     {
-        hg.volume = PlayerPrefs.GetFloat("volume");
+        audioMixer.SetFloat("volume", PlayerPrefs.GetFloat("volume"));
     }
 }

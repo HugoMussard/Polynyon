@@ -387,6 +387,9 @@
             <e p="goenigm.cs" t="Include" />
             <e p="GoGo.cs" t="Include" />
           </e>
+          <e p="ile bombe" t="Include">
+            <e p="finish1_4.cs" t="Include" />
+          </e>
           <e p="Ile2" t="Include">
             <e p="Cinematique_End.cs" t="Include" />
             <e p="Cinematique_Pose_bombe.cs" t="Include" />
@@ -424,6 +427,7 @@
             <e p="SoundScript.cs" t="Include" />
           </e>
         </e>
+        <e p="SoundManagerBombe.cs" t="Include" />
         <e p="SpeedTutor_Full_Menu_System" t="Include">
           <e p="GUI Elements" t="Include">
             <e p="UI_BrightnessShader" t="Include">

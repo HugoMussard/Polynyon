@@ -132,7 +132,6 @@ GameObject:
   m_Component:
   - component: {fileID: 152798415}
   - component: {fileID: 152798414}
-  - component: {fileID: 152798413}
   m_Layer: 0
   m_Name: BG Camera
   m_TagString: Untagged
@@ -140,14 +139,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &152798413
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 152798412}
-  m_Enabled: 0
 --- !u!20 &152798414
 Camera:
   m_ObjectHideFlags: 0

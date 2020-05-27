@@ -26,7 +26,7 @@ public class Mdp_enigme : MonoBehaviourPunCallbacks
     public Material material;
     
 
-    private string[] bank = {"AAAAA"}; 
+    private string[] bank = {"EPITA"}; 
     Random rnd = new Random();
 
     private int nb;
