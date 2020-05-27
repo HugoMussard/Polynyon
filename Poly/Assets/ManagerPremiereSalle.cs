@@ -7,7 +7,6 @@ public class ManagerPremiereSalle : MonoBehaviour
 {
 
     public GameObject script_spawn;
-    public Spawn_script spawn;
     public GameObject perso1clone;
     public GameObject perso2clone;
 

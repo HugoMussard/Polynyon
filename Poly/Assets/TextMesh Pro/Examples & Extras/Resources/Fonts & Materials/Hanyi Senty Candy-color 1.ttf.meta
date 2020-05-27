@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 0fe22623abd8cc14c859f5c22dd32a50
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Hanyi Senty Candy
+  fontNames:
+  - Hanyi Senty Candy
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 6f41807f5c9087247afe4455bb79f520, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

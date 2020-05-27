@@ -14,5 +14,4 @@ public class Starting_scenes : MonoBehaviour
         SceneManager.LoadScene("Polynon Scene"); 
     }
 
-  
 }
