@@ -47,26 +47,36 @@ public class Fail_Bombe : MonoBehaviourPunCallbacks
                 explosion_bombe.Play(true);
             check = true; 
             
-            anim.SetBool("Die", true);
-            Set_UnsetMov(false);
-            Invoke("jsp", 2);
-        
-            if (PhotonNetwork.IsMasterClient)
-                spawn.cam1.enabled = false;
-            else spawn.cam2.enabled = false;
-            
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
-        
-            if (SceneManager.GetSceneByName("HUD").isLoaded)
-                SceneManager.UnloadSceneAsync("HUD");
+            Die();
             
         }
 
     }
     
     
-    void jsp()
+    void Die()
+    {
+        anim.SetBool("Die", true);
+        Set_UnsetMov(false);
+        SceneManager.LoadScene("Die additive", LoadSceneMode.Additive);
+        Invoke("LoadDieScene", 3);
+        if (PhotonNetwork.IsMasterClient)
+        {
+            spawn.cam1.enabled = false;
+        }
+        else
+        {
+            spawn.cam2.enabled = false;
+        }
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        if (SceneManager.GetSceneByName("HUD").isLoaded)
+        {
+            SceneManager.UnloadSceneAsync("HUD");
+        }
+    }
+
+    void LoadDieScene()
     {
         SceneManager.LoadScene("Die");
     }

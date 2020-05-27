@@ -102,9 +102,7 @@
      <Compile Include="Assets\Scenes\3eme enigme\Simon.cs" />
      <Compile Include="Assets\Scripts\Biomes_solved\Biomes_HUB.cs" />
      <Compile Include="Assets\Scripts\Enigme_Chemin_pic\ButtonPush.cs" />
-     <Compile Include="Assets\Scripts\Enigme_Chemin_pic\Die.cs" />
      <Compile Include="Assets\Scripts\Enigme_Chemin_pic\Fin_enigme.cs" />
-     <Compile Include="Assets\Scripts\Enigme_Chemin_pic\Manager2.cs" />
      <Compile Include="Assets\Scripts\Enigme_Chemin_pic\Morpiege.cs" />
      <Compile Include="Assets\Scripts\Enigme_Chemin_pic\Murdepics.cs" />
      <Compile Include="Assets\Scripts\Enigme_Chemin_pic\Plateforme.cs" />
@@ -143,10 +141,12 @@
      <Compile Include="Assets\Scripts\all the game\Dialogue\DialogueManager.cs" />
      <Compile Include="Assets\Scripts\all the game\Dialogue\DialogueTrigger.cs" />
      <Compile Include="Assets\Scripts\all the game\Dialogue\NextSent.cs" />
+     <Compile Include="Assets\Scripts\all the game\Die.cs" />
      <Compile Include="Assets\Scripts\all the game\HUD.cs" />
      <Compile Include="Assets\Scripts\all the game\Hiel.cs" />
      <Compile Include="Assets\Scripts\all the game\Interactable.cs" />
      <Compile Include="Assets\Scripts\all the game\Interaction.cs" />
+     <Compile Include="Assets\Scripts\all the game\Manager2.cs" />
      <Compile Include="Assets\Scripts\all the game\PopUp.cs" />
      <Compile Include="Assets\Scripts\all the game\Spawn_script.cs" />
      <Compile Include="Assets\Scripts\all the game\Starting_scenes.cs" />

@@ -338,12 +338,14 @@
               <e p="DialogueTrigger.cs" t="Include" />
               <e p="NextSent.cs" t="Include" />
             </e>
+            <e p="Die.cs" t="Include" />
             <e p="gohub.cs" t="Include" />
             <e p="Hiel.cs" t="Include" />
             <e p="HUD.cs" t="Include" />
             <e p="Interactable.cs" t="Include" />
             <e p="Interaction.cs" t="Include" />
             <e p="interactonoff.cs" t="Include" />
+            <e p="Manager2.cs" t="Include" />
             <e p="moves.cs" t="Include" />
             <e p="outofbound.cs" t="Include" />
             <e p="PopUp.cs" t="Include" />
@@ -365,9 +367,7 @@
           </e>
           <e p="Enigme_Chemin_pic" t="Include">
             <e p="ButtonPush.cs" t="Include" />
-            <e p="Die.cs" t="Include" />
             <e p="Fin_enigme.cs" t="Include" />
-            <e p="Manager2.cs" t="Include" />
             <e p="Morpiege.cs" t="Include" />
             <e p="Murdepics.cs" t="Include" />
             <e p="Plateforme.cs" t="Include" />
