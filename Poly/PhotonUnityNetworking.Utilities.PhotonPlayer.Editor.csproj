@@ -58,11 +58,11 @@
      <Compile Include="Assets\Photon\Photon\PhotonUnityNetworking\UtilityScripts\PhotonPlayer\Editor\PlayerNumberingInspector.cs" />
      <Compile Include="Assets\Photon\Photon\PhotonUnityNetworking\UtilityScripts\PhotonPlayer\Editor\PunTeamsInspector.cs" />
      <None Include="Assets\Photon\Photon\PhotonUnityNetworking\UtilityScripts\PhotonPlayer\Editor\PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.asmdef" />
- <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/sdefo/Projet S2/Polynyon/Poly/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/Users/sdefo/Projet S2/Polynyon/Poly/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Users/sdefo/Projet S2/Polynyon/Poly/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.TestRunner">
  <HintPath>C:/Users/sdefo/Projet S2/Polynyon/Poly/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>

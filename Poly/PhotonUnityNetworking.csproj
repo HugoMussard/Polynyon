@@ -70,11 +70,11 @@
      <Compile Include="Assets\Photon\Photon\PhotonUnityNetworking\Code\Views\PhotonTransformView.cs" />
      <Compile Include="Assets\Photon\Photon\PhotonUnityNetworking\Code\Views\PhotonTransformViewClassic.cs" />
      <None Include="Assets\Photon\Photon\PhotonUnityNetworking\Code\PhotonUnityNetworking.asmdef" />
- <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/sdefo/Projet S2/Polynyon/Poly/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/Users/sdefo/Projet S2/Polynyon/Poly/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Users/sdefo/Projet S2/Polynyon/Poly/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0f5/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
