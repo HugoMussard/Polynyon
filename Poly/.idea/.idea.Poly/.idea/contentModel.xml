@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\hugom\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\hugom\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Poly.-1596253593.00" t="ExcludeRecursive" />
-    <e p="C:\Users\hugom\Polynyon\Poly" t="IncludeRecursive">
+    <e p="C:\Users\sdefo\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\sdefo\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Poly.-751983893.00" t="ExcludeRecursive" />
+    <e p="C:\Users\sdefo\Projet S2\Polynyon\Poly" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -133,6 +133,7 @@
         <e p="Ile" t="Include">
           <e p="Rotation.cs" t="Include" />
         </e>
+        <e p="ManagerPremiereSalle.cs" t="Include" />
         <e p="Photon" t="Include">
           <e p="Photon" t="Include">
             <e p="PhotonChat" t="Include">
@@ -337,12 +338,14 @@
               <e p="DialogueTrigger.cs" t="Include" />
               <e p="NextSent.cs" t="Include" />
             </e>
+            <e p="Die.cs" t="Include" />
             <e p="gohub.cs" t="Include" />
             <e p="Hiel.cs" t="Include" />
             <e p="HUD.cs" t="Include" />
             <e p="Interactable.cs" t="Include" />
             <e p="Interaction.cs" t="Include" />
             <e p="interactonoff.cs" t="Include" />
+            <e p="Manager2.cs" t="Include" />
             <e p="moves.cs" t="Include" />
             <e p="outofbound.cs" t="Include" />
             <e p="PopUp.cs" t="Include" />
@@ -364,9 +367,7 @@
           </e>
           <e p="Enigme_Chemin_pic" t="Include">
             <e p="ButtonPush.cs" t="Include" />
-            <e p="Die.cs" t="Include" />
             <e p="Fin_enigme.cs" t="Include" />
-            <e p="Manager2.cs" t="Include" />
             <e p="Morpiege.cs" t="Include" />
             <e p="Murdepics.cs" t="Include" />
             <e p="Plateforme.cs" t="Include" />
