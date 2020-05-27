@@ -134,6 +134,7 @@
           <e p="Rotation.cs" t="Include" />
         </e>
         <e p="ManagerPremiereSalle.cs" t="Include" />
+        <e p="New_Keybind.cs" t="Include" />
         <e p="Photon" t="Include">
           <e p="Photon" t="Include">
             <e p="PhotonChat" t="Include">

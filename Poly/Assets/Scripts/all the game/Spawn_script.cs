@@ -55,7 +55,7 @@ public class Spawn_script : MonoBehaviourPunCallbacks
       }
       else
       { 
-         clone2 = PhotonNetwork.Instantiate(player_prefab2, spawn_point2.position, spawn_point.rotation);
+         clone2 = PhotonNetwork.Instantiate(player_prefab2, spawn_point2.position, spawn_point2.rotation);
          cam2 = clone2.transform.Find("Character").transform.Find("GameObject").transform.Find("player_cam2")
             .GetComponent<camscript>();
       }
@@ -94,9 +94,9 @@ public class Spawn_script : MonoBehaviourPunCallbacks
       
       if (Input.GetKeyDown(KeyCode.Escape))
       {
-         if (!SceneManager.GetSceneByName("BackFromGame").isLoaded)
+         if (!SceneManager.GetSceneByName("BackFromGame").isLoaded && !SceneManager.GetSceneByName("Options").isLoaded && !SceneManager.GetSceneByName("KeyBind").isLoaded)
             Resume(false);
-         else 
+         else if (!SceneManager.GetSceneByName("Options").isLoaded && !SceneManager.GetSceneByName("KeyBind").isLoaded)
             Resume(true);
       }
    }

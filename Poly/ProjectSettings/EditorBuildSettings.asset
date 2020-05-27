@@ -4,5 +4,74 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Starting_Scenes.unity
+    guid: 0dd9c6309bf9b4e4ea28c9f846525fd9
+  - enabled: 1
+    path: Assets/Scenes/IleBombe.unity
+    guid: 2d37c02265a0714419ede70b0cb56b5a
+  - enabled: 1
+    path: Assets/Scenes/BackFromGame.unity
+    guid: 6aa4e87683dea8940b76bae00834d94d
+  - enabled: 1
+    path: Assets/Scenes/BIOMES SOLVED.unity
+    guid: 915a8a0abf88dfe409389144b13a7724
+  - enabled: 1
+    path: Assets/Scenes/Blackscreen.unity
+    guid: b285d10c21ea79049bd76ad52b989f07
+  - enabled: 1
+    path: Assets/Scenes/Die additive.unity
+    guid: 3ff7977354dcdc541ae2ec15d94370dc
+  - enabled: 1
+    path: Assets/Scenes/Die.unity
+    guid: 7bf02089f563e034d83c98eb202746dc
+  - enabled: 1
+    path: Assets/Scenes/enigma1-1.unity
+    guid: bce6fb1bb63d8d54e82a52f55f16b03b
+  - enabled: 1
+    path: Assets/Scenes/Enigme_plaques.unity
+    guid: de6430ff342f4934ba90e3f93ef81b87
+  - enabled: 1
+    path: Assets/Scenes/HUB.unity
+    guid: 906e3b84d1eb32249bef56ea7c272eed
+  - enabled: 1
+    path: Assets/Scenes/HUD.unity
+    guid: c54b7e495e6d85440aabf94b09a38112
+  - enabled: 1
+    path: Assets/Scenes/KeyBind.unity
+    guid: dd6d119ea72940844b0e31832e9acde1
+  - enabled: 1
+    path: Assets/Scenes/Load_NewGame.unity
+    guid: ec11af5ca598e7d43a5249635a676c71
+  - enabled: 1
+    path: Assets/Scenes/lobby.unity
+    guid: 8dcc1c28e3c214bfaa4b1b34b332c027
+  - enabled: 1
+    path: Assets/Scenes/MENUOK.unity
+    guid: 628acb323ad9ece4bb6085f681886f14
+  - enabled: 1
+    path: Assets/Scenes/Options.unity
+    guid: 00b200523b0f5e84dbd16496dcd540bb
+  - enabled: 1
+    path: Assets/Scenes/Polynon Scene.unity
+    guid: 1c481099a1637ee42a4af6946fc3d9a3
+  - enabled: 1
+    path: Assets/Scenes/Pop Up.unity
+    guid: 5af1f4b61daae7549a5225a642e02817
+  - enabled: 1
+    path: Assets/Scenes/premiere_salle.unity
+    guid: 0ab01f29b5f58d0438195aa3fbe37755
+  - enabled: 1
+    path: Assets/Scenes/Scene princ.unity
+    guid: eba584e504828544dac5f60b3a8c841b
+  - enabled: 1
+    path: Assets/Scenes/Test.unity
+    guid: d9f23bf3185517d478334c53a1e16df9
+  - enabled: 1
+    path: Assets/Scenes/TranspaESC.unity
+    guid: 9b386980f0d59624ca265c18c124fbd0
+  - enabled: 1
+    path: Assets/AgoraEngine/Demo/HelloUnity3D.unity
+    guid: cf0f0349488134449a67eea42ac82665
   m_configObjects: {}

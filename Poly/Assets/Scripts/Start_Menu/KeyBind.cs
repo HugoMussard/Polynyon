@@ -27,7 +27,6 @@ public class KeyBind : MonoBehaviour
     
     public TextMeshProUGUI Run;
     public TMP_InputField RunInput;
-
     
 
     void Start()
@@ -37,7 +36,9 @@ public class KeyBind : MonoBehaviour
         Left.text = PlayerPrefs.GetString("left");
         Right.text = PlayerPrefs.GetString("right");
         Vocal.text = PlayerPrefs.GetString("vocal");
-        Run.text = PlayerPrefs.GetString("run"); 
+        Run.text = PlayerPrefs.GetString("run");
+        UpInput.DeactivateInputField();
+        DownInput.DeactivateInputField();
     }
 
     public void Apply()
@@ -49,12 +50,24 @@ public class KeyBind : MonoBehaviour
         if (!String.IsNullOrEmpty(VocalInput.text)) PlayerPrefs.SetString("vocal", VocalInput.text);
         if (!String.IsNullOrEmpty(RunInput.text)) PlayerPrefs.SetString("run", Run.text);
         PlayerPrefs.Save();
+
     }
 
     public void ReturnToOption()
     {
         SceneManager.UnloadSceneAsync("KeyBind");
         SceneManager.LoadSceneAsync("Options", LoadSceneMode.Additive); 
+    }
+
+    public void Set_script(New_Keybind script)
+    {
+        script.enabled = true;
+        Debug.Log("first");
+    }
+
+    public void Unset_script(New_Keybind script)
+    {
+        script.enabled = false; 
     }
 
     

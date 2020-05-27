@@ -3687,8 +3687,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73f0ae1caf446ef44bd2123876f3fb18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  go1: {fileID: 1986085721}
-  go2: {fileID: 1018556999}
+  go1: {fileID: 660414779}
+  go2: {fileID: 421752654}
   load: final_enigma
 --- !u!1001 &194124000
 PrefabInstance:

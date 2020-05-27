@@ -87,6 +87,7 @@
      <Compile Include="Assets\Floater.cs" />
      <Compile Include="Assets\Ile\Rotation.cs" />
      <Compile Include="Assets\ManagerPremiereSalle.cs" />
+     <Compile Include="Assets\New_Keybind.cs" />
      <Compile Include="Assets\Photon\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
      <Compile Include="Assets\Photon\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
      <Compile Include="Assets\Photon\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
